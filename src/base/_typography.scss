@@ -1,0 +1,15 @@
+.heading-1 {
+    font-family: 'Maven Pro', sans-serif;    
+    font-size: 3.8rem;
+    letter-spacing: 1.7rem;
+    text-transform: uppercase;
+    color: rgb(155, 155, 155);
+
+    cursor: pointer;
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+}

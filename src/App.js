@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
+import About from './pages/About';
+import Home from './pages/Home';
+import OpeningScreen from './pages/OpeningScreen';
+import NotFound from './pages/NotFound';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+
+      <Route path="/" element={<OpeningScreen/>} /> 
+      <Route path="/home" element={<Home/>} /> 
+      <Route path="/work" element={<Gallery/>} />
+      
+        {/* 
+            <Route path=":theme">
+              <Route path=":series">
+                <Route path=":image" />
+              </Route>
+            </Route>
+         NESTED ROUTES*/} /
+
+      <Route path="/about" element={<About/>} /> 
+      <Route path="/*" element={<NotFound/>} /> 
+
+
+
+    </Routes>
   );
 }
 
