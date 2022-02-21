@@ -1,0 +1,52 @@
+.themes {
+
+
+
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    padding: 5rem;
+    gap: 1rem;
+
+    &__figure {
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &--1 {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__image {
+        display: block;
+        height: 25vw;
+        width: 25vw;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        border: none;
+
+        animation: grow 1.5s ease .3s;
+        animation-fill-mode: backwards;
+
+
+        &:hover {
+            background-color: rgb(235, 233, 233);
+            outline: 2.5rem solid rgb(235, 233, 233);
+        }
+
+        &:hover + figcaption {
+            color: rgb(133, 131, 131);
+        }
+    }
+
+    &__caption {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        color: lightgrey;
+        width: 25%;
+    }
+
+}

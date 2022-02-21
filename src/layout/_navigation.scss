@@ -1,8 +1,24 @@
 .navigation {
+    top: 2rem;
+    z-index: 3;
+    
+    // padding: 2rem 0;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    padding: 2rem 0;
+    &__title {
+        padding: 1.2rem 2rem;
+        font-size: 3rem;
+        background-color: white;
+        margin-top: -3rem;
+    }
 
     &__list {
+        width: 100%;
+        padding-bottom: 2rem;
         display: flex;
         list-style: none;
         justify-content: center;
@@ -31,11 +47,10 @@
         color: rgb(221, 129, 221);
     }
 
-    // &__link:active {
-    //     border-top: 3px solid black;
-    //     color: black;
-    //     transform: translateY(0);
-    // }
+    &__link:active {
+        border-top: 3px solid black;
+        color: black;
+    }
 
     &__social-media {
         display: flex;
@@ -50,4 +65,7 @@
             margin-right: .5rem;
         }
     }
+
+
 }
+

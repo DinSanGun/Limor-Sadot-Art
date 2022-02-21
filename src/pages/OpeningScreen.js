@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const OpeningScreen = () => {
+
   return (
     <div className='opening'>
         <div className='opening__name-box'>

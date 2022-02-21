@@ -1,10 +1,10 @@
 import React from 'react'
+import Navigation from './Navigation'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="header">
-        <img src={process.env.PUBLIC_URL + "/img/top-banner-colored.jpg"} alt="banner" className="header__img" />
-        <h1 className="heading-1 header__title">Limor Sadot</h1>
+        <img src={process.env.PUBLIC_URL + props.banner} alt="banner" className="header__img" />
     </header>
 )
 }

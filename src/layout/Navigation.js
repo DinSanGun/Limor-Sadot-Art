@@ -3,9 +3,11 @@ import { NavLink } from 'react-router-dom'
 
 const Navigation = () => {
   return (
-    <nav className="navigation">
+    <nav id="navbar" className="navigation">
+      <h1 className="heading-1 navigation__title">Limor Sadot</h1>
+
       <ul className="navigation__list">
-        <li className="navigation__item"><NavLink to="#" className="navigation__link">home</NavLink></li>
+        <li className="navigation__item"><NavLink to="/home" className="navigation__link">home</NavLink></li>
         <li className="navigation__item"><NavLink to="/work" className="navigation__link">work</NavLink></li>
         <li className="navigation__item"><NavLink to="#" className="navigation__link">about</NavLink></li>
         <li className="navigation__item"><NavLink to="#" className="navigation__link">contact</NavLink></li>
