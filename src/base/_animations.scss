@@ -22,7 +22,7 @@
 
 @keyframes grow {
     0% {
-        transform: scale(.05);
+        transform: scale(.005);
     }
 
     100% {
@@ -36,6 +36,19 @@
     }
 
     100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes growPoint {
+    0% {
+        color: transparent;
+        transform: scale(11) translateY(-5rem) translateX(-4rem);
+    }
+
+
+    100% {
+        color: currentColor;
         transform: scale(1);
     }
 }

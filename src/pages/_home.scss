@@ -72,7 +72,6 @@
         height: 100%;
         background-color: white;
         color: rgb(224, 224, 224);
-        white-space: pre-line;
         line-height: 1.3;
 
         padding: 12rem 4.5rem 6rem;
@@ -92,43 +91,56 @@
 
         &--1 {
             @extend %text-line;
-            animation: typewriter 2s steps(40, end) 2s;
+            animation: typewriter 2s steps(25, end) 2s;
         }
 
         
         &--2 {
             @extend %text-line;
-            animation: typewriter 2s steps(40, end) 4s;
+            animation: typewriter 2s steps(25, end) 4s;
         }
 
         &--3 {
             @extend %text-line;
-            animation: typewriter 2s steps(40, end) 6s;
+            animation: typewriter 2s steps(25, end) 6s;
         }
 
         &--4 {
             @extend %text-line;
-            animation: typewriter 2s steps(40, end) 8s;
+            animation: typewriter 2s steps(25, end) 8s;
         }
 
         &--5 {
             @extend %text-line;
-            animation: typewriter 2s steps(40, end) 10s;
+            animation: typewriter 2s steps(25, end) 10s;
         }
 
         &--6 {
             @extend %text-line;
-            animation: typewriter 2s steps(40, end) 12s;
+            animation: typewriter 2s steps(25, end) 12s;
         }
 
         &--7 {
             @extend %text-line;
-            animation: typewriter 2s steps(40, end) 14s;
+            animation: typewriter 2s steps(25, end) 14s;
         }
 
         &--8 {
-            @extend %text-line;
-            animation: typewriter 2s steps(40, end) 16s;
+            @extend %text-line;          
+            animation: typewriter 2s steps(25, end) 16s;
+            font-size: 7rem;
+            margin-right: 1.5rem;
+        }
+
+        &--point {
+            display: block;
+            animation: growPoint 1.2s cubic-bezier(1,0,.9,.4) 16.5s;
+            animation-fill-mode: backwards;
+            display: flex;
+            align-items: end;
+            position: absolute;
+            right: 0;
+            bottom: 1rem;
         }
     }
 
@@ -140,4 +152,10 @@
         margin-left: 15rem;
         padding-top: 4rem;
     }
+}
+
+.flex-wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 }

@@ -45,7 +45,7 @@ const WhimsicalDarkness = () => {
 
     const WhimsicalDarknessGallery = {
         title: "Whimsical Darkness",
-        description: "Analogue collage",
+        description: "analogue collage",
         images: 
         [
             {
@@ -141,7 +141,7 @@ const WhimsicalDarkness = () => {
         ]
     }
 
-  return <Gallery series={ WhimsicalDarknessGallery } />
+  return <Gallery grid="3" series={ WhimsicalDarknessGallery } />
 }
 
 export default WhimsicalDarkness

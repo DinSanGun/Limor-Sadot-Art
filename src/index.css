@@ -12,7 +12,7 @@
 
 @keyframes grow {
   0% {
-    transform: scale(0.05); }
+    transform: scale(0.005); }
   100% {
     transform: scale(1); } }
 
@@ -20,6 +20,14 @@
   0% {
     transform: scale(0.8); }
   100% {
+    transform: scale(1); } }
+
+@keyframes growPoint {
+  0% {
+    color: transparent;
+    transform: scale(11) translateY(-5rem) translateX(-4rem); }
+  100% {
+    color: currentColor;
     transform: scale(1); } }
 
 @keyframes typewriter {
@@ -37,7 +45,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 .heading-1 {
   font-family: 'Maven Pro', sans-serif;
@@ -76,9 +85,12 @@ html {
 .gallery {
   padding: 0 25rem 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2rem;
   position: relative; }
+  .gallery--grid-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .gallery--grid-3 {
+    grid-template-columns: repeat(3, 1fr); }
   .gallery__header {
     grid-column: 1 / -1;
     padding: 1rem 0;
@@ -138,8 +150,9 @@ html {
     background-color: rgba(255, 255, 255, 0.6); }
   .gallery__image {
     width: 100%;
-    animation: growLittle 1.5s; }
-  .gallery__single {
+    animation: growLittle 2s ease;
+    animation-fill-mode: backwards; }
+  .gallery__lightbox {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.88);
@@ -154,7 +167,7 @@ html {
     overflow: hidden;
     z-index: 3;
     transition: all .7s ease-in-out; }
-    .gallery__single img {
+    .gallery__lightbox img {
       width: auto;
       max-width: 100%;
       height: 97%;
@@ -162,9 +175,9 @@ html {
       line-height: 0;
       padding: 2rem 0;
       margin: 0 auto; }
-  .gallery__single--open {
-    visibility: visible;
-    opacity: 1; }
+    .gallery__lightbox--open {
+      visibility: visible;
+      opacity: 1; }
   .gallery__x-mark {
     position: absolute;
     display: block;
@@ -329,7 +342,7 @@ html {
     border-radius: 50%;
     margin-bottom: 2rem;
     border: none;
-    animation: grow 1.5s ease .3s;
+    animation: grow 1.5s ease 1.5s;
     animation-fill-mode: backwards; }
     .themes__image:hover {
       background-color: #ebe9e9;
@@ -395,7 +408,6 @@ html {
     height: 100%;
     background-color: white;
     color: #e0e0e0;
-    white-space: pre-line;
     line-height: 1.3;
     padding: 12rem 4.5rem 6rem;
     text-align: right;
@@ -407,21 +419,32 @@ html {
       overflow: hidden;
       animation-fill-mode: backwards; }
     .introduction__text--1 {
-      animation: typewriter 2s steps(40, end) 2s; }
+      animation: typewriter 2s steps(25, end) 2s; }
     .introduction__text--2 {
-      animation: typewriter 2s steps(40, end) 4s; }
+      animation: typewriter 2s steps(25, end) 4s; }
     .introduction__text--3 {
-      animation: typewriter 2s steps(40, end) 6s; }
+      animation: typewriter 2s steps(25, end) 6s; }
     .introduction__text--4 {
-      animation: typewriter 2s steps(40, end) 8s; }
+      animation: typewriter 2s steps(25, end) 8s; }
     .introduction__text--5 {
-      animation: typewriter 2s steps(40, end) 10s; }
+      animation: typewriter 2s steps(25, end) 10s; }
     .introduction__text--6 {
-      animation: typewriter 2s steps(40, end) 12s; }
+      animation: typewriter 2s steps(25, end) 12s; }
     .introduction__text--7 {
-      animation: typewriter 2s steps(40, end) 14s; }
+      animation: typewriter 2s steps(25, end) 14s; }
     .introduction__text--8 {
-      animation: typewriter 2s steps(40, end) 16s; }
+      animation: typewriter 2s steps(25, end) 16s;
+      font-size: 7rem;
+      margin-right: 1.5rem; }
+    .introduction__text--point {
+      display: block;
+      animation: growPoint 1.2s cubic-bezier(1, 0, 0.9, 0.4) 16.5s;
+      animation-fill-mode: backwards;
+      display: flex;
+      align-items: flex-end;
+      position: absolute;
+      right: 0;
+      bottom: 1rem; }
   .introduction__bottom-image {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -429,6 +452,11 @@ html {
     width: 75%;
     margin-left: 15rem;
     padding-top: 4rem; }
+
+.flex-wrap {
+  display: flex;
+  justify-content: flex-end;
+  position: relative; }
 
 .opening {
   background-image: url(/public/img/opening.jpg);

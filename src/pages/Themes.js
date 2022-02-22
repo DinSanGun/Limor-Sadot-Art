@@ -3,9 +3,11 @@ import Layout from '../layout/Layout'
 
 const Themes = () => {
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  window.scrollTo(0,0)
+
+  setTimeout(() => {
+    window.scrollTo({top: 150, behavior: 'smooth'})
+  }, 1500)
 
   return (
     <Layout banner="/img/banner-grey.jpg">

@@ -31,7 +31,7 @@ const PinkBloodlines = () => {
 
     const PinkBloodlinesGallery = {
         title: "Pink Bloodlines",
-        description: "Mixed media collage",
+        description: "mixed media collage",
         images: 
         [
             {
@@ -97,7 +97,7 @@ const PinkBloodlines = () => {
         ]
     }
 
-  return <Gallery series={ PinkBloodlinesGallery } />
+  return <Gallery grid="3" series={ PinkBloodlinesGallery } />
 }
 
 export default PinkBloodlines
