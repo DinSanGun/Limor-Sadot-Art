@@ -40,7 +40,7 @@
     }
 }
 
-@keyframes growPoint {
+@keyframes growDot {
     0% {
         color: transparent;
         transform: scale(11) translateY(-5rem) translateX(-4rem);
@@ -56,4 +56,16 @@
 @keyframes typewriter {
     from { width: 0; }
     to { width: 100%; }
+}
+
+@keyframes scaleOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(4);
+        opacity: .2;
+    }
 }

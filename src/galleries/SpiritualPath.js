@@ -22,6 +22,10 @@ import sImage21 from '../img/spiritual-path/small/spiritual-path_small (21).jpg'
 import sImage22 from '../img/spiritual-path/small/spiritual-path_small (22).jpg';
 import sImage23 from '../img/spiritual-path/small/spiritual-path_small (23).jpg';
 import sImage24 from '../img/spiritual-path/small/spiritual-path_small (24).jpg';
+import sImage25 from '../img/spiritual-path/small/spiritual-path_small (25).jpg';
+import sImage26 from '../img/spiritual-path/small/spiritual-path_small (26).jpg';
+import sImage27 from '../img/spiritual-path/small/spiritual-path_small (27).jpg';
+
 
 import bImage1 from '../img/spiritual-path/big/spiritual-path_big (1).jpg'
 import bImage2 from '../img/spiritual-path/big/spiritual-path_big (2).jpg'
@@ -47,6 +51,9 @@ import bImage21 from '../img/spiritual-path/big/spiritual-path_big (21).jpg';
 import bImage22 from '../img/spiritual-path/big/spiritual-path_big (22).jpg';
 import bImage23 from '../img/spiritual-path/big/spiritual-path_big (23).jpg';
 import bImage24 from '../img/spiritual-path/big/spiritual-path_big (24).jpg';
+import bImage25 from '../img/spiritual-path/big/spiritual-path_big (25).jpg';
+import bImage26 from '../img/spiritual-path/big/spiritual-path_big (26).jpg';
+import bImage27 from '../img/spiritual-path/big/spiritual-path_big (27).jpg';
 
 
 import React from 'react'
@@ -178,6 +185,21 @@ const SpiritualPath = () => {
           id: 24,
           smallSrc: sImage24,
           bigSrc: bImage24
+      },
+      {
+          id: 25,
+          smallSrc: sImage25,
+          bigSrc: bImage25
+      },
+      {
+          id: 26,
+          smallSrc: sImage26,
+          bigSrc: bImage26
+      },
+      {
+          id: 27,
+          smallSrc: sImage27,
+          bigSrc: bImage27
       }
     ]
   }

@@ -32,7 +32,7 @@ const Home = () => {
                 <span className="introduction__text--8">
                   sides
                 </span>
-                <span className="introduction__text--point">.</span>
+                <span className="introduction__text--dot">.</span>
               </div>
             </p>
         <img src="img/main-bottom-sketch.jpg" className="introduction__bottom-image" alt="Home page background bottom"/>

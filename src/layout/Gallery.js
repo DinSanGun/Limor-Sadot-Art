@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import Layout from '../layout/Layout'
 
 const Gallery = (props) => {
@@ -23,7 +24,7 @@ const Gallery = (props) => {
         setFade('in')
         setImage(props.series.images[image.id - 2])
       }
-      ,800)
+      ,600)
     }
   }
 
@@ -33,9 +34,10 @@ const Gallery = (props) => {
       setTimeout(() => {
         setFade('in')
         setImage(props.series.images[image.id])
-      }, 1000)
+      }, 600)
     }
   }
+  
 
   useEffect(() => {
     window.addEventListener("keydown", function (event) {
@@ -86,11 +88,13 @@ const Gallery = (props) => {
 
         <div className="gallery__header">
 
-            <div className="gallery__back-btn">
-              <span className="gallery__back-sign">
-                &#9664;
-              </span>
-            </div>
+            <Link to="/collage" className="link">
+              <div className="gallery__back-btn">
+                <span className="gallery__back-sign">
+                  &#9664;
+                </span>
+              </div>
+            </Link>
 
             <h2 className='heading-2 gallery__title'>{props.series.title}</h2>
             <p className="gallery__description">{props.series.description}</p>

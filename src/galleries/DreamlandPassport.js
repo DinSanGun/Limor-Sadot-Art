@@ -22,6 +22,13 @@ import sImage21 from '../img/dreamland-passport/small/dreamland-passport_small (
 import sImage22 from '../img/dreamland-passport/small/dreamland-passport_small (22).jpg';
 import sImage23 from '../img/dreamland-passport/small/dreamland-passport_small (23).jpg';
 import sImage24 from '../img/dreamland-passport/small/dreamland-passport_small (24).jpg';
+import sImage25 from '../img/dreamland-passport/small/dreamland-passport_small (25).jpg';
+import sImage26 from '../img/dreamland-passport/small/dreamland-passport_small (26).jpg';
+import sImage27 from '../img/dreamland-passport/small/dreamland-passport_small (27).jpg';
+import sImage28 from '../img/dreamland-passport/small/dreamland-passport_small (28).jpg';
+import sImage29 from '../img/dreamland-passport/small/dreamland-passport_small (29).jpg';
+import sImage30 from '../img/dreamland-passport/small/dreamland-passport_small (30).jpg';
+
 
 import bImage1 from '../img/dreamland-passport/big/dreamland-passport_big (1).jpg'
 import bImage2 from '../img/dreamland-passport/big/dreamland-passport_big (2).jpg'
@@ -47,6 +54,12 @@ import bImage21 from '../img/dreamland-passport/big/dreamland-passport_big (21).
 import bImage22 from '../img/dreamland-passport/big/dreamland-passport_big (22).jpg';
 import bImage23 from '../img/dreamland-passport/big/dreamland-passport_big (23).jpg';
 import bImage24 from '../img/dreamland-passport/big/dreamland-passport_big (24).jpg';
+import bImage25 from '../img/dreamland-passport/big/dreamland-passport_big (25).jpg';
+import bImage26 from '../img/dreamland-passport/big/dreamland-passport_big (26).jpg';
+import bImage27 from '../img/dreamland-passport/big/dreamland-passport_big (27).jpg';
+import bImage28 from '../img/dreamland-passport/big/dreamland-passport_big (28).jpg';
+import bImage29 from '../img/dreamland-passport/big/dreamland-passport_big (29).jpg';
+import bImage30 from '../img/dreamland-passport/big/dreamland-passport_big (30).jpg';
 
 
 import React from 'react'
@@ -56,7 +69,7 @@ const DreamlandPassport = () => {
 
   const DreamlandPassportGallery = {
     title: "A Passport To Dreamland",
-    description: "mixed media collage",
+    description: "digital collage",
     images: 
     [
       {
@@ -178,7 +191,37 @@ const DreamlandPassport = () => {
           id: 24,
           smallSrc: sImage24,
           bigSrc: bImage24
-      }
+      },
+      {
+          id: 25,
+          smallSrc: sImage25,
+          bigSrc: bImage25
+      },
+      {
+          id: 26,
+          smallSrc: sImage26,
+          bigSrc: bImage26
+      },
+      {
+          id: 27,
+          smallSrc: sImage27,
+          bigSrc: bImage27
+      },
+      {
+          id: 28,
+          smallSrc: sImage28,
+          bigSrc: bImage28
+      },
+      {
+          id: 29,
+          smallSrc: sImage29,
+          bigSrc: bImage29
+      },
+      {
+          id: 30,
+          smallSrc: sImage30,
+          bigSrc: bImage30
+      } 
     ]
   }
 

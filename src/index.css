@@ -22,7 +22,7 @@
   100% {
     transform: scale(1); } }
 
-@keyframes growPoint {
+@keyframes growDot {
   0% {
     color: transparent;
     transform: scale(11) translateY(-5rem) translateX(-4rem); }
@@ -36,6 +36,14 @@
   to {
     width: 100%; } }
 
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+    opacity: 1; }
+  to {
+    transform: scale(4);
+    opacity: .2; } }
+
 *,
 *::after,
 *::before {
@@ -47,6 +55,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
+
+.link:link,
+.link:visited {
+  text-decoration: none; }
 
 .heading-1 {
   font-family: 'Maven Pro', sans-serif;
@@ -63,13 +75,18 @@ html {
 .heading-2 {
   font-size: 2.7rem;
   color: #cfcfcf;
-  font-weight: 500; }
+  font-weight: 500;
+  font-family: sans-serif;
+  letter-spacing: .2rem; }
 
 .fadeIn-class {
-  animation: fadeIn 1.3s; }
+  animation: fadeIn 1.5s; }
 
 .fadeOut-class {
-  animation: fadeOut 1.3s; }
+  animation: fadeOut 1s; }
+
+.scaleOut {
+  animation: scaleOut 1.5s; }
 
 .footer {
   background-color: black;
@@ -342,6 +359,7 @@ html {
     border-radius: 50%;
     margin-bottom: 2rem;
     border: none;
+    cursor: pointer;
     animation: grow 1.5s ease 1.5s;
     animation-fill-mode: backwards; }
     .themes__image:hover {
@@ -354,7 +372,8 @@ html {
     font-size: 2.5rem;
     margin-top: 1rem;
     color: lightgrey;
-    width: 25%; }
+    width: 25%;
+    cursor: pointer; }
 
 .introduction {
   display: grid;
@@ -436,9 +455,9 @@ html {
       animation: typewriter 2s steps(25, end) 16s;
       font-size: 7rem;
       margin-right: 1.5rem; }
-    .introduction__text--point {
+    .introduction__text--dot {
       display: block;
-      animation: growPoint 1.2s cubic-bezier(1, 0, 0.9, 0.4) 16.5s;
+      animation: growDot 1.2s cubic-bezier(1, 0, 0.9, 0.4) 16.5s;
       animation-fill-mode: backwards;
       display: flex;
       align-items: flex-end;
@@ -484,3 +503,42 @@ html {
       left: 1.8rem; }
     .opening__name-box:hover::before {
       background-color: #9b9b9b; }
+
+.series {
+  padding: 0 12rem 10rem 18rem; }
+  .series__heading {
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    margin-right: 7rem;
+    font-family: 'Special Elite', cursive; }
+  .series__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem; }
+  .series__item {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .series__icon {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-right: 3.2rem;
+    cursor: pointer;
+    transition: all .2s; }
+    .series__icon:hover {
+      background-color: black;
+      outline: 1.5rem solid black;
+      transform: scale(1.1); }
+    .series__icon:hover + figcaption {
+      color: #a1a1a1; }
+  .series__caption {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all .3s;
+    color: transparent; }

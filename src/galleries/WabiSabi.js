@@ -28,6 +28,9 @@ import sImage27 from '../img/wabi-sabi/small/wabi-sabi_small (27).jpg';
 import sImage28 from '../img/wabi-sabi/small/wabi-sabi_small (28).jpg';
 import sImage29 from '../img/wabi-sabi/small/wabi-sabi_small (29).jpg';
 import sImage30 from '../img/wabi-sabi/small/wabi-sabi_small (30).jpg';
+import sImage31 from '../img/wabi-sabi/small/wabi-sabi_small (31).jpg';
+import sImage32 from '../img/wabi-sabi/small/wabi-sabi_small (32).jpg';
+import sImage33 from '../img/wabi-sabi/small/wabi-sabi_small (33).jpg';
 
 import bImage1 from '../img/wabi-sabi/big/wabi-sabi_big (1).jpg'
 import bImage2 from '../img/wabi-sabi/big/wabi-sabi_big (2).jpg'
@@ -59,6 +62,9 @@ import bImage27 from '../img/wabi-sabi/big/wabi-sabi_big (27).jpg';
 import bImage28 from '../img/wabi-sabi/big/wabi-sabi_big (28).jpg';
 import bImage29 from '../img/wabi-sabi/big/wabi-sabi_big (29).jpg';
 import bImage30 from '../img/wabi-sabi/big/wabi-sabi_big (30).jpg';
+import bImage31 from '../img/wabi-sabi/big/wabi-sabi_big (31).jpg';
+import bImage32 from '../img/wabi-sabi/big/wabi-sabi_big (32).jpg';
+import bImage33 from '../img/wabi-sabi/big/wabi-sabi_big (33).jpg';
 
 
 import React from 'react'
@@ -220,6 +226,21 @@ const WabiSabi = () => {
           id: 30,
           smallSrc: sImage30,
           bigSrc: bImage30
+      },
+      {
+          id: 31,
+          smallSrc: sImage31,
+          bigSrc: bImage31
+      },
+      {
+          id: 32,
+          smallSrc: sImage32,
+          bigSrc: bImage32
+      },
+      {
+          id: 33,
+          smallSrc: sImage33,
+          bigSrc: bImage33
       }
     ]
   }

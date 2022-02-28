@@ -15,6 +15,8 @@ import StorytellingCollage from './galleries/StorytellingCollage';
 import TheSeeker from './galleries/TheSeeker';
 import SpiritualPath from './galleries/SpiritualPath';
 import DreamlandPassport from './galleries/DreamlandPassport'
+import Assemblage from './galleries/Assemblage';
+import Series from './pages/Series';
 
 function App() {
   return (
@@ -23,8 +25,9 @@ function App() {
       <Route path="/" element={<OpeningScreen/>} /> 
       <Route path="/home" element={<Home/>} /> 
       <Route path="/work" element={<Themes/>} />
+      <Route path="/collage" element={<Series/>} />
 
-      <Route path="/wabi-sabi" element={<WabiSabi/>} />
+      <Route path="/eternal-randomness" element={<WabiSabi/>} />
       <Route path="/whimsical-darkness" element={<WhimsicalDarkness/>} />
       <Route path="/pink-bloodlines" element={<PinkBloodlines/>} />
       <Route path="/the-purple-era" element={<ThePurpleEra/>} />
@@ -34,6 +37,7 @@ function App() {
       <Route path="/the-seeker" element={<TheSeeker/>} />
       <Route path="/spiritual-path" element={<SpiritualPath/>} />
       <Route path="/dreamland-passport" element={<DreamlandPassport/>} />
+      <Route path="/assemblage" element={<Assemblage/>} />
 
 
             {/* <Route path=":theme">
