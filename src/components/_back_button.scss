@@ -1,0 +1,21 @@
+.back-btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: rgb(228, 228, 228);
+
+    font-size: 3rem;
+    color: #FFF;
+    cursor: pointer;
+
+    transition: all .3s;
+
+    &:hover {   background-color: rgb(247, 247, 247);   }
+    &:hover span{   color: rgb(219, 219, 219);  }
+}
+
+.back-sign {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}

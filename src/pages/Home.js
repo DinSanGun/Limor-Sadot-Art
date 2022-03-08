@@ -11,7 +11,7 @@ const Home = () => {
   }, 7500)
 
   return (
-    <Layout banner="/img/banner-colored.jpg">
+    <Layout banner="color">
       <section className="introduction">
         <img src={process.env.PUBLIC_URL + 'img/half-circle.jpg'} className="introduction__top-image" alt="Home page background top"/>
           <Link to="/work">

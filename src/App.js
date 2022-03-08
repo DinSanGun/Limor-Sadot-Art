@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import OpeningScreen from './pages/OpeningScreen';
 import NotFound from './pages/NotFound';
 import Themes from './pages/Themes';
+import CollageSeries from './pages/CollageSeries';
+
 import WabiSabi from './galleries/WabiSabi';
 import WhimsicalDarkness from './galleries/WhimsicalDarkness';
 import PinkBloodlines from './galleries/PinkBloodline';
@@ -16,7 +18,18 @@ import TheSeeker from './galleries/TheSeeker';
 import SpiritualPath from './galleries/SpiritualPath';
 import DreamlandPassport from './galleries/DreamlandPassport'
 import Assemblage from './galleries/Assemblage';
-import Series from './pages/Series';
+import TheJapaneseWindow from './galleries/TheJapaneseWindow';
+
+import HumanKinda from './galleries/HumanKinda';
+import FloatingWorld from './galleries/FloatingWorld';
+import LineArtSeries from './pages/LineArtSeries';
+import TheHumanLines from './galleries/TheHumanLines';
+import FamilliesDiptychsWinter from './galleries/FamiliesDiptychsWinter';
+import FamilliesDiptychsSummer from './galleries/FamiliesDiptychsSummer';
+import BlackWhiteBrown from './galleries/BlackWhiteBrown';
+import SurrealNeuroTrip from './galleries/SurrealNeuroTrip';
+import EntangledLiving from './galleries/EntangledLiving';
+
 
 function App() {
   return (
@@ -25,7 +38,9 @@ function App() {
       <Route path="/" element={<OpeningScreen/>} /> 
       <Route path="/home" element={<Home/>} /> 
       <Route path="/work" element={<Themes/>} />
-      <Route path="/collage" element={<Series/>} />
+      <Route path="/collage" element={<CollageSeries/>} />
+      <Route path="/line-art" element={<LineArtSeries/>} />
+
 
       <Route path="/eternal-randomness" element={<WabiSabi/>} />
       <Route path="/whimsical-darkness" element={<WhimsicalDarkness/>} />
@@ -38,6 +53,16 @@ function App() {
       <Route path="/spiritual-path" element={<SpiritualPath/>} />
       <Route path="/dreamland-passport" element={<DreamlandPassport/>} />
       <Route path="/assemblage" element={<Assemblage/>} />
+      <Route path="/the-japanese-window" element={<TheJapaneseWindow/>} />
+
+      <Route path="/human-kinda" element={<HumanKinda/>} />
+      <Route path="/pictures-of-the-floating-world" element={<FloatingWorld/>} />
+      <Route path="/the-human-lines" element={<TheHumanLines/>} />
+      <Route path="/families-diptychs-winter" element={<FamilliesDiptychsWinter/>} />
+      <Route path="/families-diptychs-summer" element={<FamilliesDiptychsSummer/>} />
+      <Route path="/B&W-&-Brown" element={<BlackWhiteBrown/>} />
+      <Route path="/surreal-neuro-trip" element={<SurrealNeuroTrip/>} />
+      <Route path="/entangled-living" element={<EntangledLiving/>} />
 
 
             {/* <Route path=":theme">

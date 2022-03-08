@@ -1,37 +1,37 @@
-import sImage1 from '../img/the-purple-era/small/the-purple-era_small (1).jpg';
-import sImage2 from '../img/the-purple-era/small/the-purple-era_small (2).jpg';
-import sImage3 from '../img/the-purple-era/small/the-purple-era_small (3).jpg';
-import sImage4 from '../img/the-purple-era/small/the-purple-era_small (4).jpg';
-import sImage5 from '../img/the-purple-era/small/the-purple-era_small (5).jpg';
-import sImage6 from '../img/the-purple-era/small/the-purple-era_small (6).jpg';
-import sImage7 from '../img/the-purple-era/small/the-purple-era_small (7).jpg';
-import sImage8 from '../img/the-purple-era/small/the-purple-era_small (8).jpg';
-import sImage9 from '../img/the-purple-era/small/the-purple-era_small (9).jpg';
-import sImage10 from '../img/the-purple-era/small/the-purple-era_small (10).jpg';
-import sImage11 from '../img/the-purple-era/small/the-purple-era_small (11).jpg';
-import sImage12 from '../img/the-purple-era/small/the-purple-era_small (12).jpg';
-import sImage13 from '../img/the-purple-era/small/the-purple-era_small (13).jpg';
-import sImage14 from '../img/the-purple-era/small/the-purple-era_small (14).jpg';
-import sImage15 from '../img/the-purple-era/small/the-purple-era_small (15).jpg';
+import sImage1 from '../img/collage/the-purple-era/small/the-purple-era_small (1).jpg';
+import sImage2 from '../img/collage/the-purple-era/small/the-purple-era_small (2).jpg';
+import sImage3 from '../img/collage/the-purple-era/small/the-purple-era_small (3).jpg';
+import sImage4 from '../img/collage/the-purple-era/small/the-purple-era_small (4).jpg';
+import sImage5 from '../img/collage/the-purple-era/small/the-purple-era_small (5).jpg';
+import sImage6 from '../img/collage/the-purple-era/small/the-purple-era_small (6).jpg';
+import sImage7 from '../img/collage/the-purple-era/small/the-purple-era_small (7).jpg';
+import sImage8 from '../img/collage/the-purple-era/small/the-purple-era_small (8).jpg';
+import sImage9 from '../img/collage/the-purple-era/small/the-purple-era_small (9).jpg';
+import sImage10 from '../img/collage/the-purple-era/small/the-purple-era_small (10).jpg';
+import sImage11 from '../img/collage/the-purple-era/small/the-purple-era_small (11).jpg';
+import sImage12 from '../img/collage/the-purple-era/small/the-purple-era_small (12).jpg';
+import sImage13 from '../img/collage/the-purple-era/small/the-purple-era_small (13).jpg';
+import sImage14 from '../img/collage/the-purple-era/small/the-purple-era_small (14).jpg';
+import sImage15 from '../img/collage/the-purple-era/small/the-purple-era_small (15).jpg';
 
-import bImage1 from '../img/the-purple-era/big/the-purple-era_big (1).jpg';
-import bImage2 from '../img/the-purple-era/big/the-purple-era_big (2).jpg';
-import bImage3 from '../img/the-purple-era/big/the-purple-era_big (3).jpg';
-import bImage4 from '../img/the-purple-era/big/the-purple-era_big (4).jpg';
-import bImage5 from '../img/the-purple-era/big/the-purple-era_big (5).jpg';
-import bImage6 from '../img/the-purple-era/big/the-purple-era_big (6).jpg';
-import bImage7 from '../img/the-purple-era/big/the-purple-era_big (7).jpg';
-import bImage8 from '../img/the-purple-era/big/the-purple-era_big (8).jpg';
-import bImage9 from '../img/the-purple-era/big/the-purple-era_big (9).jpg';
-import bImage10 from '../img/the-purple-era/big/the-purple-era_big (10).jpg';
-import bImage11 from '../img/the-purple-era/big/the-purple-era_big (11).jpg';
-import bImage12 from '../img/the-purple-era/big/the-purple-era_big (12).jpg';
-import bImage13 from '../img/the-purple-era/big/the-purple-era_big (13).jpg';
-import bImage14 from '../img/the-purple-era/big/the-purple-era_big (14).jpg';
-import bImage15 from '../img/the-purple-era/big/the-purple-era_big (15).jpg';
+import bImage1 from '../img/collage/the-purple-era/big/the-purple-era_big (1).jpg';
+import bImage2 from '../img/collage/the-purple-era/big/the-purple-era_big (2).jpg';
+import bImage3 from '../img/collage/the-purple-era/big/the-purple-era_big (3).jpg';
+import bImage4 from '../img/collage/the-purple-era/big/the-purple-era_big (4).jpg';
+import bImage5 from '../img/collage/the-purple-era/big/the-purple-era_big (5).jpg';
+import bImage6 from '../img/collage/the-purple-era/big/the-purple-era_big (6).jpg';
+import bImage7 from '../img/collage/the-purple-era/big/the-purple-era_big (7).jpg';
+import bImage8 from '../img/collage/the-purple-era/big/the-purple-era_big (8).jpg';
+import bImage9 from '../img/collage/the-purple-era/big/the-purple-era_big (9).jpg';
+import bImage10 from '../img/collage/the-purple-era/big/the-purple-era_big (10).jpg';
+import bImage11 from '../img/collage/the-purple-era/big/the-purple-era_big (11).jpg';
+import bImage12 from '../img/collage/the-purple-era/big/the-purple-era_big (12).jpg';
+import bImage13 from '../img/collage/the-purple-era/big/the-purple-era_big (13).jpg';
+import bImage14 from '../img/collage/the-purple-era/big/the-purple-era_big (14).jpg';
+import bImage15 from '../img/collage/the-purple-era/big/the-purple-era_big (15).jpg';
 
 import React from 'react'
-import Gallery from '../layout/Gallery'
+import Gallery from '../pages/Gallery'
 
 const ThePurpleEra = () => {
 

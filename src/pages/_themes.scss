@@ -6,6 +6,14 @@
     padding: 5rem;
     gap: 1rem;
 
+    &[fade='1'] figure:last-of-type {
+        animation: fadeOut 1.2s,
+    }
+
+    &[fade='2'] figure:first-of-type {
+        animation: fadeOut 1.2s,
+    }
+
     &__figure {
         display: flex;
         // flex-direction: column;
@@ -15,6 +23,7 @@
         &--1 {
             flex-direction: row-reverse;
         }
+
     }
 
     &__image {
@@ -26,7 +35,7 @@
         border: none;
         cursor: pointer;
 
-        animation: grow 1.5s ease 1.5s;
+        animation: grow 1.5s ease 1s;
         animation-fill-mode: backwards;
 
         &:hover {
@@ -37,7 +46,9 @@
         &:hover + figcaption {
             color: rgb(133, 131, 131);
         }
+
     }
+
 
     &__caption {
         text-align: center;
