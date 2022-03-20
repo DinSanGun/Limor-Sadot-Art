@@ -20,13 +20,25 @@
     &__grid {
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
-        gap: 4rem;
+        gap: 2rem;
     }
 
     &__item {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__caption {
+        text-align: left;
+        font-family: sans-serif;
+        font-size: 1.7rem;        
+
+        cursor: pointer;
+        transition: all .3s;
+        color: transparent;
+        
     }
 
     &__icon {
@@ -47,18 +59,215 @@
             color: rgb(161, 161, 161);
         }
 
-        animation: growMedium .8s .2s;
-        animation-fill-mode: backwards;
+        // animation: growMedium .8s .2s;
+        // animation-fill-mode: backwards;
+
+        &--1 {
+            @keyframes circle1 {
+                0% {
+                    opacity: 0;
+                    transform: translate(250px, 70px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle1 .5s 1s;
+            animation-fill-mode: backwards;
+        }
+
+        &--2 {
+            @keyframes circle2 {
+                0% {
+                    opacity: 0;
+                    transform: translate(75px, -10px) scale(.7);
+                }
+
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle2 .7s .4s;
+            animation-fill-mode: backwards;
+        }
+
+        &--3 {
+            @keyframes circle3 {
+                0% {
+                    opacity: 0;
+                    transform: translate(-20px, 30px) scale(.7);
+                }
+
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle3 .7s .7s;
+            animation-fill-mode: backwards;
+        }
+
+        &--4 {
+            @keyframes circle4 {
+                0% {
+                    opacity: 0;
+                    transform: translate(-250px, 90px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle4 .7s .9s;
+            animation-fill-mode: backwards;
+        }
+
+        &--5 {
+            @keyframes circle5 {
+                0% {
+                    opacity: 0;
+                    transform: translate(500px, -20px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle5 .7s .7s;
+            animation-fill-mode: backwards;
+        }
+
+        &--6 {
+            @keyframes circle6 {
+                0% {
+                    opacity: 0;
+                    transform: translate(50px, 60px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle6 .7s .6s;
+            animation-fill-mode: backwards;
+        }
+
+        &--7 {
+            @keyframes circle7 {
+                0% {
+                    opacity: 0;
+                    transform: translate(150px, -30px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle7 .7s .7s;
+            animation-fill-mode: backwards;
+        }
+
+        &--8 {
+            @keyframes circle8 {
+                0% {
+                    opacity: 0;
+                    transform: translate(-450px, 55px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle8 .4s .8s;
+            animation-fill-mode: backwards;
+        }
+
+        &--9 {
+            @keyframes circle9 {
+                0% {
+                    opacity: 0;
+                    transform: translate(150px, -50px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle9 .5s .9s;
+            animation-fill-mode: backwards;
+        }
+
+        &--10 {
+            @keyframes circle10 {
+                0% {
+                    opacity: 0;
+                    transform: translate(30px, -130px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle10 .7s .8s;
+            animation-fill-mode: backwards;
+        }
+
+        &--11 {
+            @keyframes circle11 {
+                0% {
+                    opacity: 0;
+                    transform: translate(-10px, -100px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle11 .7s .7s;
+            animation-fill-mode: backwards;
+        }
+
+        &--12 {
+            @keyframes circle12 {
+                0% {
+                    opacity: 0;
+                    transform: translate(-230px, -150px) scale(.7);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(1) scale(1);
+                }
+            }
+
+            animation: circle12 .7s 1.3s;
+            animation-fill-mode: backwards;
+        }
     }
 
-    &__caption {
-        text-align: left;
-        font-family: sans-serif;
-        font-size: 1.8rem;        
 
-        cursor: pointer;
-        transition: all .3s;
-        color: transparent;
-        
-    }
 }

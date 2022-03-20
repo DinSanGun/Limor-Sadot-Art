@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../layout/Layout'
 
 const About = () => {
   return (
-    <div>About</div>
+    <Layout banner='color'>
+      About
+    </Layout>
   )
 }
 

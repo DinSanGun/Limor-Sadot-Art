@@ -19,6 +19,12 @@ import sImage18 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-tri
 import sImage19 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (19).jpg';
 import sImage20 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (20).jpg';
 import sImage21 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (21).jpg';
+import sImage22 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (22).jpg';
+import sImage23 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (23).jpg';
+import sImage24 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (24).jpg';
+import sImage25 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (25).jpg';
+import sImage26 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (26).jpg';
+import sImage27 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (27).jpg';
 
 
 import bImage1 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (1).jpg'
@@ -42,6 +48,12 @@ import bImage18 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_
 import bImage19 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (19).jpg';
 import bImage20 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (20).jpg';
 import bImage21 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (21).jpg';
+import bImage22 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (22).jpg';
+import bImage23 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (23).jpg';
+import bImage24 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (24).jpg';
+import bImage25 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (25).jpg';
+import bImage26 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (26).jpg';
+import bImage27 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (27).jpg';
 
 
 import React from 'react'
@@ -158,6 +170,36 @@ const SurrealNeuroTrip = () => {
           id: 21,
           smallSrc: sImage21,
           bigSrc: bImage21
+      },
+      {
+          id: 22,
+          smallSrc: sImage22,
+          bigSrc: bImage22
+      },
+      {
+          id: 23,
+          smallSrc: sImage23,
+          bigSrc: bImage23
+      },
+      {
+          id: 24,
+          smallSrc: sImage24,
+          bigSrc: bImage24
+      },
+      {
+          id: 25,
+          smallSrc: sImage25,
+          bigSrc: bImage25
+      },
+      {
+          id: 26,
+          smallSrc: sImage26,
+          bigSrc: bImage26
+      },
+      {
+          id: 27,
+          smallSrc: sImage27,
+          bigSrc: bImage27
       }
     ]
   }

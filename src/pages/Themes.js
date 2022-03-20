@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Blocker from '../components/Blocker'
 import Layout from '../layout/Layout'
 
 const Themes = () => {
@@ -14,16 +15,13 @@ const Themes = () => {
   return (
     <Layout banner="grey" className="black">
 
+      <Blocker/>
+
       <div className='themes' fade={fade}>
 
           <figure className='themes__figure themes__figure--1'>
             <img src={process.env.PUBLIC_URL + 'img/big-circle-left.png'} alt="theme-collage" className="themes__image" 
-                onClick={
-                  () => {
-                    setFade(1)
-                    setTimeout(() => navigate('/collage'), 1000)
-                  } 
-                }
+                onClick={() => navigate('/collage')}
                 />
             <figcaption className='themes__caption'>Collage & mixed media</figcaption>
           </figure>
@@ -31,12 +29,7 @@ const Themes = () => {
         <figure className='themes__figure'>
           <img src={process.env.PUBLIC_URL + 'img/big-circle-right.png'} alt="theme-line-art" 
             className="themes__image fadeOut-class"
-            onClick={
-                  () => {
-                    setFade(2)
-                    setTimeout(() => navigate('/line-art'), 1000)
-                  } 
-                }
+            onClick={() => navigate('/line-art')}
             onAnimationEnd={() => setFade(0)}
             />
           <figcaption className='themes__caption'>Line art illustration</figcaption>

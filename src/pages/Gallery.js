@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import BackButton from '../components/BackButton';
+import Blocker from '../components/Blocker';
 import Layout from '../layout/Layout'
 
 const Gallery = (props) => {
@@ -58,6 +59,7 @@ const Gallery = (props) => {
       event.preventDefault();
     
     }, true);
+
   },[setLightbox])
 
 
@@ -68,6 +70,7 @@ const Gallery = (props) => {
 
     <Layout banner="/img/banner-grey.jpg">
 
+        <Blocker/>
         <div className={lightbox ? "gallery__lightbox gallery__lightbox--open" : "gallery__lightbox"} >
         
           <div className="gallery__arrow-left" onClick={() => back()}>

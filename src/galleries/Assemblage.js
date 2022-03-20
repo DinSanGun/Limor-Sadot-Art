@@ -36,7 +36,6 @@ import bImage16 from '../img/collage/assemblage/big/assemblage_big (16).jpg';
 import bImage17 from '../img/collage/assemblage/big/assemblage_big (17).jpg';
 import bImage18 from '../img/collage/assemblage/big/assemblage_big (18).jpg';
 
-
 import React from 'react'
 import Gallery from '../pages/Gallery'
 

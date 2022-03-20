@@ -6,14 +6,6 @@
     padding: 5rem;
     gap: 1rem;
 
-    &[fade='1'] figure:last-of-type {
-        animation: fadeOut 1.2s,
-    }
-
-    &[fade='2'] figure:first-of-type {
-        animation: fadeOut 1.2s,
-    }
-
     &__figure {
         display: flex;
         // flex-direction: column;

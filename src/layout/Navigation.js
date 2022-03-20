@@ -9,8 +9,8 @@ const Navigation = () => {
       <ul className="navigation__list">
         <li className="navigation__item"><NavLink to="/home" className="navigation__link">home</NavLink></li>
         <li className="navigation__item"><NavLink to="/work" className="navigation__link">work</NavLink></li>
-        <li className="navigation__item"><NavLink to="#" className="navigation__link">about</NavLink></li>
-        <li className="navigation__item"><NavLink to="#" className="navigation__link">contact</NavLink></li>
+        <li className="navigation__item"><NavLink to="/about" className="navigation__link">about</NavLink></li>
+        <li className="navigation__item"><NavLink to="/contact" className="navigation__link">contact</NavLink></li>
         <li className="navigation__item"><NavLink to="#" className="navigation__link">shop</NavLink></li>
 
         <li className="navigation__social-media">

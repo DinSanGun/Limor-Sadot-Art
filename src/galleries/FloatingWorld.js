@@ -38,7 +38,7 @@ const FloatingWorld = () => {
 
   const FloatingWorldGallery = {
     title: "Pictures of the Floating World",
-    description: "New Ukiyo-e - Digital Illustration",
+    description: "digital Ukiyo-e inspired",
     images: 
     [
       {

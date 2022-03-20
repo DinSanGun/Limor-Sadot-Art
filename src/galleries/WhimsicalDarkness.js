@@ -45,7 +45,7 @@ const WhimsicalDarkness = () => {
 
     const WhimsicalDarknessGallery = {
         title: "Whimsical Darkness",
-        description: "analogue collage",
+        description: "analogue paper collage",
         images: 
         [
             {
