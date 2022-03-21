@@ -65,6 +65,9 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
+body {
+  font-family: sans-serif; }
+
 .link:link,
 .link:visited {
   text-decoration: none; }
@@ -85,8 +88,21 @@ html {
   font-size: 2.7rem;
   color: #cfcfcf;
   font-weight: 500;
-  font-family: sans-serif;
   letter-spacing: .2rem; }
+
+.heading-3 {
+  font-size: 2.6rem;
+  letter-spacing: 1rem;
+  font-weight: 300; }
+
+.heading-4 {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 200;
+  padding: .6rem;
+  line-height: 1; }
 
 .fadeIn-class {
   animation: fadeIn 1.5s; }
@@ -96,6 +112,9 @@ html {
 
 .grow-class {
   animation: grow 2s 4s; }
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 #blocker {
   position: fixed;
@@ -123,6 +142,18 @@ html {
   position: absolute;
   top: 5%;
   left: 10%; }
+
+.go-top {
+  font-size: 2.2rem;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer; }
+
+.youtube {
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  height: 27.5rem;
+  width: 44.5rem; }
 
 .footer {
   background-color: black;
@@ -360,6 +391,120 @@ html {
     cursor: pointer; }
     .navigation__icon:not(:last-child) {
       margin-right: .5rem; }
+
+.about {
+  font-family: sans-serif;
+  margin-left: 12%;
+  margin-bottom: 3rem; }
+  .about__banner {
+    width: 100%;
+    position: relative; }
+  .about__banner-img {
+    width: 100%; }
+  .about__banner-title {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    font-size: 4.2rem;
+    background-color: #dd81dd;
+    padding: 0 2rem 1rem;
+    line-height: .8; }
+  .about__top-section {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-template-rows: repeat(2, min-content);
+    margin-top: 5rem; }
+  .about__intro {
+    grid-column: 1 / 2;
+    width: 72%; }
+  .about__quote {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.6rem;
+    color: #9b9b9b;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    margin-left: .5rem; }
+  .about__strong {
+    font-size: 1.6rem;
+    color: black;
+    margin-left: .5rem; }
+  .about__text {
+    font-size: 1.3rem;
+    color: #5a5a5a;
+    margin-bottom: 2rem;
+    text-align: justify;
+    margin-left: .5rem; }
+    .about__text--black {
+      color: black; }
+  .about__intro-images {
+    grid-column: 2 / 3;
+    position: relative; }
+    .about__intro-images--1 {
+      position: absolute;
+      top: 40%;
+      right: 35%;
+      width: 18%; }
+    .about__intro-images--2 {
+      position: absolute;
+      bottom: -60%;
+      left: 5%;
+      width: 50%; }
+  .about__declaration {
+    grid-column: 1 / 2;
+    position: relative; }
+  .about__declaration-image {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    position: relative; }
+  .about__declaration-circle {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .about__signature {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1rem; }
+  .about__signature-image {
+    width: 20rem; }
+  .about__interview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem; }
+    .about__interview-header {
+      display: flex;
+      margin-top: 5rem; }
+    .about__interview-image {
+      width: 50%; }
+    .about__interview-title {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+    .about__interview-bubbles {
+      position: absolute;
+      top: 0;
+      left: 42%;
+      width: 10rem; }
+    .about__interview-text {
+      position: relative; }
+    .about__interview-videos {
+      position: relative; }
+    .about__interview-bottom-image {
+      width: 100%;
+      position: absolute;
+      bottom: -4rem;
+      left: -4.5rem; }
+  .about__back-btn {
+    position: absolute;
+    bottom: 2rem;
+    left: -7rem; }
+  .about__go-top {
+    position: absolute;
+    bottom: 0;
+    right: -8rem;
+    z-index: 3; }
 
 .themes {
   display: grid;
