@@ -66,6 +66,16 @@
         }
     }
 
+    &__social-media-icon {
+        width: 2.2rem;
+        margin-right: .8rem;
+        cursor: pointer;
+
+        &--3 {
+            width: 2rem;
+        }
+    }
+
 
 }
 

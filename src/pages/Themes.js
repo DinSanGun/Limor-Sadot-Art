@@ -9,7 +9,8 @@ const Themes = () => {
   const navigate = useNavigate();
 
   setTimeout(() => {
-    window.scrollTo({top: 150, behavior: 'smooth'})
+    const nav = document.getElementById('navbar')
+    nav.scrollIntoView(true)
   }, 1000)
 
   return (

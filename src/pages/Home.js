@@ -17,7 +17,7 @@ const Home = () => {
           <Link to="/work">
             <button className="introduction__btn">
               <span className="introduction__btn--1">Work</span>
-              <span className="introduction__btn--2">Collage<br/>Mixed Media<br/>Illustration</span>
+              <span className="introduction__btn--2">Collage<hr className='introduction__hr'/>Illustration</span>
             </button>
         </Link>
         <p className="introduction__text">

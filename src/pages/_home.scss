@@ -41,7 +41,7 @@
             display: none;
             font-size: .2rem;
             font-weight: 300;
-            color: lightgrey;
+            color: white;
         }
 
         &:hover {
@@ -58,11 +58,19 @@
 
         &:hover &--2 {
             display: inline;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
+            font-weight: 600;
             animation: grow .4s;
             animation-fill-mode: backwards;
         }
 
+    }
+
+    &__hr {
+        height: 1px;
+        background-color: white;
+        border: none;
+        margin: 1.5rem 0;
     }
 
     &__text {

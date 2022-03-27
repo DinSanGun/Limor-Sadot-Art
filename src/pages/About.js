@@ -7,13 +7,13 @@ import GoTop from '../components/GoTop'
 const About = () => {
 
   useEffect(() => {
-    const about = document.getElementById('about-banner')
-    about.scrollIntoView(true)
+    const nav = document.getElementById('navbar')
+    nav.scrollIntoView(true)
   }, [])
   
 
   return (
-    <Layout banner='color'>
+    <Layout banner='grey'>
         <div id="about-banner" className="about__banner">
           <img src="/img/about/top-banner-about.jpg" className="about__banner-img" alt="about-banner" />
           <div className="about__banner-title">
@@ -25,7 +25,7 @@ const About = () => {
         <section className='about__top-section'>
           <div className='about__intro'>
             <h4 className='heading-4'>Who are you?</h4>
-            <p className='about__quote'>I am many things, some can be defined and some cannot. <br/> As we all are.</p>
+            <p className='about__quote'>I am many things, some can be defined <br/>and some cannot. <br/> As we all are.</p>
             <p className='about__strong'>My name is Limor Sadot</p>
             <p className='about__text about__text--black'>
               I was born and raised in Israel <br/>
@@ -42,7 +42,7 @@ const About = () => {
           </div>
 
           <div className='about__declaration'>
-            <h4 className='heading-4 margin-bottom-small'>Artist Declaration</h4>
+            <h4 className='heading-4 margin-bottom-realy-small'>Artist Declaration</h4>
             <p className='about__text'>
               Between the reduction and the multiplicity, 
               between the art lines and the collage pieces becoming one, 
@@ -231,8 +231,8 @@ const About = () => {
           </div>
 
           <div className='about__interview-videos'>
-            <YouTubeVideo link="https://www.youtube.com/embed/zoOa8expuu0"/>
-            <YouTubeVideo link="https://www.youtube.com/embed/Z6PPk2uLbPI"/>
+            <YouTubeVideo link="https://www.youtube.com/embed/nt2idwDFzH0"/>
+            <YouTubeVideo link="https://www.youtube.com/embed/PUjYCkNugtg"/>
             <img src="/img/about/interview-bottom-image.png" alt="faces" className='about__interview-bottom-image' />
           </div>
         </section>
