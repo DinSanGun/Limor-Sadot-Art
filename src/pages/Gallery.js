@@ -105,8 +105,8 @@ const Gallery = (props) => {
         {
             props.series.images.map((image) => {
                 return(
-                    <div class="gallery__item reveal" key={image.id} onClick={() => getImg(image)}>
-                        <img src={image.smallSrc} alt="img" class="gallery__image" />
+                    <div className="gallery__item reveal" key={image.id} onClick={() => getImg(image)}>
+                        <img src={image.smallSrc} alt="img" className="gallery__image" />
                     </div>
                 )
             })

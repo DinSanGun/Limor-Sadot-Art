@@ -2,6 +2,8 @@
   "name": "limor-sadot",
   "version": "0.1.0",
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
+    "dotenv": "^10.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",

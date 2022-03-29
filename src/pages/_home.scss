@@ -141,7 +141,7 @@
         }
 
         &--dot {
-            display: block;
+            display: inline-block;
             animation: growDot 1.2s cubic-bezier(1,0,.9,.4) 16.5s;
             animation-fill-mode: backwards;
             display: flex;

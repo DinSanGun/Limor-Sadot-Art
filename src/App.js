@@ -29,6 +29,7 @@ import FamilliesDiptychsSummer from './galleries/FamiliesDiptychsSummer';
 import BlackWhiteBrown from './galleries/BlackWhiteBrown';
 import SurrealNeuroTrip from './galleries/SurrealNeuroTrip';
 import EntangledLiving from './galleries/EntangledLiving';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
          NESTED ROUTES */}
 
       <Route path="/about" element={<About/>} /> 
+      <Route path="/contact" element={<Contact/>} />
       <Route path="/*" element={<NotFound/>} /> 
 
 

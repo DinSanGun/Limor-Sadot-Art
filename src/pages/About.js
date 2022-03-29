@@ -21,7 +21,7 @@ const About = () => {
           </div>
         </div>
 
-        <main className='about'>
+        <div className='about'>
         <section className='about__top-section'>
           <div className='about__intro'>
             <h4 className='heading-4'>Who are you?</h4>
@@ -236,7 +236,7 @@ const About = () => {
             <img src="/img/about/interview-bottom-image.png" alt="faces" className='about__interview-bottom-image' />
           </div>
         </section>
-      </main>
+      </div>
       
     </Layout>
   )

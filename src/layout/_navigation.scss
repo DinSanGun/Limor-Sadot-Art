@@ -1,6 +1,7 @@
 .navigation {
     top: 2rem;
     z-index: 3;
+
     
     // padding: 2rem 0;
     width: 100%;
@@ -18,7 +19,9 @@
 
     &__list {
         width: 100%;
-        padding-bottom: 2rem;
+        overflow: hidden;
+        padding: 2rem 0;
+        padding-left: 6rem;
         display: flex;
         list-style: none;
         justify-content: center;
@@ -27,17 +30,14 @@
 
     &__item {
         margin-right: 4rem;
-        display: block;
     }
 
     &__link:link,
     &__link:visited {
         text-decoration: none;
         font-size: 1.6rem;
-        display: block;
-        padding: .5rem .5rem;
+        padding: .5rem .3rem;
         color: black;
-        display: block;
         border-top: 4px solid transparent;
         transition: all .4s;
     }
@@ -47,9 +47,13 @@
         color: rgb(221, 129, 221);
     }
 
-    &__link:active {
-        border-top: 3px solid black;
+    &__link-active:link,
+    &__link-active:visited {
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: .5rem .3rem;
         color: black;
+        border-top: 4px solid currentColor;
     }
 
     &__social-media {
