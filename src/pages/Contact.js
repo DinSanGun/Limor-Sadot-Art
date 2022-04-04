@@ -44,9 +44,7 @@ const Contact = () => {
 
                     <input type='submit' value="send" className='form__submit' />
                 </form>
-
-                <button onClick={() => console.log(process)} >HEYA</button>
-
+                
             </div>
         </div>
     </Layout>

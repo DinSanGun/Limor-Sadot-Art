@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: repeat(2, min-content);
 
+    @media only screen and (max-width: 450px) {
+        grid-template-columns: min-content;
+    }
+
     &__image {
         width: 52vw;
     }
@@ -12,6 +16,10 @@
         flex-direction: column;
         align-items: center;
         width: 35vw;
+
+        @media only screen and (max-width: 450px) {
+            width: 100vw;
+        }
     }
 
     &__title {
@@ -42,6 +50,10 @@
         border: 1.2px solid black;
         padding: .3rem;
         width: 40rem;
+
+        @include respond(phone) {
+            width: 30rem;
+        }
     }
 
     &__textarea {

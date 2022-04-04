@@ -31,8 +31,9 @@ import SurrealNeuroTrip from './galleries/SurrealNeuroTrip';
 import EntangledLiving from './galleries/EntangledLiving';
 import Contact from './pages/Contact';
 
-
 function App() {
+
+
   return (
     <Routes>
 

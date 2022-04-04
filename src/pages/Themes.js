@@ -24,7 +24,7 @@ const Themes = () => {
             <img src={process.env.PUBLIC_URL + 'img/big-circle-left.png'} alt="theme-collage" className="themes__image" 
                 onClick={() => navigate('/collage')}
                 />
-            <figcaption className='themes__caption'>Collage & mixed media</figcaption>
+            <figcaption className='themes__caption'>Collage &<br/>mixed media</figcaption>
           </figure>
 
         <figure className='themes__figure'>
@@ -33,7 +33,7 @@ const Themes = () => {
             onClick={() => navigate('/line-art')}
             onAnimationEnd={() => setFade(0)}
             />
-          <figcaption className='themes__caption'>Line art illustration</figcaption>
+          <figcaption className='themes__caption'>Line art<br/>illustration</figcaption>
         </figure>
 
       </div>

@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     padding: 5rem;
-    gap: 1rem;
+    gap: 5rem;
 
     &__figure {
         display: flex;
@@ -45,9 +45,9 @@
     &__caption {
         text-align: center;
         font-size: 2.5rem;
-        margin-top: 1rem;
+        margin: 1rem 3rem;
         color: lightgrey;
-        width: 25%;
+        width: 35%;
         cursor: pointer;
     }
 
