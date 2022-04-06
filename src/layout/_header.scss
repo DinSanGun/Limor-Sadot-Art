@@ -4,12 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     &__img {
         width: 100vw;
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 500px) {
         display: none;
     }
 

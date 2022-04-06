@@ -5,6 +5,8 @@
     padding: 0 25rem 3rem;
 
 
+
+
     &--grid-2 {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -15,11 +17,41 @@
     
     gap: 3.2rem;
 
+    @include respond(tab-land) {
+        padding: 0 18rem 3rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 0 12rem 3rem;
+        gap: 2.2rem;
+    }
+
+    @include respond(phone) {
+        padding: 0 5rem 3rem;
+        gap: 1.5rem;
+    }
+
+    @media only screen and(max-width: 500px) {
+        padding: 0 3rem 3rem;
+    }
+
     position: relative;
 
     &__back-btn {
         position: absolute;
         left: 15rem;
+
+        @include respond(tab-land) {
+            left: 12rem;
+        }
+
+        @include respond(tab-port) {
+            left: 6rem;
+        }
+
+        @media only screen and(max-width: 500px) {
+            left: 3rem;
+        }
     }
 
     &__header {
@@ -106,14 +138,19 @@
         transition: all .7s ease-in-out;
 
         img {
-            width: auto;
-            max-width: 100%;
-            height: 97%;
             display: block;
+            height: 95%;
             line-height: 0;
-            padding: 2rem 0;
-            margin: 0 auto;
             pointer-events: none;
+
+            @include respond(tab-land) {
+                height: 90%;
+            }
+
+            @include respond(phone) {
+                height: auto;
+                width: 90%;
+            }
         }
 
         &--open {
@@ -131,6 +168,16 @@
         top: 5rem;
         right: 10rem;
         cursor: pointer;
+
+        @media only screen and (max-width: 700px) {
+            right: 5rem;
+            top: 3rem;
+        }
+
+        @media only screen and (max-width: 550px) {
+            right: 3rem;
+            top: 2rem;
+        }
 
 
         &::before,
@@ -169,6 +216,10 @@
         @include arrow;
         left: 5rem;
 
+        @media only screen and (max-width: 550px) {
+            left: 2rem;
+        }
+
         &::before {
             top: 1px;
             transform: rotate(-45deg);
@@ -184,6 +235,10 @@
     &__arrow-right {
         @include arrow;
         right: 5rem;
+
+        @media only screen and (max-width: 550px) {
+            right: 2rem;
+        }
 
         &::before {
             transform: rotate(-45deg);

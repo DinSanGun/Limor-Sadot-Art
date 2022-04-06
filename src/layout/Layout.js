@@ -17,7 +17,7 @@ const Layout = (props) => {
     <div className='layout'>
         <Header banner={bannerSrc} />
         <Navigation/> 
-        <main>{props.children}</main>
+        <main className='layout__main'>{props.children}</main>
         <Footer/>
     </div>
   )

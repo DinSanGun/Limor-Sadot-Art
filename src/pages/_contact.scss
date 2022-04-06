@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, min-content);
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 500px) {
         grid-template-columns: min-content;
     }
 
@@ -17,7 +17,7 @@
         align-items: center;
         width: 35vw;
 
-        @media only screen and (max-width: 450px) {
+        @media only screen and (max-width: 500px) {
             width: 100vw;
         }
     }
@@ -40,7 +40,7 @@
     margin-bottom: 3rem;
 
     &__label {
-        font-size: .9rem;
+        font-size: 1.3rem;
         margin-left: .2rem;
     }
 
@@ -54,6 +54,12 @@
         @include respond(phone) {
             width: 30rem;
         }
+
+        @media only screen and (max-width: 500px) {
+            width: 65vw;
+        }
+
+        
     }
 
     &__textarea {
@@ -89,4 +95,14 @@
 .vl {
     height: 11rem;
     border-left: 1.5px solid black;
+
+    @include respond(phone) {
+        height: 9rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+        height: 6.5rem;
+        border-left: 1.5px dashed rgb(152, 152, 152);
+        z-index: -1;
+    }
 }

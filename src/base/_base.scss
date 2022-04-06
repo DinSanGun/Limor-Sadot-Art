@@ -11,9 +11,9 @@ html {
     font-size: 62.5%;   //1rem == 10px, 10/16 = 62.5%
     scroll-behavior: smooth;
 
-    // @include respond(tab-land) { //width < 1200px
-    //     font-size: 56.25%;  //1rem = 9px, 9/16 = 56.26%
-    // }
+    @include respond(tab-land) { //width < 1200px
+        font-size: 56.25%;  //1rem = 9px, 9/16 = 56.26%
+    }
 
     @include respond(tab-port) { //width < 900px
         font-size: 50%; //1rem = 8px, 8/16 = 50%
@@ -26,6 +26,7 @@ html {
 
 body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 

@@ -11,11 +11,13 @@ const Series = () => {
         <Blocker/>
         <div className="series">
 
-            <div className='series__back-btn'>
-                <BackButton/>
-            </div>
+                <div className='series__top'>
+                    <div className='series__back-btn'>
+                        <BackButton/>
+                    </div>
 
-            <h2 className='heading-2 series__heading'>Collage & Mixed Media</h2>
+                    <h2 className='heading-2 series__heading'>Collage & Mixed Media</h2>
+                </div>
 
             <div className='series__grid'>
                 

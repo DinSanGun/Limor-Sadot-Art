@@ -11,11 +11,15 @@ const LineArtSeries = () => {
         
         <div className="series">
 
-            <div className='series__back-btn'>
-                <BackButton/>
+            <div className='series__top'>
+                <div className='series__back-btn'>
+                    <BackButton/>
+                </div>
+
+                <h2 className='heading-2 series__heading'>Line Art Illustration</h2>
             </div>
 
-            <h2 className='heading-2 series__heading'>Line Art Illustration</h2>
+
 
             <div className='series__grid'>
 

@@ -1,10 +1,17 @@
 .themes {
 
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(2, min-content);
+
     justify-content: center;
     padding: 5rem;
     gap: 5rem;
+
+    @include respond(phone) {
+        grid-template-columns: min-content;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
 
     &__figure {
         display: flex;
@@ -14,6 +21,10 @@
 
         &--1 {
             flex-direction: row-reverse;
+
+            @include respond(phone) {
+                flex-direction: row;
+            }
         }
 
     }
@@ -26,6 +37,17 @@
         margin-bottom: 2rem;
         border: none;
         cursor: pointer;
+
+        @include respond(phone) {
+            width: 40vw;
+            height: 40vw;
+        }
+
+        @media only screen and(max-width: 400px) {
+            width: 50vw;
+            height: 50vw;
+            margin-left: 2rem;
+        }
 
         animation: grow 1.5s ease 1s;
         animation-fill-mode: backwards;
@@ -44,11 +66,34 @@
 
     &__caption {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin: 1rem 3rem;
         color: lightgrey;
-        width: 35%;
         cursor: pointer;
+        width: 20rem;
+
+        @include respond(tab-land) {
+            font-size: 2.5rem;
+            width: 15rem;
+        }
+
+        @media only screen and (max-width: 700px) {
+            font-size: 2rem;
+            margin: .5rem;
+        }
+
+        @include respond(phone) {
+            grid-template-columns: min-content;
+            font-size: 3rem;
+            width: 20rem;
+            color: rgb(155, 155, 155);
+        }
+
+        @media only screen and (max-width: 400px) {
+            font-size: 2.5rem;
+            margin: .6rem;
+            width: 15rem;
+        }
     }
 
 }
