@@ -5,29 +5,38 @@
     &__top {
         padding: 2rem 0;
         position: sticky;
-        background-color: white;
+        background-color: rgb(234, 234, 234);
         top: -.1rem;
 
         @media only screen and (max-width: 500px) {
-            top: 5.9rem;
+            top: 6.5rem;
+            
         }
     }
 
     &__back-btn {
         position: absolute;
         left: 4rem;
-        top: .5rem;
+        top: 1rem;
 
         @include respond(phone) {
-            left: 2.2rem;
+            left: 2.8rem;
+        }
+
+        @media only screen and (max-width: 500px) {
+            top: 1.5rem;
+        }
+
+        @media only screen and (max-width: 400px) {
+            top: 2.5rem;
         }
     }
 
     &__heading {
         text-align: center;
-        color: rgb(199, 199, 199);
-        font-size: 2.5rem;
-        margin-right: 7rem;
+        color: rgb(110, 110, 110);
+        font-size: 1.8rem;
+        margin-right: 3rem;
         font-family: 'Special Elite', cursive;
 
         @media only screen and (max-width: 700px) {
@@ -37,6 +46,7 @@
         @media only screen and (max-width: 400px) {
             font-size: 2.2rem;
             margin-left: 3rem;
+            margin-top: 1rem;
         }
 
     }
@@ -93,8 +103,13 @@
             color: rgb(180, 180, 180);
         }
 
+        @media only screen and(max-width: 700px) {
+            font-size: 2.2rem;
+            width: 12rem;
+        }
+
         @media only screen and (max-width: 400px) {
-            font-size: 2rem;
+            font-size: 2.5rem;
             width: 12rem;
         }
         
@@ -107,6 +122,11 @@
         margin-right: 3.2rem;
         cursor: pointer;
         transition: all .2s;
+
+        @media only screen and(max-width: 700px) {
+            width: 17vw;
+            height: 17vw;
+        }
 
         @media only screen and (max-width: 400px) {
             width: 30vw;

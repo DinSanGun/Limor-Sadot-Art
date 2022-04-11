@@ -42,10 +42,11 @@
     &__label {
         font-size: 1.3rem;
         margin-left: .2rem;
+        margin-bottom: .5rem;
     }
 
     &__input {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         border-radius: 0%;
         border: 1.2px solid black;
         padding: .3rem;
@@ -73,9 +74,9 @@
     &__submit {
         border-radius: 50%;
         border: .8rem solid black;
-        width: 7rem;
-        height: 7rem;
-        font-size: 2rem;
+        width: 9rem;
+        height: 9rem;
+        font-size: 2.5rem;
         font-weight: 400;
         background-color: rgb(221, 129, 221);
         margin-left: auto;

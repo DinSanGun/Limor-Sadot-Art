@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Layout from '../layout/Layout'
-import YouTubeVideo from '../components/YouTubeVideo'
 import BackButton from '../components/BackButton'
 import GoTop from '../components/GoTop'
 
@@ -14,28 +13,28 @@ const About = () => {
 
   return (
     <Layout banner='grey'>
-        <div id="about-banner" className="about__banner">
-          <img src="/img/about/top-banner-about.jpg" className="about__banner-img" alt="about-banner" />
-          <div className="about__banner-title">
-            about
-          </div>
+      <div id="about-banner" className="about__banner">
+        <div className="about__banner-title">
+          about
         </div>
+      </div>
 
-        <div className='about'>
+      <div className='about'>
         <section className='about__top-section'>
           <div className='about__intro'>
             <h4 className='heading-4'>Who are you?</h4>
-            <p className='about__quote'>I am many things, some can be defined <br/>and some cannot. <br/> As we all are.</p>
+            <p className='about__quote'>I am many things, some can be defined and some cannot. <br/> As we all are.</p>
             <p className='about__strong'>My name is Limor Sadot</p>
             <p className='about__text about__text--black'>
               I was born and raised in Israel <br/>
               (My Hebrew name means : "fields of myrrh fragrance")
             </p>
             <p className='about__text'>
-              I'm a collage and mixed-media artist, a designer and an illustrator, a spiritual seeker, a tree hugger and a mom.<br/>
+              I'm a collage and mixed-media artist, a designer and an illustrator, a spiritual seeker, a tree hugger and a mom.
               Art is my main tool for searching and growing.
             </p>
           </div>
+
           <div className='about__intro-images'>
             <img className="about__intro-images--1" src="/img/about/intro-bubble.png" alt="bubble-1" />
             <img className="about__intro-images--2" src="/img/about/intro-profile.png" alt="bubble-2" />
@@ -63,6 +62,8 @@ const About = () => {
               to deal with complexity vs Wholeness intuitively and these are the vital tools 
               that I need to explore the diversity of the human story.
             </p>
+
+            <img className='about__declaration-circle about__declaration-circle--1' src='/img/about/intro-half-circle.png' alt='bubble-3' />
 
             <p className='about__text'>
               <span className='about__strong'>My "Collage & Mixed media" </span>
@@ -105,15 +106,16 @@ const About = () => {
           </div>
 
           <div className='about__declaration-image'>
-            <img className='about__declaration-circle' src='/img/about/intro-half-circle.png' alt='bubble-3' />
+            <img className='about__declaration-circle about__declaration-circle--2' src='/img/about/intro-half-circle.png' alt='bubble-3' />
           </div>
+
         </section>
 
         <div className='about__interview-header'>
           <img src="/img/about/interview-image.jpg" alt="interview" className='about__interview-image' />
           <div className='about__interview-title'>
             <img src="/img/about/three-bubbles.png" alt="bubbles" className="about__interview-bubbles" />
-            <h3 className='heading-3'>a short interview</h3>
+            <h3 className='heading-3 about__interview-heading'>a short interview</h3>
           </div>
         </div>
 
@@ -179,6 +181,8 @@ const About = () => {
               the structural laws of the universe.
             </p>
 
+            <img src="/img/about/interview-bottom-image.png" alt="faces" className='about__interview-bottom-image' />
+
             <h4 className='heading-4'>what are your artistic methods?</h4>
             <p className='about__text'>
               I see myself as an inventor and a researcher in my artistic work. 
@@ -191,6 +195,7 @@ const About = () => {
               and materials a new and unique collage language in each series of works, 
               this is the inventor side of me. 
             </p>
+
 
             <h4 className='heading-4'>What about the researcher side?</h4>
             <p className='about__text'>
@@ -229,12 +234,7 @@ const About = () => {
             </div>
 
           </div>
-
-          <div className='about__interview-videos'>
-            <YouTubeVideo link="https://www.youtube.com/embed/nt2idwDFzH0"/>
-            <YouTubeVideo link="https://www.youtube.com/embed/PUjYCkNugtg"/>
-            <img src="/img/about/interview-bottom-image.png" alt="faces" className='about__interview-bottom-image' />
-          </div>
+          
         </section>
       </div>
       

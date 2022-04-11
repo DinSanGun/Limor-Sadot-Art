@@ -68,7 +68,7 @@ const Gallery = (props) => {
 
   return (
 
-    <Layout banner="/img/banner-grey.jpg">
+    <Layout banner="grey">
 
         <Blocker/>
         <div className={lightbox ? "gallery__lightbox gallery__lightbox--open" : "gallery__lightbox"} >
