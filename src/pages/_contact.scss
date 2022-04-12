@@ -20,6 +20,9 @@
         @include respond(mini) {
             width: 100vw;
         }
+
+        animation: moveUp 2s 1s;
+        animation-fill-mode: backwards;
     }
 
     &__title {

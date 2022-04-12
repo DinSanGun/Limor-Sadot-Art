@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <Layout banner="contact">
         <div className='contact'>
-            <img className='contact__image' src='img/half-circle-contact.jpg' alt='circle-background' />
+            <img className='contact__image' src='img/contact/contact-half-circle.jpg' alt='circle-background' />
             <div className='contact__form-area'>
                 <h1 className='contact__title'>contact</h1>
                 <div className='vl'></div>

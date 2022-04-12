@@ -20,19 +20,19 @@ const Themes = () => {
 
       <Blocker/>
 
-      <img src='img/mobile-home-banner.jpg' alt="Themes banner" className='themes__mobile-banner'/>
+      <img src='img/work/work-mobile-banner.jpg' alt="Themes banner" className='themes__mobile-banner'/>
 
       <div className='themes' fade={fade}>
 
           <figure className='themes__figure themes__figure--1'>
-            <img src={process.env.PUBLIC_URL + 'img/big-circle-left.png'} alt="collage theme" className="themes__image" 
+            <img src='img/work/big-circle-left.png' alt="collage theme" className="themes__image" 
                 onClick={() => navigate('/collage')}
                 />
             <figcaption className='themes__caption'>Collage &<br/>mixed media</figcaption>
           </figure>
 
         <figure className='themes__figure'>
-          <img src={process.env.PUBLIC_URL + 'img/big-circle-right.png'} alt="line art theme" 
+          <img src='img/work/big-circle-right.png' alt="line art theme" 
             className="themes__image fadeOut-class"
             onClick={() => navigate('/line-art')}
             onAnimationEnd={() => setFade(0)}

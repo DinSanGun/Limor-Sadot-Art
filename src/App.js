@@ -30,6 +30,7 @@ import BlackWhiteBrown from './galleries/BlackWhiteBrown';
 import SurrealNeuroTrip from './galleries/SurrealNeuroTrip';
 import EntangledLiving from './galleries/EntangledLiving';
 import Contact from './pages/Contact';
+import Videos from './pages/Videos';
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight
       var elementTop = reveals[i].getBoundingClientRect().top
-      var elementVisible = 70
+      var elementVisible = 80
 
       if (elementTop < windowHeight - elementVisible)
         reveals[i].classList.add("active");
@@ -94,6 +95,7 @@ function App() {
          NESTED ROUTES */}
 
       <Route path="/about" element={<About/>} /> 
+      <Route path="/videos" element={<Videos/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/*" element={<NotFound/>} /> 
 

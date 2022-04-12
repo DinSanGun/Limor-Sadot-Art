@@ -13,10 +13,13 @@
         grid-column: 1 / 2;
 
         @include respond(mini){
-            background-image: url('/public/img/mobile-home-banner.jpg');
+            background-image: url('/public/img/home/mobile-home-banner.jpg');
             background-position: right;
             background-size: cover;
             height: 30vh;
+
+            animation: fadeIn 1.2s ease 1s;
+            animation-fill-mode: backwards;
         }
 
         &--1 {
@@ -201,6 +204,9 @@
         margin-left: 15rem;
         padding-top: 4rem;
         position: relative;
+
+        animation: moveUp 1.5s ease 8s;
+        animation-fill-mode: backwards;
 
         @include respond(phone){
             margin-left: 10rem;

@@ -13,15 +13,17 @@ const About = () => {
   return (
     <Layout banner='grey'>
       <div id="about-banner" className="about__banner">
-        <div className="about__banner-title">
+        <h1 className="about__banner-title">
           about
-        </div>
+        </h1>
       </div>
 
+
       <div className='about'>
+        <img src='img/about/three-bubbles.png' alt="bubbles" className='about__top-bubbles' />
         <section className='about__top-section'>
           <div className='about__intro'>
-            <h4 className='heading-4'>Who are you?</h4>
+            <h4 className='heading-4 heading-4-wrap'>Who are you?</h4>
             <p className='about__quote'>I am many things, some can be defined and some cannot. <br/> As we all are.</p>
             <p className='about__strong'>My name is Limor Sadot</p>
             <p className='about__text about__text--black'>
@@ -40,7 +42,8 @@ const About = () => {
           </div>
 
           <div className='about__declaration'>
-            <h4 className='heading-4 margin-bottom-realy-small reveal'>Artist Declaration</h4>
+            <h4 className='heading-4 heading-4-wrap reveal'>Artist Declaration</h4>
+            <img className="about__intro-mobile-image" src="/img/about/intro-profile.png" alt="Limor Sadot" />
             <p className='about__text reveal'>
               Between the reduction and the multiplicity, 
               between the art lines and the collage pieces becoming one, 
@@ -54,37 +57,42 @@ const About = () => {
               They both touch on the deity, the infinity planted in each of us, 
               and for the sake of my research I activate my two brain lobes and play between them a ping pong game of art. 
               The male and the female, wisdom and knowledge, lines and stains.
-              <br />
-              The two faces of my work, my two main paths are: 
+            </p>
+            <p className='about__text reveal'>
+              <b>The two faces of my work</b> <br/>My two main paths are: 
               mixed media collage, on one hand, and line art illustration on the other hand, 
               can seem opposite or different and yet they both give me the chance 
               to deal with complexity vs Wholeness intuitively and these are the vital tools 
               that I need to explore the diversity of the human story.
             </p>
 
-            <img className='about__declaration-circle about__declaration-circle--1 reveal' src='/img/about/intro-half-circle.png' alt='collage bubble' />
 
             <p className='about__text reveal'>
-              <span className='about__strong'>My "Collage & Mixed media" </span>
-              is a spotty and intuitive tool, I feel at home with it. 
+              <span className='about__strong'>My "Collage & Mixed media"</span>
+              &nbsp;is a spotty and intuitive tool, I feel at home with it. 
               It seeks truth and harmony in the compound. 
               It stems from my subconscious, both private and collective as a human being. 
               I was always influenced by old legends, spiritual wisdom, philosophies of different 
-              cultures and archetypes and I use them in my work. Collage represents to me 
-              the more feminine knowledge and the longer process for the exploration of truth. 
-              It is a way that is unfolding through trial and eror, 
+              cultures and archetypes and I use them in my work.
+            </p>
+            <img className='about__declaration-circle about__declaration-circle--1 reveal' src='/img/about/intro-half-circle.png' alt='collage bubble' />
+            <p className='about__text reveal'>
+              <b>Collage represents</b> to me the more feminine knowledge and the longer process 
+              for the exploration of truth. It is a way that is unfolding through trial and error, 
               understanding one thing from another until arriving to the hole truth that exist 
               in the harmonious wholeness of the one law. 
             </p>
 
             <p className='about__text reveal'>
-              <span className='about__strong'>My "Line ART" Illustrations </span>
-              on the other hand, represent to me a more male type of search. 
+              <span className='about__strong'>My "Line ART" Illustrations</span>
+              <br/>on the other hand, represent to me a more male type of search. 
               They are mostly intuitive dynamic lines that treasure within them, 
               a bit like seeds, a complete wisdom that already resides within them 
               but they still do not have all the intelligence sufficient to 
               discover and develop the whole story. 
-              They are sketches-like, limitation of wondering loose thoughts. 
+            </p>
+            <p className='about__text reveal'>
+              <b>They are sketches-like,</b> limitations of wondering loose thoughts. 
               As for the subject of work - I mostly depict imaginary human portraits 
               with open eyes to the truth but with their mouth closed and that creates a tension. 
               They all seem to consciously know the secret of life but cannot tell it yet. 
@@ -92,7 +100,9 @@ const About = () => {
               and families of humans (that perhaps exist in a parallel dimension) and they 
               are my imaginary friends and an on-going obsession that helps me carrying 
               the burden of pre-mature consciousness and keeping humanity human. 
-              Faces are inner reflections, slivers of souls that are briefly depicted 
+            </p>
+            <p className='about__text reveal'>
+              <b>Faces are inner reflections,</b> slivers of souls that are briefly depicted 
               in the contours of a limited truth so as long as I deal with the human face 
               I am portraying humanity. 
               Faces, my Faces... are watching, observing, Seeing, feeling, knowing, 
@@ -120,7 +130,8 @@ const About = () => {
 
         <section className='about__interview'>
           <div className='about__interview-text'>
-            <h4 className='heading-4 reveal'>What drew you to collage and intuitive art?</h4>
+            <h5 className='heading-5 reveal'>A Short Interview</h5>
+            <h4 className='heading-4 heading-4--question reveal'>What drew you to collage and intuitive art?</h4>
             <p className='about__text reveal'>
               I've been studying and working as a visual communication artist for 
               over 25 years in the field of advertising and graphic design. 
@@ -133,6 +144,8 @@ const About = () => {
               Tearing, cutting and pasting with less mind and more heart 
               seemed like a good way to visually tell my story in a way that 
               I couldn’t really make any “mistake”. 
+            </p>
+            <p className='about__text reveal'>
               I think collage is like channeling your inner world out 
               to the paper fast so the skills you really need is to be brave 
               enough to let go and to be open enough to allow it to simply 
@@ -141,7 +154,7 @@ const About = () => {
               but you know he will somehow look like you.
             </p>
 
-            <h4 className='heading-4 reveal'>What are your major influences?</h4>
+            <h4 className='heading-4 heading-4--question reveal'>What are your major influences?</h4>
             <p className='about__text reveal'>
               Well, obviously advertising, magazines, urban-living and design 
               that was my line of work and profession for so many years are big influences. 
@@ -149,7 +162,8 @@ const About = () => {
               looking for answers about life, how and why the world ticks the way it ticks? 
               Is there a system? a pattern? a secret code? a way out? a meaning to this whole charade? 
               I needed to find some answers myself.
-              <br />
+            </p>
+            <p className='about__text reveal'> 
               The spiritual path had led me to do my personal leg work around the world. 
               I traveled to many countries and studied cultures, philosophies, religions 
               and different ways of thinking and seeing the world: 
@@ -161,7 +175,7 @@ const About = () => {
               probably more than just in this lifetime.
             </p>
 
-            <h4 className='heading-4 reveal'>How do you apply spirituality to your artistic work?</h4>
+            <h4 className='heading-4 heading-4--question reveal'>How do you apply spirituality to your artistic work?</h4>
             <p className='about__text reveal'>
               When you live a spiritual life, a life of awake awareness 
               it is reflected in everything you do because you are connected 
@@ -174,15 +188,17 @@ const About = () => {
               and for me it means that I do not create just to show myself or because 
               something pressures me from within to express itself emotionally or conceptually 
               or to release some mental stress, which may have been good for me in the past.  
+            </p>
+            <p className='about__text reveal'>
               I believe that quieting the heart or self-satisfaction in my artistic process 
               is only a necessary step in order to climb higher so I can connect and touch 
               my soul by expressing the unique spark of infinity within me that understands 
               the structural laws of the universe.
             </p>
 
-            <img src="/img/about/interview-bottom-image.png" alt="line art faces" className='about__interview-bottom-image' />
+            <img src="/img/about/interview-bottom-image.png" alt="line art faces" className='about__interview-bottom-image reveal' />
 
-            <h4 className='heading-4 reveal'>what are your artistic methods?</h4>
+            <h4 className='heading-4 heading-4--question reveal'>what are your artistic methods?</h4>
             <p className='about__text reveal'>
               I see myself as an inventor and a researcher in my artistic work. 
               I use all my skills from cut and paste analogue collage 
@@ -196,7 +212,7 @@ const About = () => {
             </p>
 
 
-            <h4 className='heading-4 reveal'>What about the researcher side?</h4>
+            <h4 className='heading-4 heading-4--question reveal'>What about the researcher side?</h4>
             <p className='about__text reveal'>
               When you work in series, it's like creating families of work 
               and when you research a family you deal with both: similarity and uniqueness 
@@ -211,7 +227,7 @@ const About = () => {
               is the most important spiritual task, I believe. 
             </p>
 
-            <h4 className='heading-4 reveal'>what’s next?</h4>
+            <h4 className='heading-4 heading-4--question reveal'>what’s next?</h4>
             <p className='about__text reveal'>
               The last couple of years I left the design field to fulfill my dream
               to purely practice art - so I participated in many group exhibitions, 

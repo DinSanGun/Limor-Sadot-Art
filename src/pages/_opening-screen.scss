@@ -1,11 +1,11 @@
 .opening {
-    background-image: url('/public/img/opening.jpg');
+    background-image: url('/public/img/opening/opening.jpg');
     background-size: cover;
     height: 100vh;
     width: 100%;
 
     @include respond(mini) {
-        background-image: url('/public/img/mobile-opening.jpg');
+        background-image: url('/public/img/opening/mobile-opening.jpg');
     }
 
     animation: fadeIn 2s;

@@ -15,7 +15,7 @@ const Home = () => {
       <section className="introduction">
         
         <div className='introduction__top-image'>
-          <img src={process.env.PUBLIC_URL + 'img/half-circle-main.jpg'} className='introduction__top-image--1' alt="Collage art circle"/>
+          <img src='img/home/home-half-circle.jpg' className='introduction__top-image--1' alt="Collage art circle"/>
           &nbsp;
         </div>
 
@@ -43,7 +43,7 @@ const Home = () => {
               </Link>
             </button>
 
-        <img src="img/main-bottom-sketch.jpg" className="introduction__bottom-image" alt="Line art sketch"/>
+        <img src="img/home/home-bottom-sketch.jpg" className="introduction__bottom-image" alt="Line art sketch"/>
       </section>
     </Layout>
   )

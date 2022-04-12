@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
     
 
     z-index: 3;
+
 
     @include respond(mini) {
         position: fixed;
@@ -21,13 +21,15 @@
 
     &__title {
         padding: 1.2rem 2rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         background-color: white;
         margin-top: -3rem;
 
         @include respond(mini) {
-            margin-top: 1rem;
-            margin-left: 4rem;
+            font-size: 2.5rem;
+            margin-top: 1.2rem;
+            margin-left: 1.5vw;
+            z-index: 3;
         }
     }
 
@@ -39,7 +41,7 @@
         list-style: none;
         justify-content: center;
         align-items: center;
-        transition: all 1.2s ease;
+        transition: all .8s ease;
 
         @include respond(phone) {
             padding: 1.5rem 0 2.5rem;
@@ -48,28 +50,30 @@
         @include respond(mini) {
             flex-direction: column;
             justify-content: flex-start;
+            align-items: flex-start;
             background-color: white;
             position: fixed;
-            top: 7rem;
+            top: 0;
             left: -100%;
             width: 100%;
             height: 100vh;
             z-index: 3;
-            padding: 0;
-
-            border-right: 1px solid lightgrey;
+            padding-top: 7vh;
         }
     }
 
     &__item:not(:last-child) {
         margin-right: 4rem;
 
+    }
+
+    &__item {
         @include respond(mini) {
             margin-right: 0;
-            padding: 3rem 3rem;
+            padding: 1.5rem 3rem;
+            padding-left: 15vw;
             width: 100%;
-            border-bottom: 1px solid lightgrey;
-            text-align: center;
+            text-align: left;
         }
     }
 
@@ -83,7 +87,8 @@
         transition: all .4s;
 
         @include respond(mini) {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            color: rgb(193, 193, 193);
         }
     }
 
@@ -102,7 +107,8 @@
 
         @include respond(mini) {
             border-top: 4px solid transparent;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            color: rgb(193, 193, 193);
         }
     }
 
@@ -116,16 +122,22 @@
         }
 
         @include respond(mini) {
-            margin-top: 4rem;
-            margin-right: 4rem;
+            margin-top: 2rem;
+            margin-right: 4vw;
+            width: 1.5rem;
+            opacity: .3;
 
             &--3 {
                 margin-right: 0;
             }
         }
+
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-2px) scale(1.2);
+        }
     }
-
-
 
 
     &__checkbox {
@@ -137,9 +149,10 @@
         width: 4rem;
         position: absolute;
         top: 2rem;
-        left: 2rem;
+        right: 2rem;
         text-align: center;
         cursor: pointer;
+        z-index: 4;
 
         display: none;
 
@@ -163,7 +176,7 @@
         &::before,
         &::after {
             width: 3rem;
-            height: 2px;
+            height: 1px;
             background-color: black;
             display: inline-block;
 

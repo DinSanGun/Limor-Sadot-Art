@@ -24,6 +24,7 @@ const Navigation = () => {
         <li className="navigation__item"><NavLink to="/home" className={(navData) => activeClass(navData)}>home</NavLink></li>
         <li className="navigation__item"><NavLink to="/work" className={(navData) => activeClass(navData)}>work</NavLink></li>
         <li className="navigation__item"><NavLink to="/about" className={(navData) => activeClass(navData)}>about</NavLink></li>
+        <li className="navigation__item"><NavLink to="/videos" className={(navData) => activeClass(navData)}>videos</NavLink></li>
         <li className="navigation__item"><NavLink to="/contact" className={(navData) => activeClass(navData)}>contact</NavLink></li>
         <li className="navigation__item"><a href="https://www.redbubble.com/people/Limor-Sadot/shop" className="navigation__link" target="_blank" rel="noopener noreferrer">shop</a></li>
 

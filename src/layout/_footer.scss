@@ -1,13 +1,14 @@
 .footer {
     background-color: black;
     color: grey;
-    height: 20vh;
+    height: 28vh;
     text-align: center;
     font-size: 1.2rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: relative;
+    padding-top: 3rem;
 
     @include respond(mini) {
         justify-content: flex-start;
@@ -28,31 +29,21 @@
             margin-right: 8%;
         }
 
-        &-circle {
-            display: inline-block;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            padding: 1rem;
-            background-color: white;
-            margin-right: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         &-icon {
-            width: 2rem;
-            height: 2rem;
-            margin-top: -1px;
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-top: -.5rem;
+            margin-right: 1.2rem;
+
+            transition: all .3s;
+
+            &--3 {
+                margin-right: 0;
+            }
+
+            &:hover {
+                transform: translateY(-2px) scale(1.2);
+            }
         }
-    }
-
-    @include respond(tab-land) {
-        height: 15vh;
-    }
-
-    @include respond(tab-port) {
-        height: 10vh;
     }
 }

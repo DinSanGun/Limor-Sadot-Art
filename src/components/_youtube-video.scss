@@ -1,6 +1,20 @@
 .youtube {
     margin-bottom: 3rem;
-    margin-left: 3rem;
-    height: 27.5rem;
-    width: 44.5rem;
+    height: 31vw;
+    width: 55vw;
+
+    @include respond(tab-port) {
+        width: 65vw;
+        height: 36.56vw;
+    }
+
+    @include respond(phone) {
+        width: 80vw;
+        height: 45vw;
+    }
+
+    @include respond(mini) {
+        width: 90vw;
+        height: 50.63vw;
+    }
 }

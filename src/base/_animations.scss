@@ -95,3 +95,26 @@
         opacity: 1;
     }
 }
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundPosition {
+
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 75% 75%;
+    }
+}

@@ -7,10 +7,10 @@ const Layout = (props) => {
 
   let bannerSrc = ""
   switch(props.banner) {
-    case 'color': bannerSrc = '/img/banner-colored.jpg'; break;
-    case 'grey': bannerSrc = '/img/banner-grey.jpg'; break;
-    case 'contact': bannerSrc = '/img/banner-contact.jpg'; break;
-    default: bannerSrc = '/img/banner-colored.jpg';
+    case 'color': bannerSrc = '/img/top-banners/banner-colored.jpg'; break;
+    case 'grey': bannerSrc = '/img/top-banners/banner-grey.jpg'; break;
+    case 'contact': bannerSrc = '/img/top-banners/banner-contact.jpg'; break;
+    default: bannerSrc = '/img/top-banners/banner-colored.jpg';
   }
 
   return (
