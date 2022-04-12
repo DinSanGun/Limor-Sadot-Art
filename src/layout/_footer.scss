@@ -2,10 +2,57 @@
     background-color: black;
     color: grey;
     height: 20vh;
-    display: block;
     text-align: center;
     font-size: 1.2rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    position: relative;
+
+    @include respond(mini) {
+        justify-content: flex-start;
+        padding-left: 5%;
+    }
+
+    &__social {
+        position: absolute;
+        display: flex;
+        left: 13%;
+
+        @include respond(tab-port) {
+            left: 7%;
+        }
+
+        @include respond(mini) {
+            position: static;
+            margin-right: 8%;
+        }
+
+        &-circle {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            padding: 1rem;
+            background-color: white;
+            margin-right: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-icon {
+            width: 2rem;
+            height: 2rem;
+            margin-top: -1px;
+        }
+    }
+
+    @include respond(tab-land) {
+        height: 15vh;
+    }
+
+    @include respond(tab-port) {
+        height: 10vh;
+    }
 }

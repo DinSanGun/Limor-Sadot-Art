@@ -32,49 +32,49 @@ const LineArtSeries = () => {
                 
                 <Link to='/human-kinda' className='link'>
                     <figure className='series__item'>
-                        <img className='series__icon series__icon--2' alt='series #1' src="/img/series-icons/line-art/human-kinda_button.png" />
+                        <img className='series__icon series__icon--2' alt='Human Kinda' src="/img/series-icons/line-art/human-kinda_button.png" />
                         <figcaption className='series__caption'>Human Kinda</figcaption>
                     </figure>
                 </Link>
 
                 <Link to='/B&W-&-Brown' className='link'>
                     <figure className='series__item'>
-                        <img className='series__icon series__icon--3' alt='series #6' src="/img/series-icons/line-art/bw-and-brown_button.png" />
+                        <img className='series__icon series__icon--3' alt='B&W & Brown' src="/img/series-icons/line-art/bw-and-brown_button.png" />
                         <figcaption className='series__caption'>B&W & Brown</figcaption>
                     </figure> 
                 </Link>
 
                 <Link to='/pictures-of-the-floating-world' className='link'>
                     <figure className='series__item'>
-                        <img className='series__icon series__icon--4' alt='series #2' src="/img/series-icons/line-art/floating-world_button.png" />
+                        <img className='series__icon series__icon--4' alt='Pictures of the floating world - ukiyo e' src="/img/series-icons/line-art/floating-world_button.png" />
                         <figcaption className='series__caption'>Pictures of the Floating World</figcaption>
                     </figure>
                 </Link>
 
                 <Link to='/entangled-living' className='link'>
                     <figure className='series__item'>
-                        <img className='series__icon series__icon--5' alt='series #8' src="/img/series-icons/line-art/entangled_button.png" />
+                        <img className='series__icon series__icon--5' alt='Entangled living' src="/img/series-icons/line-art/entangled_button.png" />
                         <figcaption className='series__caption'>Entangled Living</figcaption>
                     </figure>
                 </Link>
 
                 <Link to='/surreal-neuro-trip' className='link'>
                     <figure className='series__item'>
-                        <img className='series__icon series__icon--6' alt='series #7' src="/img/series-icons/line-art/surreal_button.png" />
+                        <img className='series__icon series__icon--6' alt='Surreal Neuro art trip' src="/img/series-icons/line-art/surreal_button.png" />
                         <figcaption className='series__caption'>Surreal Neuro Trip</figcaption>
                     </figure> 
                 </Link>
 
                 <Link to='/families-diptychs-summer' className='link'>
                     <figure className='series__item'>
-                        <img className='series__icon series__icon--7' alt='series #5' src="/img/series-icons/line-art/summer_button.png" />
+                        <img className='series__icon series__icon--7' alt='Families diptychs Summer' src="/img/series-icons/line-art/summer_button.png" />
                         <figcaption className='series__caption'>Families diptychs - Summer</figcaption>
                     </figure> 
                 </Link>
 
                 <Link to='/families-diptychs-winter' className='link'>
                     <figure className='series__item'>
-                        <img className='series__icon series__icon--8' alt='series #4' src="/img/series-icons/line-art/winter_button.png" />
+                        <img className='series__icon series__icon--8' alt='Families diptychs Winter' src="/img/series-icons/line-art/winter_button.png" />
                         <figcaption className='series__caption'>Families diptychs - Winter</figcaption>
                     </figure>
                 </Link>

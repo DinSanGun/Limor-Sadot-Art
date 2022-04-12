@@ -13,7 +13,7 @@
     &:hover {   background-color: rgb(247, 247, 247);   }
     &:hover span{   color: rgb(219, 219, 219);  }
 
-    @media only screen and (max-width: 500px) {
+    @include respond(mini) {
         height: 3rem;
         width: 3rem;
         font-size: 2.4rem;

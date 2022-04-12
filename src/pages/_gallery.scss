@@ -10,7 +10,7 @@
     &--grid-2 {
         grid-template-columns: repeat(2, 1fr);
 
-        @media only screen and (max-width: 500px) {
+        @include respond(mini) {
             grid-template-columns: 1fr;
         }
     }
@@ -18,7 +18,7 @@
     &--grid-3 {
         grid-template-columns: repeat(3, 1fr);
 
-        @media only screen and (max-width: 500px) {
+        @include respond(mini) {
             grid-template-columns: 1fr;
         }
     }
@@ -39,7 +39,7 @@
         gap: 1.5rem;
     }
 
-    @media only screen and(max-width: 500px) {
+    @include respond(mini) {
         padding: 0 3rem 3rem;
         gap: 2.5rem;
     }
@@ -58,7 +58,7 @@
             left: 6rem;
         }
 
-        @media only screen and(max-width: 500px) {
+        @include respond(mini) {
             left: 2.5rem;
         }
     }
@@ -72,7 +72,7 @@
         top: 0rem;
         z-index: 2;
         
-        @media only screen and (max-width: 500px) {
+        @include respond(mini) {
             top: 6.5rem;
             padding: 1rem 0 1rem 3rem;
         }
@@ -272,14 +272,3 @@
 }
 
 
-// .reveal{
-//     position: relative;
-//     transform: translateY(1rem) scale(.9);
-//     opacity: 0;
-//     transition: .5s all ease;
-//   }
-  
-//   .reveal.active{
-//     transform: translateY(0) scale(1);
-//     opacity: 1;
-//   }

@@ -5,9 +5,9 @@ import Layout from '../layout/Layout'
 
 const Gallery = (props) => {
 
-  useEffect(() => {
-    window.scrollTo({top: 100, behavior: 'smooth'})
-  },[])
+  // useEffect(() => {
+  //   window.scrollTo({top: 100, behavior: 'smooth'})
+  // },[])
 
   const [lightbox, setLightbox] = useState(false);
   const [image, setImage] = useState('');
@@ -61,9 +61,6 @@ const Gallery = (props) => {
     }, true);
 
   },[setLightbox])
-
-
-    
 
 
   return (

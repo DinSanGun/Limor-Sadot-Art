@@ -9,7 +9,6 @@ const About = () => {
     const nav = document.getElementById('navbar')
     nav.scrollIntoView(true)
   }, [])
-  
 
   return (
     <Layout banner='grey'>
@@ -37,18 +36,18 @@ const About = () => {
 
           <div className='about__intro-images'>
             <img className="about__intro-images--1" src="/img/about/intro-bubble.png" alt="bubble-1" />
-            <img className="about__intro-images--2" src="/img/about/intro-profile.png" alt="bubble-2" />
+            <img className="about__intro-images--2" src="/img/about/intro-profile.png" alt="Limor Sadot" />
           </div>
 
           <div className='about__declaration'>
-            <h4 className='heading-4 margin-bottom-realy-small'>Artist Declaration</h4>
-            <p className='about__text'>
+            <h4 className='heading-4 margin-bottom-realy-small reveal'>Artist Declaration</h4>
+            <p className='about__text reveal'>
               Between the reduction and the multiplicity, 
               between the art lines and the collage pieces becoming one, 
               between the darkness and the great light that expresses itself in the spectrum of all colors, 
               this is where I live.
             </p>
-            <p className='about__text'>
+            <p className='about__text reveal'>
               I move between the poles, 
               seeking to discover the secrets within me through these polar instruments of consciousness, 
               to explore and understand my existence through them and to scrape from them the source of truth. 
@@ -63,9 +62,9 @@ const About = () => {
               that I need to explore the diversity of the human story.
             </p>
 
-            <img className='about__declaration-circle about__declaration-circle--1' src='/img/about/intro-half-circle.png' alt='bubble-3' />
+            <img className='about__declaration-circle about__declaration-circle--1 reveal' src='/img/about/intro-half-circle.png' alt='collage bubble' />
 
-            <p className='about__text'>
+            <p className='about__text reveal'>
               <span className='about__strong'>My "Collage & Mixed media" </span>
               is a spotty and intuitive tool, I feel at home with it. 
               It seeks truth and harmony in the compound. 
@@ -78,7 +77,7 @@ const About = () => {
               in the harmonious wholeness of the one law. 
             </p>
 
-            <p className='about__text'>
+            <p className='about__text reveal'>
               <span className='about__strong'>My "Line ART" Illustrations </span>
               on the other hand, represent to me a more male type of search. 
               They are mostly intuitive dynamic lines that treasure within them, 
@@ -100,18 +99,18 @@ const About = () => {
               but not communicating it yet and not fighting loudly. 
               They are quiet and this is their real fight.
             </p>
-            <div className='about__signature'>
-              <img src="/img/about/signature.png" alt="Limor Sadot" className='about__signature-image'/>
+            <div className='about__signature reveal'>
+              <img src="/img/about/signature.png" alt="signature" className='about__signature-image'/>
             </div>
           </div>
 
           <div className='about__declaration-image'>
-            <img className='about__declaration-circle about__declaration-circle--2' src='/img/about/intro-half-circle.png' alt='bubble-3' />
+            <img className='about__declaration-circle about__declaration-circle--2' src='/img/about/intro-half-circle.png' alt='collage bubble' />
           </div>
 
         </section>
 
-        <div className='about__interview-header'>
+        <div className='about__interview-header reveal'>
           <img src="/img/about/interview-image.jpg" alt="interview" className='about__interview-image' />
           <div className='about__interview-title'>
             <img src="/img/about/three-bubbles.png" alt="bubbles" className="about__interview-bubbles" />
@@ -121,8 +120,8 @@ const About = () => {
 
         <section className='about__interview'>
           <div className='about__interview-text'>
-            <h4 className='heading-4'>What drew you to collage and intuitive art?</h4>
-            <p className='about__text'>
+            <h4 className='heading-4 reveal'>What drew you to collage and intuitive art?</h4>
+            <p className='about__text reveal'>
               I've been studying and working as a visual communication artist for 
               over 25 years in the field of advertising and graphic design. 
               Since my early art and design studies I fell in love with 
@@ -142,8 +141,8 @@ const About = () => {
               but you know he will somehow look like you.
             </p>
 
-            <h4 className='heading-4'>What are your major influences?</h4>
-            <p className='about__text'>
+            <h4 className='heading-4 reveal'>What are your major influences?</h4>
+            <p className='about__text reveal'>
               Well, obviously advertising, magazines, urban-living and design 
               that was my line of work and profession for so many years are big influences. 
               But ever since I remember myself I was a spiritual seeker - asking questions, 
@@ -162,8 +161,8 @@ const About = () => {
               probably more than just in this lifetime.
             </p>
 
-            <h4 className='heading-4'>How do you apply spirituality to your artistic work?</h4>
-            <p className='about__text'>
+            <h4 className='heading-4 reveal'>How do you apply spirituality to your artistic work?</h4>
+            <p className='about__text reveal'>
               When you live a spiritual life, a life of awake awareness 
               it is reflected in everything you do because you are connected 
               to the root and the root is above everything (and not below as is commonly thought). 
@@ -181,10 +180,10 @@ const About = () => {
               the structural laws of the universe.
             </p>
 
-            <img src="/img/about/interview-bottom-image.png" alt="faces" className='about__interview-bottom-image' />
+            <img src="/img/about/interview-bottom-image.png" alt="line art faces" className='about__interview-bottom-image' />
 
-            <h4 className='heading-4'>what are your artistic methods?</h4>
-            <p className='about__text'>
+            <h4 className='heading-4 reveal'>what are your artistic methods?</h4>
+            <p className='about__text reveal'>
               I see myself as an inventor and a researcher in my artistic work. 
               I use all my skills from cut and paste analogue collage 
               to illustration and digital work. I’m really a mixer and matcher: 
@@ -197,8 +196,8 @@ const About = () => {
             </p>
 
 
-            <h4 className='heading-4'>What about the researcher side?</h4>
-            <p className='about__text'>
+            <h4 className='heading-4 reveal'>What about the researcher side?</h4>
+            <p className='about__text reveal'>
               When you work in series, it's like creating families of work 
               and when you research a family you deal with both: similarity and uniqueness 
               in different percentages. A family is really like a hologram, you decide 
@@ -212,8 +211,8 @@ const About = () => {
               is the most important spiritual task, I believe. 
             </p>
 
-            <h4 className='heading-4'>what’s next?</h4>
-            <p className='about__text'>
+            <h4 className='heading-4 reveal'>what’s next?</h4>
+            <p className='about__text reveal'>
               The last couple of years I left the design field to fulfill my dream
               to purely practice art - so I participated in many group exhibitions, 
               and also fullfiled a long calling to “collage” my two big passions together: 

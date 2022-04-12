@@ -38,3 +38,16 @@ a {
 .link:visited {
     text-decoration: none;
 }
+
+
+.reveal{
+    position: relative;
+    transform: translateY(7rem);
+    opacity: 0;
+    transition: 1.2s all ease;
+  }
+  
+.reveal.active{
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}

@@ -8,6 +8,16 @@
     }
 }
 
+@keyframes fadeInVague {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
 @keyframes fadeOut {
     0% {
         opacity: 1;

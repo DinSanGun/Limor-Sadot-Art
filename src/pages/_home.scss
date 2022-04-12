@@ -12,17 +12,21 @@
         grid-row: 1 / 2;
         grid-column: 1 / 2;
 
-        @include respond(phone){
-            background-image: url('/public/img/banner-colored.jpg');
+        @include respond(mini){
+            background-image: url('/public/img/mobile-home-banner.jpg');
             background-position: right;
             background-size: cover;
-            height: 20vh;
+            height: 30vh;
         }
 
         &--1 {
-            width: 100%;
+            width: 92%;
 
-            @include respond (phone) {
+            @include respond(phone) {
+                width: 47%;
+            }
+
+            @include respond(mini) {
                 display: none;
             }
         }

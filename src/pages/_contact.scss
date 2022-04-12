@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, min-content);
 
-    @media only screen and (max-width: 500px) {
+    @include respond(mini) {
         grid-template-columns: min-content;
     }
 
@@ -17,7 +17,7 @@
         align-items: center;
         width: 35vw;
 
-        @media only screen and (max-width: 500px) {
+        @include respond(mini) {
             width: 100vw;
         }
     }
@@ -56,7 +56,7 @@
             width: 30rem;
         }
 
-        @media only screen and (max-width: 500px) {
+        @include respond(mini) {
             width: 65vw;
         }
 

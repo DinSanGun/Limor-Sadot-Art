@@ -8,6 +8,8 @@ const Themes = () => {
   const [fade, setFade] = useState(0)
   const navigate = useNavigate();
 
+  window.scrollTo({top: 0, behavior: 'smooth'})
+
   setTimeout(() => {
     const nav = document.getElementById('navbar')
     nav.scrollIntoView(true)
@@ -18,17 +20,19 @@ const Themes = () => {
 
       <Blocker/>
 
+      <img src='img/mobile-home-banner.jpg' alt="Themes banner" className='themes__mobile-banner'/>
+
       <div className='themes' fade={fade}>
 
           <figure className='themes__figure themes__figure--1'>
-            <img src={process.env.PUBLIC_URL + 'img/big-circle-left.png'} alt="theme-collage" className="themes__image" 
+            <img src={process.env.PUBLIC_URL + 'img/big-circle-left.png'} alt="collage theme" className="themes__image" 
                 onClick={() => navigate('/collage')}
                 />
             <figcaption className='themes__caption'>Collage &<br/>mixed media</figcaption>
           </figure>
 
         <figure className='themes__figure'>
-          <img src={process.env.PUBLIC_URL + 'img/big-circle-right.png'} alt="theme-line-art" 
+          <img src={process.env.PUBLIC_URL + 'img/big-circle-right.png'} alt="line art theme" 
             className="themes__image fadeOut-class"
             onClick={() => navigate('/line-art')}
             onAnimationEnd={() => setFade(0)}
