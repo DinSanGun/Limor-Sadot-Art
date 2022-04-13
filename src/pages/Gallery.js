@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react'
 import BackButton from '../components/BackButton';
 import Blocker from '../components/Blocker';
 import Layout from '../layout/Layout'
+import { reveal } from '../App';
 
 const Gallery = (props) => {
 
-  // useEffect(() => {
-  //   window.scrollTo({top: 100, behavior: 'smooth'})
-  // },[])
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
+    reveal();
+  },[])
+
 
   const [lightbox, setLightbox] = useState(false);
   const [image, setImage] = useState('');

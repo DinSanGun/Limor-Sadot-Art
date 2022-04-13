@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Blocker from '../components/Blocker'
 import Layout from '../layout/Layout'
@@ -8,12 +8,16 @@ const Themes = () => {
   const [fade, setFade] = useState(0)
   const navigate = useNavigate();
 
-  window.scrollTo({top: 0, behavior: 'smooth'})
+  useEffect(() => {
 
-  setTimeout(() => {
-    const nav = document.getElementById('navbar')
-    nav.scrollIntoView(true)
-  }, 1000)
+    setTimeout(() => {
+      // const nav = document.getElementById('navbar')
+      // nav.scrollIntoView(true)
+      window.scrollTo({top: 120, behavior: 'smooth'})
+    }, 1000)
+  
+  }, [])
+  
 
   return (
     <Layout banner="grey" className="black">
@@ -28,16 +32,16 @@ const Themes = () => {
             <img src='img/work/big-circle-left.png' alt="collage theme" className="themes__image" 
                 onClick={() => navigate('/collage')}
                 />
-            <figcaption className='themes__caption'>Collage &<br/>mixed media</figcaption>
+            <figcaption className='themes__caption'>Collage &<br/>Mixed Media</figcaption>
           </figure>
 
         <figure className='themes__figure'>
-          <img src='img/work/big-circle-right.png' alt="line art theme" 
-            className="themes__image fadeOut-class"
+          <img src='img/work/big-circle-right-color.png' alt="line art theme" 
+            className="themes__image themes__image--1 fadeOut-class"
             onClick={() => navigate('/line-art')}
             onAnimationEnd={() => setFade(0)}
             />
-          <figcaption className='themes__caption'>Line art<br/>illustration</figcaption>
+          <figcaption className='themes__caption'>Line Art<br/>Illustration</figcaption>
         </figure>
 
       </div>

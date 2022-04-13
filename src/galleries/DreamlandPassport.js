@@ -68,7 +68,7 @@ import Gallery from '../pages/Gallery'
 const DreamlandPassport = () => {
 
   const DreamlandPassportGallery = {
-    title: "A Passport To Dreamland",
+    title: "The Dreamland Passport",
     description: "digital collage",
     images: 
     [

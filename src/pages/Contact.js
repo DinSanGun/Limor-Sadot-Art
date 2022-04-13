@@ -42,7 +42,7 @@ const Contact = () => {
                     <label htmlFor='form-message' className='form__label'>Please write your message here</label>
                     <textarea id='form-message' name='message' rows="10" col="80" className='form__textarea' />
 
-                    <input type='submit' value="send" className='form__submit' />
+                    <input type='submit' value="Send" className='form__submit' />
                 </form>
                 
             </div>

@@ -13,7 +13,7 @@
     }
 
     @include respond(mini) {
-        padding: 8rem 5rem;
+        padding: 15rem 5rem 6rem;
     }
 
     &__figure {
@@ -34,8 +34,8 @@
 
     &__image {
         display: block;
-        height: 25vw;
-        width: 25vw;
+        height: 20vw;
+        width: 20vw;
         border-radius: 50%;
         margin-bottom: 2rem;
         border: none;
@@ -44,12 +44,6 @@
         @include respond(phone) {
             width: 40vw;
             height: 40vw;
-        }
-
-        @media only screen and(max-width: 400px) {
-            width: 50vw;
-            height: 50vw;
-            margin-left: 2rem;
         }
 
         animation: grow 1.5s ease 3s;
@@ -67,6 +61,16 @@
         @include respond(mini) {
             animation: grow 1.5s ease 3s;
             animation-fill-mode: backwards;
+            background-color: rgb(252, 252, 252);
+            outline: 1.5rem solid rgb(252, 252, 252);
+            margin-bottom: 3rem;
+        }
+
+        &--1 {
+            @include respond(mini) {
+                background-color: rgb(248, 248, 248);
+                outline: 1.5rem solid rgb(248, 248, 248);
+            }
         }
 
     }
@@ -74,8 +78,8 @@
 
     &__caption {
         text-align: center;
-        font-size: 2.8rem;
-        margin: 1rem 3rem;
+        font-size: 2rem;
+        margin: 1rem;
         color: lightgrey;
         cursor: pointer;
         width: 20rem;
@@ -84,18 +88,13 @@
         animation-fill-mode: backwards;
 
         @include respond(tab-land) {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             width: 15rem;
-        }
-
-        @media only screen and (max-width: 700px) {
-            font-size: 2rem;
-            margin: .5rem;
         }
 
         @include respond(phone) {
             grid-template-columns: min-content;
-            font-size: 3rem;
+            font-size: 2.2rem;
             width: 20rem;
             color: rgb(155, 155, 155);
 
@@ -103,8 +102,8 @@
             animation-fill-mode: backwards;
         }
 
-        @media only screen and (max-width: 400px) {
-            font-size: 2.5rem;
+        @include respond(mini) {
+            font-size: 2rem;
             margin: .6rem;
             width: 15rem;
         }
@@ -119,7 +118,6 @@
             position: absolute;
             top: 0;
             width: 100vw;
-            background-color: aquamarine;
             z-index: -1;
             opacity: 0.3;
 

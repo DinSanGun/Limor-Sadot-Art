@@ -12,18 +12,19 @@ const Home = () => {
 
   return (
     <Layout banner="color">
+
+      <img src='img/home/mobile-home-banner.jpg' className='introduction__top-banner' alt="Collage art circle"/>
+
       <section className="introduction">
         
         <div className='introduction__top-image'>
           <img src='img/home/home-half-circle.jpg' className='introduction__top-image--1' alt="Collage art circle"/>
-          &nbsp;
         </div>
 
-
-        <p id="scroll-point" className="introduction__text">
+        <p className="introduction__text">
             <span className="introduction__text--1">Whimsical darkness</span>
             <span className="introduction__text--2">is my special way</span>
-            <span className="introduction__text--3">to force my light</span>
+            <span id="scroll-point" className="introduction__text--3">to force my light</span>
             <span className="introduction__text--4">to invite my shadow</span>
             <span className="introduction__text--5">for a dance</span>
             <span className="introduction__text--6">so I can refrain</span>

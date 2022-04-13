@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../layout/Layout'
 import BackButton from '../components/BackButton'
 import Blocker from '../components/Blocker'
+
 
 const Series = () => {
 
@@ -89,7 +90,7 @@ const Series = () => {
                 <Link to='/dreamland-passport' className='link'>
                     <figure className='series__item'>
                         <img className='series__icon series__icon--10' alt='Passport to dreamland' src="/img/series-icons/collage/a-passport-to-dreamland_button.png" />
-                        <figcaption className='series__caption'>A Passport to Dreamland</figcaption>
+                        <figcaption className='series__caption'>The Dreamland Passport</figcaption>
                     </figure>
                 </Link>
                 

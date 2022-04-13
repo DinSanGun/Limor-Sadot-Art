@@ -51,7 +51,7 @@
     &__input {
         margin-bottom: 2rem;
         border-radius: 0%;
-        border: 1.2px solid black;
+        border: 1.5px solid black;
         padding: .3rem;
         width: 40rem;
 
@@ -69,28 +69,49 @@
     &__textarea {
         margin-bottom: 1rem;
         border-radius: 0%;
-        border: 1.2px solid black;
+        border: 1.5px solid black;
         padding: .4rem;
         resize: none;
     }
 
     &__submit {
         border-radius: 50%;
-        border: .8rem solid black;
-        width: 9rem;
-        height: 9rem;
-        font-size: 2.5rem;
-        font-weight: 400;
+        border: .9vw solid black;
+        font-size: 2.2vw;
+        font-weight: 600;
         background-color: rgb(221, 129, 221);
         margin-left: auto;
         cursor: pointer;
         transition: all .5s;
+        width: 8vw;
+        height: 8vw;
 
         &:hover {
             color: white;
             border: .8rem solid  rgb(221, 129, 221);
             background-color:black;
             transform: scale(1.2);
+        }
+
+        @include respond(tab-land) {
+            font-size: 2.5vw;
+            width: 9vw;
+            height: 9vw;
+            border: 1.1vw solid black;
+        }
+
+        @include respond(tab-port) {
+            font-size: 3vw;
+            width: 12vw;
+            height: 12vw;
+            border: 1.5vw solid black;
+        }
+
+        @include respond(phone) {
+            font-size: 4vw;
+            width: 18vw;
+            height: 18vw;
+            border: 1.8vw solid black;
         }
     }
 

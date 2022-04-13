@@ -6,32 +6,23 @@
     font-size: 1.2rem;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     padding-top: 3rem;
+    padding-left: 13vw;
 
-    @include respond(mini) {
-        justify-content: flex-start;
-        padding-left: 5%;
+    @include respond(tab-port) {
+        padding-left: 7vw;
     }
 
+
     &__social {
-        position: absolute;
         display: flex;
-        left: 13%;
-
-        @include respond(tab-port) {
-            left: 7%;
-        }
-
-        @include respond(mini) {
-            position: static;
-            margin-right: 8%;
-        }
+        margin-right: 5vw;
 
         &-icon {
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 2.2rem;
+            height: 2.2rem;
             margin-top: -.5rem;
             margin-right: 1.2rem;
 

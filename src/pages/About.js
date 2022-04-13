@@ -30,7 +30,7 @@ const About = () => {
               I was born and raised in Israel <br/>
               (My Hebrew name means : "fields of myrrh fragrance")
             </p>
-            <p className='about__text'>
+            <p className='about__text about__text--special'>
               I'm a collage and mixed-media artist, a designer and an illustrator, a spiritual seeker, a tree hugger and a mom.
               Art is my main tool for searching and growing.
             </p>

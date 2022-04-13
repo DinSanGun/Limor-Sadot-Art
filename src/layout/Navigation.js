@@ -30,8 +30,12 @@ const Navigation = () => {
 
         <li className="navigation__item">
           <a href="https://www.instagram.com/limor_sadot/" target="_blank" rel="noopener noreferrer"><img src="img/social-media/instagram-logo.png" alt="instagram" className='navigation__social-media'/></a>
+          <a href="https://www.instagram.com/limor_sadot/" target="_blank" rel="noopener noreferrer"><img src="img/social-media/insta-purple.png" alt="instagram" className='navigation__social-media--mobile'/></a>
           <a href="https://www.facebook.com/limor.sadot" target="_blank" rel="noopener noreferrer"><img src="img/social-media/facebook-logo.png" alt="facebook" className='navigation__social-media'/></a>          
+          <a href="https://www.facebook.com/limor.sadot" target="_blank" rel="noopener noreferrer"><img src="img/social-media/fb-purple.png" alt="facebook" className='navigation__social-media--mobile'/></a>          
           <a href="https://www.pinterest.com/limisan/" target="_blank" rel="noopener noreferrer"><img src="img/social-media/pinterest-logo.png" alt="pinterest" className='navigation__social-media navigation__social-media--3'/></a>
+          <a href="https://www.pinterest.com/limisan/" target="_blank" rel="noopener noreferrer"><img src="img/social-media/pinterest-purple.png" alt="pinterest" className='navigation__social-media--mobile navigation__social-media--mobile--3'/></a>
+
         </li>
       </ul>
   </nav>
