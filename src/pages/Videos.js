@@ -15,7 +15,7 @@ const Videos = () => {
         </div>
 
 
-        <div className='videos__item'>
+        <div className='videos__item reveal'>
           <h2 className='videos__title'>Wabi Sabi - Mixed Media</h2>
           <p className='videos__description'>A short demonstration of one work</p>
           <YouTubeVideo link="https://www.youtube.com/embed/PUjYCkNugtg"/>
@@ -24,7 +24,9 @@ const Videos = () => {
 
       </div>
 
-      <img src="img/videos/videos-footer.jpg" alt="videos footer" className='videos__footer' />
+      <div className='videos__footer'>
+        &nbsp;{/* <img src="img/videos/videos-footer.jpg" alt="videos footer" /> */}
+      </div>
 
     </Layout>
   )

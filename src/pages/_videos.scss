@@ -34,10 +34,21 @@
     }
 
     &__footer {
-        width: 100%;
         height: 20vh;
+        width: 100%;
+        background-image: url('/public/img/videos/videos-footer.jpg');
+        background-position: center;
+        background-size: cover;
         margin-bottom: -3px;
         opacity: .5;
+
+        @include respond(phone) {
+            height: 15vh;
+        }
+
+        @include respond(mini) {
+            height: 12vh;
+        }
     }
 
     &__item {

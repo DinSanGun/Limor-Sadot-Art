@@ -1633,10 +1633,19 @@ a {
       .videos__description {
         font-size: 2.5vw; } }
   .videos__footer {
-    width: 100%;
     height: 20vh;
+    width: 100%;
+    background-image: url("/public/img/videos/videos-footer.jpg");
+    background-position: center;
+    background-size: cover;
     margin-bottom: -3px;
     opacity: .5; }
+    @media only screen and (max-width: 37.5em) {
+      .videos__footer {
+        height: 15vh; } }
+    @media only screen and (max-width: 31.25em) {
+      .videos__footer {
+        height: 12vh; } }
   .videos__item {
     display: flex;
     flex-direction: column;

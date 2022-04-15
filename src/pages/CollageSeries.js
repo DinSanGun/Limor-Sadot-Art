@@ -7,13 +7,17 @@ import Blocker from '../components/Blocker'
 
 const Series = () => {
 
+    useEffect(() => {
+        var point = document.getElementById('scroll-point')
+        point.scrollIntoView({behavior: 'smooth'})
+    }, [])
 
     return (
     <Layout banner="grey" className="series__layout">
         <Blocker/>
         <div className="series">
 
-                <div className='series__top'>
+                <div id='scroll-point' className='series__top'>
                     <div className='series__back-btn'>
                         <BackButton/>
                     </div>

@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../layout/Layout'
 import BackButton from '../components/BackButton'
 import Blocker from '../components/Blocker'
 
 const LineArtSeries = () => {
+
+    useEffect(() => {
+        var point = document.getElementById('scroll-point')
+        point.scrollIntoView({behavior: 'smooth'})
+    }, [])
+
     return (
     <Layout banner="grey">
         <Blocker/>
         
         <div className="series">
 
-            <div className='series__top'>
+            <div id='scroll-point' className='series__top'>
                 <div className='series__back-btn'>
                     <BackButton/>
                 </div>
