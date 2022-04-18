@@ -1,0 +1,45 @@
+export const assemblage = {
+    small: [
+        "",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(1).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(2).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(3).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(4).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(5).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(6).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(7).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(8).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(9).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(10).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(11).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(12).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(13).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(14).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(15).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(16).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(17).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/small/assemblage_small+(18).jpg"
+    ],
+
+    big: [
+        "",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(1).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(2).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(3).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(4).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(5).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(6).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(7).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(8).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(9).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(10).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(11).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(12).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(13).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(14).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(15).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(16).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(17).jpg",
+        "https://limor-sadot-web.s3.eu-west-2.amazonaws.com/collage/assemblage/big/assemblage_big+(18).jpg"
+    ]
+}
