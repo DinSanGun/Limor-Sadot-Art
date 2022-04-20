@@ -3,7 +3,7 @@ import Layout from '../layout/Layout'
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-
+    
     window.scrollTo(0,0)
 
   const form = useRef()

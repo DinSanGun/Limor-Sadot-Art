@@ -13,8 +13,8 @@
 
 
     @include respond(mini) {
-        position: fixed;
-        top: 0;
+        // position: fixed;
+        // top: 0;
         background-color: rgb(255, 255, 255);
         align-items: flex-start;
     }
@@ -39,7 +39,7 @@
     &__list {
         width: 100%;
         overflow: hidden;
-        padding: 1.5rem 0 2.5rem 4rem;
+        padding: 1.5rem 0 2.5rem 2rem;
         display: flex;
         list-style: none;
         justify-content: center;
@@ -97,7 +97,7 @@
 
     &__link:hover {
         border-top: 4px solid currentColor;
-        color: rgb(221, 129, 221);
+        color: $purple-primary;
     }
 
     &__link-active:link,
@@ -106,7 +106,7 @@
         font-size: 1.6rem;
         padding: .5rem .3rem;
         color: black;
-        border-top: 4px solid rgb(221, 129, 221);
+        border-top: 4px solid $purple-primary;
 
         @include respond(mini) {
             border-top: 4px solid transparent;

@@ -26,6 +26,10 @@
     &:hover::after {
         background-color: white;
     }
+
+    @include respond(phone) {
+        top: 100%;
+    }
 }
 
 @mixin respond($breakpoint) {

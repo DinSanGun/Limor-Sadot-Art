@@ -7,18 +7,22 @@ import { reveal } from '../App';
 const Gallery = (props) => {
 
   useEffect(() => {
-    window.scrollTo({top: 0, behavior: 'smooth'})
-    reveal();
-  },[])
+    var point = document.getElementById('scroll-point')
+    point.scrollIntoView({behavior: 'smooth'})
+    reveal('.reveal-image')
+  }, [])
 
+  window.addEventListener("scroll", reveal(".reveal-image"));
 
   const [lightbox, setLightbox] = useState(false);
   const [image, setImage] = useState('');
   const [fade, setFade] = useState('in');
 
   const getImg = (image) => {
+    if(window.innerWidth > 600){
       setImage(image);
       setLightbox(true);
+    }
   }
 
   const back = () => {
@@ -89,7 +93,7 @@ const Gallery = (props) => {
 
         </div>
 
-        <div className="gallery__header">
+        <div id='scroll-point' className="gallery__header">
 
             <div className="gallery__back-btn">
               <BackButton/>

@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import Layout from '../layout/Layout'
 
 const Home = () => {
-  window.scrollTo({top: 0, behavior: 'smooth'})
+
+  
+  window.scrollTo(0,0)
 
   setTimeout(() => {
     var point = document.getElementById('scroll-point')

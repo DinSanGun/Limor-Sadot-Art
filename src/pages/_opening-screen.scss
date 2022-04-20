@@ -35,6 +35,10 @@
             position: absolute;
             bottom: .5rem;
             left: 1.8rem;
+
+            @include respond(phone) {
+                display: none;
+            }
         }
 
         &:hover::before {

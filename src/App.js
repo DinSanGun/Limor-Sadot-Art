@@ -32,8 +32,8 @@ import EntangledLiving from './galleries/EntangledLiving';
 import Contact from './pages/Contact';
 import Videos from './pages/Videos';
 
-export const reveal = () => {
-  var reveals = document.querySelectorAll(".reveal")
+export const reveal = (nameOfClass) => {
+  var reveals = document.querySelectorAll(nameOfClass)
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight
@@ -49,7 +49,7 @@ export const reveal = () => {
 
 function App() {
 
-  window.addEventListener("scroll", reveal);
+  window.addEventListener("scroll", () => reveal(".reveal"));
 
   return (
     <Routes>

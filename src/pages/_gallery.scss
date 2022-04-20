@@ -4,9 +4,6 @@
     display: grid;
     padding: 0 25rem 3rem;
 
-
-
-
     &--grid-2 {
         grid-template-columns: repeat(2, 1fr);
 
@@ -73,8 +70,7 @@
         z-index: 2;
         
         @include respond(mini) {
-            top: 5.2rem;
-            padding: 1rem 0 1rem 3rem;
+            padding: 2rem 0 1rem 3rem;
         }
     }
 
@@ -107,6 +103,10 @@
 
     &__item:hover {
         transform: translateY(-3px) scale(1.05);
+
+        @include respond(phone) {
+            transform: translateY(1) scale(1);
+        }
     }
 
     &__item::before {
@@ -123,6 +123,10 @@
 
     &__item:hover::before {
         background-color: rgba(white,.6);
+
+        @include respond(phone) {
+            background-color: transparent;
+        }
     }
 
     &__image {
@@ -271,4 +275,16 @@
 
 }
 
+
+.reveal-image{
+    position: relative;
+    transform: translateY(.8);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+.reveal-image.active{
+    transform: translateY(1);
+    opacity: 1;
+}
 

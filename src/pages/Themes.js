@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Blocker from '../components/Blocker'
 import Layout from '../layout/Layout'
@@ -8,15 +8,7 @@ const Themes = () => {
   const [fade, setFade] = useState(0)
   const navigate = useNavigate();
 
-  useEffect(() => {
-
-    setTimeout(() => {
-      // const nav = document.getElementById('navbar')
-      // nav.scrollIntoView(true)
-      window.scrollTo({top: 120, behavior: 'smooth'})
-    }, 1000)
-  
-  }, [])
+  window.scrollTo(0,0)
   
 
   return (

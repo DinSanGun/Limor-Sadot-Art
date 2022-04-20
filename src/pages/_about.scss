@@ -37,7 +37,7 @@
 
 
         font-size: 6rem;
-        background-color: rgb(221, 129, 221);
+        background-color: $purple-primary;
         padding: 0 2rem 1rem;
         line-height: .8;
 
@@ -112,7 +112,7 @@
     &__strong {
 
             font-size: 2rem;
-            background-color: rgb(221, 129, 221);
+            background-color: $purple-primary;
             width: max-content;
             padding: .2rem 1rem;
             color: white;

@@ -113,7 +113,7 @@ a {
   transition: 1.2s all ease; }
 
 .reveal.active {
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
   opacity: 1; }
 
 .heading-1 {
@@ -136,7 +136,7 @@ a {
 
 .heading-2 {
   font-size: 2.7rem;
-  color: #cfcfcf;
+  color: #acacac;
   font-weight: 500;
   letter-spacing: .2rem; }
   @media only screen and (max-width: 400px) {
@@ -170,7 +170,7 @@ a {
     font-size: 2.4rem; }
 
 .heading-5 {
-  color: #dd81dd;
+  color: #b083bf;
   font-size: 4rem;
   font-weight: 200;
   letter-spacing: 1rem;
@@ -207,9 +207,12 @@ a {
   cursor: pointer;
   transition: all .3s; }
   .back-btn:hover {
-    background-color: #f7f7f7; }
-  .back-btn:hover span {
-    color: #dbdbdb; }
+    background-color: #efefef; }
+  .back-btn:hover div {
+    border-right: 1.8rem solid #dbdbdb; }
+    @media only screen and (max-width: 31.25em) {
+      .back-btn:hover div {
+        border-right: 1.5rem solid white; } }
   @media only screen and (max-width: 31.25em) {
     .back-btn {
       height: 3rem;
@@ -218,8 +221,20 @@ a {
 
 .back-sign {
   position: absolute;
-  top: 5%;
-  left: 10%; }
+  top: 22%;
+  left: 20%;
+  width: 0;
+  height: 0;
+  border-top: 1.1rem solid transparent;
+  border-bottom: 1.1rem solid transparent;
+  border-right: 1.8rem solid white; }
+  @media only screen and (max-width: 31.25em) {
+    .back-sign {
+      top: 18%;
+      left: 18%;
+      border-right: 1.5rem solid white;
+      border-top: 1rem solid transparent;
+      border-bottom: 1rem solid transparent; } }
 
 .go-top {
   font-size: 2.2rem;
@@ -227,8 +242,8 @@ a {
 
 .youtube {
   margin-bottom: 3rem;
-  height: 31vw;
-  width: 55vw; }
+  height: 25.3vw;
+  width: 45vw; }
   @media only screen and (max-width: 56.25em) {
     .youtube {
       width: 65vw;
@@ -288,9 +303,6 @@ a {
   animation: fadeIn 2s;
   animation-fill-mode: backwards;
   position: relative; }
-  @media only screen and (max-width: 31.25em) {
-    .layout__main {
-      margin-top: 5.2rem; } }
 
 .navigation {
   width: 100%;
@@ -301,8 +313,6 @@ a {
   z-index: 3; }
   @media only screen and (max-width: 31.25em) {
     .navigation {
-      position: fixed;
-      top: 0;
       background-color: white;
       align-items: flex-start; } }
   .navigation__title {
@@ -321,7 +331,7 @@ a {
   .navigation__list {
     width: 100%;
     overflow: hidden;
-    padding: 1.5rem 0 2.5rem 4rem;
+    padding: 1.5rem 0 2.5rem 2rem;
     display: flex;
     list-style: none;
     justify-content: center;
@@ -365,13 +375,13 @@ a {
         color: #c1c1c1; } }
   .navigation__link:hover {
     border-top: 4px solid currentColor;
-    color: #dd81dd; }
+    color: #b083bf; }
   .navigation__link-active:link, .navigation__link-active:visited {
     text-decoration: none;
     font-size: 1.6rem;
     padding: .5rem .3rem;
     color: black;
-    border-top: 4px solid #dd81dd; }
+    border-top: 4px solid #b083bf; }
     @media only screen and (max-width: 31.25em) {
       .navigation__link-active:link, .navigation__link-active:visited {
         border-top: 4px solid transparent;
@@ -472,7 +482,7 @@ a {
     font-weight: 300;
     color: white;
     font-size: 6rem;
-    background-color: #dd81dd;
+    background-color: #b083bf;
     padding: 0 2rem 1rem;
     line-height: .8; }
     @media only screen and (max-width: 37.5em) {
@@ -520,7 +530,7 @@ a {
         margin-bottom: 3rem; } }
   .about__strong {
     font-size: 2rem;
-    background-color: #dd81dd;
+    background-color: #b083bf;
     width: max-content;
     padding: .2rem 1rem;
     color: white;
@@ -758,7 +768,7 @@ a {
     display: inline;
     font-size: 4.5rem;
     font-weight: 300;
-    background-color: #dd81dd;
+    background-color: #b083bf;
     line-height: .8;
     padding: .2rem 1rem .4rem;
     text-align: center; }
@@ -795,7 +805,7 @@ a {
     border: .9vw solid black;
     font-size: 2.2vw;
     font-weight: 600;
-    background-color: #dd81dd;
+    background-color: #b083bf;
     margin-left: auto;
     cursor: pointer;
     transition: all .5s;
@@ -803,7 +813,7 @@ a {
     height: 8vw; }
     .form__submit:hover {
       color: white;
-      border: 0.8rem solid #dd81dd;
+      border: 0.8rem solid #b083bf;
       background-color: black;
       transform: scale(1.2); }
     @media only screen and (max-width: 75em) {
@@ -888,8 +898,7 @@ a {
     z-index: 2; }
     @media only screen and (max-width: 31.25em) {
       .gallery__header {
-        top: 5.2rem;
-        padding: 1rem 0 1rem 3rem; } }
+        padding: 2rem 0 1rem 3rem; } }
   .gallery__title {
     display: flex;
     justify-content: center;
@@ -910,6 +919,9 @@ a {
     position: relative; }
   .gallery__item:hover {
     transform: translateY(-3px) scale(1.05); }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__item:hover {
+        transform: translateY(1) scale(1); } }
   .gallery__item::before {
     content: "";
     background-color: transparent;
@@ -922,6 +934,9 @@ a {
     transition: all .5s; }
   .gallery__item:hover::before {
     background-color: rgba(255, 255, 255, 0.6); }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__item:hover::before {
+        background-color: transparent; } }
   .gallery__image {
     width: 100%;
     animation: growLittle 2s ease;
@@ -1014,6 +1029,9 @@ a {
       margin-left: 1rem; }
     .gallery__arrow-left:hover::before, .gallery__arrow-left:hover::after {
       background-color: white; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__arrow-left {
+        top: 100%; } }
     @media only screen and (max-width: 550px) {
       .gallery__arrow-left {
         left: 2rem; } }
@@ -1045,6 +1063,9 @@ a {
       margin-left: 1rem; }
     .gallery__arrow-right:hover::before, .gallery__arrow-right:hover::after {
       background-color: white; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__arrow-right {
+        top: 100%; } }
     @media only screen and (max-width: 550px) {
       .gallery__arrow-right {
         right: 2rem; } }
@@ -1055,6 +1076,16 @@ a {
       top: 1px;
       transform: rotate(45deg);
       transform-origin: right; }
+
+.reveal-image {
+  position: relative;
+  transform: translateY(0.8);
+  opacity: 0;
+  transition: 2s all ease; }
+
+.reveal-image.active {
+  transform: translateY(1);
+  opacity: 1; }
 
 .themes {
   display: grid;
@@ -1107,8 +1138,8 @@ a {
         margin-bottom: 3rem; } }
     @media only screen and (max-width: 31.25em) {
       .themes__image--1 {
-        background-color: #f8f8f8;
-        outline: 1.5rem solid #f8f8f8; } }
+        background-color: #dfdfdf;
+        outline: 1.5rem solid #dfdfdf; } }
   .themes__caption {
     text-align: center;
     font-size: 2rem;
@@ -1234,7 +1265,7 @@ a {
     display: block;
     height: 100%;
     background-color: white;
-    color: #e0e0e0;
+    color: #c2c2c2;
     line-height: 1.3;
     padding: 12% 4.5rem 6rem;
     text-align: right;
@@ -1364,6 +1395,9 @@ a {
       position: absolute;
       bottom: .5rem;
       left: 1.8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .opening__name-box::before {
+          display: none; } }
     .opening__name-box:hover::before {
       background-color: #9b9b9b; }
 
@@ -1371,10 +1405,7 @@ a {
   padding: 2rem 0;
   position: sticky;
   background-color: #eaeaea;
-  top: -.1rem; }
-  @media only screen and (max-width: 31.25em) {
-    .series__top {
-      top: 5.2rem; } }
+  top: 0; }
 
 .series__back-btn {
   position: absolute;
@@ -1457,7 +1488,7 @@ a {
   margin-right: 3.2rem;
   cursor: pointer;
   transition: all .2s;
-  outline: 1.2rem solid whitesmoke; }
+  outline: 1.2rem solid #dfdfdf; }
   @media only screen and (max-width: 700px) {
     .series__icon {
       width: 17vw;
@@ -1466,7 +1497,7 @@ a {
     .series__icon {
       width: 30vw;
       height: 30vw;
-      outline: 1.5rem solid #efefef; } }
+      outline: 1.5rem solid #dbdada; } }
   .series__icon:hover {
     background-color: black;
     outline: 1.5rem solid black;
@@ -1613,8 +1644,9 @@ a {
   padding-top: 7vh; }
   .videos__title {
     font-weight: 200;
-    font-size: 2.5vw;
-    margin-bottom: .5rem; }
+    font-size: 2vw;
+    margin-bottom: .5rem;
+    font-family: 'Special Elite', cursive; }
     @media only screen and (max-width: 56.25em) {
       .videos__title {
         font-size: 3.2vw; } }

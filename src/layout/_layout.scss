@@ -6,8 +6,5 @@
     position: relative;
 
     &__main {
-        @include respond(mini) {
-            margin-top: 5.2rem;
-        }
     }
 }
