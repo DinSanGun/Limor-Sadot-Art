@@ -5,19 +5,7 @@
     padding-top: 7vh;
 
     &__title {
-        font-weight: 200;
-        font-size: 2vw;
         margin-bottom: .5rem;
-        font-family: 'Special Elite', cursive;
-
-
-        @include respond(tab-port) {
-            font-size: 3.2vw;
-        }
-
-        @include respond(phone) {
-            font-size: 4.8vw;
-        }
     }
 
     &__description {

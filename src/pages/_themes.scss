@@ -55,7 +55,7 @@
         }
 
         &:hover + figcaption {
-            color: rgb(133, 131, 131);
+            color: rgb(100, 100, 100);
         }
 
         @include respond(mini) {
@@ -80,7 +80,7 @@
         text-align: center;
         font-size: 2rem;
         margin: 1rem;
-        color: lightgrey;
+        color: rgb(180,180,180);
         cursor: pointer;
         width: 20rem;
 

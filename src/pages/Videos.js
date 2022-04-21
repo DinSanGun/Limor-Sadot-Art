@@ -7,20 +7,20 @@ const Videos = () => {
   window.scrollTo(0,0)
 
   return (
-    <Layout>
+    <Layout banner="grey">
 
       <div className='videos'>
         
         <div className='videos__item'>
           <h2 className='heading-2 videos__title'>Psychedelic Days</h2>
-          <p className='videos__description'>An original art journal made in the qurantine days of 2020</p>
+          <h5 className='heading-4'>An original art journal made in the qurantine days of 2020</h5>
           <YouTubeVideo link="https://www.youtube.com/embed/nt2idwDFzH0"/>
         </div>
 
 
         <div className='videos__item reveal'>
           <h2 className='heading-2 videos__title'>Wabi Sabi - Mixed Media</h2>
-          <p className='videos__description'>A short demonstration of one work</p>
+          <h5 className='heading-4'>A short demonstration of one work</h5>
           <YouTubeVideo link="https://www.youtube.com/embed/PUjYCkNugtg"/>
         </div>
 

@@ -23,7 +23,7 @@ const About = () => {
         <img src='img/about/three-bubbles.png' alt="bubbles" className='about__top-bubbles' />
         <section className='about__top-section'>
           <div className='about__intro'>
-            <h4 className='heading-4 heading-4-wrap'>Who are you?</h4>
+            <h4 className='heading-3 heading-3-wrap'>Who are you?</h4>
             <p className='about__quote'>I am many things, some can be defined and some cannot. <br/> As we all are.</p>
             <p className='about__strong'>My name is Limor Sadot</p>
             <p className='about__text about__text--black'>
@@ -42,7 +42,7 @@ const About = () => {
           </div>
 
           <div className='about__declaration'>
-            <h4 className='heading-4 heading-4-wrap reveal'>Artist Declaration</h4>
+            <h4 className='heading-3 heading-3-wrap reveal'>Artist Declaration</h4>
             <img className="about__intro-mobile-image" src="/img/about/intro-profile.png" alt="Limor Sadot" />
             <p className='about__text reveal'>
               Between the reduction and the multiplicity, 
@@ -122,16 +122,16 @@ const About = () => {
 
         <div className='about__interview-header reveal'>
           <img src="/img/about/interview-image.jpg" alt="interview" className='about__interview-image' />
-          <div className='about__interview-title'>
+          <div className='about__interview-caption'>
             <img src="/img/about/three-bubbles.png" alt="bubbles" className="about__interview-bubbles" />
-            <h3 className='heading-3 about__interview-heading'>a short interview</h3>
+            <h3 className='about__interview-heading'>a short interview</h3>
           </div>
         </div>
 
         <section className='about__interview'>
           <div className='about__interview-text'>
-            <h5 className='heading-5 reveal'>A Short Interview</h5>
-            <h4 className='heading-4 heading-4--question reveal'>What drew you to collage and intuitive art?</h4>
+            <h3 className='about__interview-title reveal'>A Short Interview</h3>
+            <h4 className='heading-3 heading-3--question reveal'>What drew you to collage and intuitive art?</h4>
             <p className='about__text reveal'>
               I've been studying and working as a visual communication artist for 
               over 25 years in the field of advertising and graphic design. 
@@ -154,7 +154,7 @@ const About = () => {
               but you know he will somehow look like you.
             </p>
 
-            <h4 className='heading-4 heading-4--question reveal'>What are your major influences?</h4>
+            <h4 className='heading-3 heading-3--question reveal'>What are your major influences?</h4>
             <p className='about__text reveal'>
               Well, obviously advertising, magazines, urban-living and design 
               that was my line of work and profession for so many years are big influences. 
@@ -175,7 +175,7 @@ const About = () => {
               probably more than just in this lifetime.
             </p>
 
-            <h4 className='heading-4 heading-4--question reveal'>How do you apply spirituality to your artistic work?</h4>
+            <h4 className='heading-3 heading-3--question reveal'>How do you apply spirituality to your artistic work?</h4>
             <p className='about__text reveal'>
               When you live a spiritual life, a life of awake awareness 
               it is reflected in everything you do because you are connected 
@@ -198,7 +198,7 @@ const About = () => {
 
             <img src="/img/about/interview-bottom-image.png" alt="line art faces" className='about__interview-bottom-image reveal' />
 
-            <h4 className='heading-4 heading-4--question reveal'>what are your artistic methods?</h4>
+            <h4 className='heading-3 heading-3--question reveal'>what are your artistic methods?</h4>
             <p className='about__text reveal'>
               I see myself as an inventor and a researcher in my artistic work. 
               I use all my skills from cut and paste analogue collage 
@@ -212,7 +212,7 @@ const About = () => {
             </p>
 
 
-            <h4 className='heading-4 heading-4--question reveal'>What about the researcher side?</h4>
+            <h4 className='heading-3 heading-3--question reveal'>What about the researcher side?</h4>
             <p className='about__text reveal'>
               When you work in series, it's like creating families of work 
               and when you research a family you deal with both: similarity and uniqueness 
@@ -227,7 +227,7 @@ const About = () => {
               is the most important spiritual task, I believe. 
             </p>
 
-            <h4 className='heading-4 heading-4--question reveal'>what’s next?</h4>
+            <h4 className='heading-3 heading-3--question reveal'>what’s next?</h4>
             <p className='about__text reveal'>
               The last couple of years I left the design field to fulfill my dream
               to purely practice art - so I participated in many group exhibitions, 

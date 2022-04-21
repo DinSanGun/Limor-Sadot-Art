@@ -2,7 +2,6 @@
 
 
     display: grid;
-    padding: 0 25rem 3rem;
 
     &--grid-2 {
         grid-template-columns: repeat(2, 1fr);
@@ -19,8 +18,14 @@
             grid-template-columns: 1fr;
         }
     }
-    
+
+
+    padding: 1.5vw 20vw 5vw;
     gap: 3.2rem;
+
+    @media only screen and (min-width: 1600px) {
+        padding: 1.5vw 25vw 3rem;
+    }
 
     @include respond(tab-land) {
         padding: 0 16rem 3rem;
@@ -45,7 +50,9 @@
 
     &__back-btn {
         position: absolute;
-        left: 15rem;
+        left: 15vw;
+
+
 
         @include respond(tab-land) {
             left: 12rem;
@@ -58,12 +65,20 @@
         @include respond(mini) {
             left: 2.5rem;
         }
+
+        @media only screen and (min-width: 1600px) {
+            left: 20vw;
+        }
     }
 
     &__header {
         grid-column: 1 / -1;
-        padding: 1rem 0;
+        padding: 1.5rem 0;
         background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         position: sticky;
         top: 0rem;
@@ -73,25 +88,6 @@
             padding: 2rem 0 1rem 3rem;
         }
     }
-
-    &__title {
-        display: flex;
-        justify-content: center;
-        font-family: 'Special Elite', cursive;
-    }
-
-    &__description {
-        grid-column: 1 / -1;
-        text-align: center;
-        display: block;
-        font-size: 1.5rem;
-        color:grey;
-
-        @include respond(tab-port) {
-            color: rgb(207, 207, 207);
-        }
-    }
-
 
 
     &__item {

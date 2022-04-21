@@ -135,20 +135,23 @@ a {
       font-size: 2rem; } }
 
 .heading-2 {
-  font-size: 2.7rem;
-  color: #acacac;
-  font-weight: 500;
-  letter-spacing: .2rem; }
+  font-size: 1.6vw;
+  color: #6e6e6e;
+  font-weight: 200;
+  letter-spacing: .2rem;
+  font-family: 'Special Elite', cursive;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-2 {
+      font-size: 3.2vw; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      font-size: 4.8vw; } }
   @media only screen and (max-width: 400px) {
     .heading-2 {
       font-size: 2.1rem; } }
 
 .heading-3 {
-  font-size: 2.6rem;
-  letter-spacing: 1rem;
-  font-weight: 300; }
-
-.heading-4 {
   background-color: black;
   color: white;
   display: inline-block;
@@ -160,22 +163,27 @@ a {
   text-align: left;
   width: 100%; }
   @media only screen and (max-width: 37.5em) {
-    .heading-4 {
+    .heading-3 {
       font-size: 2.8rem;
       line-height: 1.2; } }
-  .heading-4-wrap {
+  .heading-3-wrap {
     width: auto; }
-  .heading-4--question {
+  .heading-3--question {
     font-family: 'Special Elite', cursive;
     font-size: 2.4rem; }
 
-.heading-5 {
-  color: #b083bf;
-  font-size: 4rem;
-  font-weight: 200;
-  letter-spacing: 1rem;
-  text-align: center;
-  margin-bottom: 3rem; }
+.heading-4 {
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: #bebebe;
+  letter-spacing: 1px;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-4 {
+      font-size: 1.8vw; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-4 {
+      font-size: 2.5vw; } }
 
 .fadeIn-class {
   animation: fadeIn 1.5s; }
@@ -241,7 +249,7 @@ a {
   cursor: pointer; }
 
 .youtube {
-  margin-bottom: 3rem;
+  margin: 2rem 0;
   height: 25.3vw;
   width: 45vw; }
   @media only screen and (max-width: 56.25em) {
@@ -681,31 +689,44 @@ a {
           height: 90vw;
           background-image: url("/public/img/about/interview-image.jpg");
           background-size: cover; } }
+    .about__interview-title {
+      color: #b083bf;
+      font-size: 2.8vw;
+      font-weight: 200;
+      letter-spacing: 1rem;
+      text-align: center;
+      margin-bottom: 4rem;
+      display: block;
+      width: 100%; }
     .about__interview-image {
       width: 50%; }
       @media only screen and (max-width: 37.5em) {
         .about__interview-image {
           display: none; } }
-    .about__interview-title {
+    .about__interview-caption {
       width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative; }
       @media only screen and (max-width: 37.5em) {
-        .about__interview-title {
+        .about__interview-caption {
           width: 100%; } }
-    @media only screen and (max-width: 700px) {
-      .about__interview-heading {
-        font-size: 2.2rem;
-        letter-spacing: .8rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .about__interview-heading {
-        font-size: 4vw;
-        letter-spacing: 1.5vw;
-        position: absolute;
-        top: 30%;
-        left: 35%; } }
+    .about__interview-heading {
+      font-size: 2.6rem;
+      letter-spacing: 1rem;
+      font-weight: 300; }
+      @media only screen and (max-width: 700px) {
+        .about__interview-heading {
+          font-size: 2.2rem;
+          letter-spacing: .8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .about__interview-heading {
+          font-size: 4vw;
+          letter-spacing: 1.5vw;
+          position: absolute;
+          top: 30%;
+          left: 35%; } }
     .about__interview-bubbles {
       position: absolute;
       top: 0;
@@ -849,7 +870,7 @@ a {
 
 .gallery {
   display: grid;
-  padding: 0 25rem 3rem;
+  padding: 1.5vw 20vw 5vw;
   gap: 3.2rem;
   position: relative; }
   .gallery--grid-2 {
@@ -862,6 +883,9 @@ a {
     @media only screen and (max-width: 31.25em) {
       .gallery--grid-3 {
         grid-template-columns: 1fr; } }
+  @media only screen and (min-width: 1600px) {
+    .gallery {
+      padding: 1.5vw 25vw 3rem; } }
   @media only screen and (max-width: 75em) {
     .gallery {
       padding: 0 16rem 3rem; } }
@@ -879,7 +903,7 @@ a {
       gap: 2.5rem; } }
   .gallery__back-btn {
     position: absolute;
-    left: 15rem; }
+    left: 15vw; }
     @media only screen and (max-width: 75em) {
       .gallery__back-btn {
         left: 12rem; } }
@@ -889,29 +913,23 @@ a {
     @media only screen and (max-width: 31.25em) {
       .gallery__back-btn {
         left: 2.5rem; } }
+    @media only screen and (min-width: 1600px) {
+      .gallery__back-btn {
+        left: 20vw; } }
   .gallery__header {
     grid-column: 1 / -1;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     top: 0rem;
     z-index: 2; }
     @media only screen and (max-width: 31.25em) {
       .gallery__header {
         padding: 2rem 0 1rem 3rem; } }
-  .gallery__title {
-    display: flex;
-    justify-content: center;
-    font-family: 'Special Elite', cursive; }
-  .gallery__description {
-    grid-column: 1 / -1;
-    text-align: center;
-    display: block;
-    font-size: 1.5rem;
-    color: grey; }
-    @media only screen and (max-width: 56.25em) {
-      .gallery__description {
-        color: #cfcfcf; } }
   .gallery__item {
     cursor: pointer;
     display: block;
@@ -1128,7 +1146,7 @@ a {
       background-color: #ebe9e9;
       outline: 2.5rem solid #ebe9e9; }
     .themes__image:hover + figcaption {
-      color: #858383; }
+      color: #646464; }
     @media only screen and (max-width: 31.25em) {
       .themes__image {
         animation: grow 1.5s ease 3s;
@@ -1144,7 +1162,7 @@ a {
     text-align: center;
     font-size: 2rem;
     margin: 1rem;
-    color: lightgrey;
+    color: #b4b4b4;
     cursor: pointer;
     width: 20rem;
     animation: moveUp 1.2s 1.5s;
@@ -1278,6 +1296,10 @@ a {
         grid-row: 2 / 3;
         line-height: 1.2;
         padding: 2rem 3rem 0; } }
+    @media only screen and (min-width: 1800px) {
+      .introduction__text {
+        font-size: 3.2vw;
+        margin-right: 4vw; } }
     .introduction__text .introduction__text--1, .introduction__text .introduction__text--2, .introduction__text .introduction__text--3, .introduction__text .introduction__text--4, .introduction__text .introduction__text--5, .introduction__text .introduction__text--6, .introduction__text .introduction__text--7, .introduction__text .introduction__text--8 {
       display: block;
       overflow: hidden;
@@ -1404,7 +1426,7 @@ a {
 .series__top {
   padding: 2rem 0;
   position: sticky;
-  background-color: #eaeaea;
+  background-color: gainsboro;
   top: 0; }
 
 .series__back-btn {
@@ -1423,16 +1445,12 @@ a {
 
 .series__heading {
   text-align: center;
-  color: #6e6e6e;
-  font-size: 1.8rem;
-  margin-right: 3rem;
-  font-family: 'Special Elite', cursive; }
+  margin-right: 3rem; }
   @media only screen and (max-width: 700px) {
     .series__heading {
       margin-right: 0; } }
   @media only screen and (max-width: 400px) {
     .series__heading {
-      font-size: 2.2rem;
       margin-left: 3rem;
       margin-top: 1rem; } }
 
@@ -1488,7 +1506,7 @@ a {
   margin-right: 3.2rem;
   cursor: pointer;
   transition: all .2s;
-  outline: 1.2rem solid #dfdfdf; }
+  outline: 1.2rem solid #dddddd; }
   @media only screen and (max-width: 700px) {
     .series__icon {
       width: 17vw;
@@ -1643,16 +1661,7 @@ a {
   align-items: center;
   padding-top: 7vh; }
   .videos__title {
-    font-weight: 200;
-    font-size: 2vw;
-    margin-bottom: .5rem;
-    font-family: 'Special Elite', cursive; }
-    @media only screen and (max-width: 56.25em) {
-      .videos__title {
-        font-size: 3.2vw; } }
-    @media only screen and (max-width: 37.5em) {
-      .videos__title {
-        font-size: 4.8vw; } }
+    margin-bottom: .5rem; }
   .videos__description {
     font-size: 1.2vw;
     color: darkgrey;

@@ -23,10 +23,21 @@
 }
 
 .heading-2 {
-    font-size: 2.7rem;
-    color: rgb(172, 172, 172);
-    font-weight: 500;
+    font-size: 1.6vw;
+    color: rgb(110, 110, 110);
+    font-weight: 200;
     letter-spacing: .2rem;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+
+
+    @include respond(tab-port) {
+        font-size: 3.2vw;
+    }
+
+    @include respond(phone) {
+        font-size: 4.8vw;
+    }
 
     @media only screen and (max-width: 400px) {
         font-size: 2.1rem;
@@ -34,12 +45,6 @@
 }
 
 .heading-3 {
-    font-size: 2.6rem;
-    letter-spacing: 1rem;
-    font-weight: 300;
-}
-
-.heading-4 {
     background-color: black;
     color: white;
     display: inline-block;
@@ -66,11 +71,19 @@
     }
 }
 
-.heading-5 {
-    color: $purple-primary;
-    font-size: 4rem;
-    font-weight: 200;
-    letter-spacing: 1rem;
+.heading-4 {
+    font-size: 1.2vw;
+    font-weight: 300;
+    color: rgb(190, 190, 190);
+    letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 3rem;
+
+
+    @include respond(tab-port) {
+        font-size: 1.8vw;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5vw;
+    }
 }

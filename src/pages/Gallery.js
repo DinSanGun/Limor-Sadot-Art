@@ -12,7 +12,7 @@ const Gallery = (props) => {
     reveal('.reveal-image')
   }, [])
 
-  window.addEventListener("scroll", reveal(".reveal-image"));
+  window.addEventListener('scroll', reveal('.reveal-image'));
 
   const [lightbox, setLightbox] = useState(false);
   const [image, setImage] = useState('');
@@ -48,7 +48,7 @@ const Gallery = (props) => {
   
 
   useEffect(() => {
-    window.addEventListener("keydown", function (event) {
+    window.addEventListener('keydown', function (event) {
 
       if (event.defaultPrevented) {
         return; // Do nothing if the event was already processed
@@ -56,8 +56,8 @@ const Gallery = (props) => {
       // Cancel the default action to avoid it being handled twice
 
       switch (event.key) {
-        case "Esc": // IE/Edge
-        case "Escape": setLightbox(false); 
+        case 'Esc': // IE/Edge
+        case 'Escape': setLightbox(false); 
           break;
         default:
           return;
@@ -72,45 +72,42 @@ const Gallery = (props) => {
 
   return (
 
-    <Layout banner="grey">
+    <Layout banner='grey'>
 
         <Blocker/>
-        <div className={lightbox ? "gallery__lightbox gallery__lightbox--open" : "gallery__lightbox"} >
+        <div className={lightbox ? 'gallery__lightbox gallery__lightbox--open' : 'gallery__lightbox'} >
         
-          <div className="gallery__arrow-left" onClick={() => back()}>
+          <div className='gallery__arrow-left' onClick={() => back()}>
             &nbsp;
           </div>
 
-          <img src={ image.bigSrc } className={ fade === 'in' ? 'fadeIn-class' : 'fadeOut-class'} alt="Gallery item"/>
+          <img src={ image.bigSrc } className={ fade === 'in' ? 'fadeIn-class' : 'fadeOut-class'} alt='Gallery item'/>
 
-          <div className="gallery__close" onClick={() => setLightbox(false)}>
-            <span className="gallery__x-mark">&nbsp;</span>
+          <div className='gallery__close' onClick={() => setLightbox(false)}>
+            <span className='gallery__x-mark'>&nbsp;</span>
           </div> 
 
-          <div className="gallery__arrow-right" onClick={() => next()}>
+          <div className='gallery__arrow-right' onClick={() => next()}>
             &nbsp;
           </div>
 
         </div>
 
-        <div id='scroll-point' className="gallery__header">
-
-            <div className="gallery__back-btn">
+        <div id='scroll-point' className='gallery__header'>
+            <div className='gallery__back-btn'>
               <BackButton/>
             </div>
-
-            <h2 className='heading-2 gallery__title'>{props.series.title}</h2>
-            <p className="gallery__description">{props.series.description}</p>
-
+            <h2 className='heading-2'>{props.series.title}</h2>
+            <h5 className='heading-4'>{props.series.description}</h5>
         </div>
 
-        <div className={'gallery ' + (props.grid === "2" ? 'gallery--grid-2' : 'gallery--grid-3')}>
+        <div className={'gallery ' + (props.grid === '2' ? 'gallery--grid-2' : 'gallery--grid-3')}>
 
         {
             props.series.images.map((image) => {
                 return(
-                    <div className="gallery__item reveal" key={image.id} onClick={() => getImg(image)}>
-                        <img src={image.smallSrc} alt="img" className="gallery__image" />
+                    <div className='gallery__item reveal' key={image.id} onClick={() => getImg(image)}>
+                        <img src={image.smallSrc} alt='img' className='gallery__image' />
                     </div>
                 )
             })
