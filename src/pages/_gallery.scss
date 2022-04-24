@@ -157,17 +157,22 @@
 
         img {
             display: block;
-            height: 95%;
+            height: 90%;
             line-height: 0;
             pointer-events: none;
 
-            @include respond(tab-land) {
-                height: 90%;
-            }
 
             @include respond(phone) {
                 height: auto;
                 width: 90%;
+            }
+
+            @media only screen and (min-width: 1400px) {
+                height: 80%;
+            }
+
+            @media only screen and (min-width: 1800px) {
+                height: 75%;
             }
         }
 

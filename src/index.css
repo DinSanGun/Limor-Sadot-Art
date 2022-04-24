@@ -175,7 +175,7 @@ a {
 .heading-4 {
   font-size: 1.2vw;
   font-weight: 300;
-  color: #bebebe;
+  color: #b0b0b0;
   letter-spacing: 1px;
   text-align: center; }
   @media only screen and (max-width: 56.25em) {
@@ -189,7 +189,7 @@ a {
       font-size: 3.4vw; } }
 
 .fadeIn-class {
-  animation: fadeIn 1.5s; }
+  animation: fadeIn 1s; }
 
 .fadeOut-class {
   animation: fadeOut 1s; }
@@ -996,16 +996,19 @@ a {
     transition: all .7s ease-in-out; }
     .gallery__lightbox img {
       display: block;
-      height: 95%;
+      height: 90%;
       line-height: 0;
       pointer-events: none; }
-      @media only screen and (max-width: 75em) {
-        .gallery__lightbox img {
-          height: 90%; } }
       @media only screen and (max-width: 37.5em) {
         .gallery__lightbox img {
           height: auto;
           width: 90%; } }
+      @media only screen and (min-width: 1400px) {
+        .gallery__lightbox img {
+          height: 80%; } }
+      @media only screen and (min-width: 1800px) {
+        .gallery__lightbox img {
+          height: 75%; } }
     .gallery__lightbox--open {
       visibility: visible;
       opacity: 1; }
