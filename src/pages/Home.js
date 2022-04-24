@@ -1,16 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../layout/Layout'
 
 const Home = () => {
 
-  
-  window.scrollTo(0,0)
+  useEffect(() => {
+    
+    window.scrollTo(0,0)
 
-  setTimeout(() => {
-    var point = document.getElementById('scroll-point')
-    point.scrollIntoView({behavior: 'smooth'})
-  }, 7500)
+    if(window.innerWidth > 600) {
+      setTimeout(() => {
+      var point = document.getElementById('scroll-point')
+      point.scrollIntoView({behavior: 'smooth'})
+      }, 7500)
+    }
+
+    else {
+      setTimeout(() => {
+        window.scrollTo({
+          top: 250,
+          behavior: 'smooth'
+        })
+        }, 3500)
+    }
+  
+  }, [])
+  
 
   return (
     <Layout banner="color">

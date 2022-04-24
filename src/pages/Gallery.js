@@ -9,10 +9,10 @@ const Gallery = (props) => {
   useEffect(() => {
     var point = document.getElementById('scroll-point')
     point.scrollIntoView({behavior: 'smooth'})
-    reveal('.reveal-image')
+    reveal('.reveal')
   }, [])
 
-  window.addEventListener('scroll', reveal('.reveal-image'));
+  window.addEventListener('scroll', reveal('.reveal'));
 
   const [lightbox, setLightbox] = useState(false);
   const [image, setImage] = useState('');

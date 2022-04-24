@@ -60,6 +60,12 @@
 
         animation: moveUp 1s 2s;
         animation-fill-mode: backwards;
+
+        @include respond(mini) {
+            width: 25vw;
+            top: -12vh;
+            right: 0;
+        }
     }
 
     //============MAIN CONTENT==============
@@ -69,7 +75,11 @@
     margin-bottom: 5rem;
 
     @include respond(tab-port) {
-        margin: 30vh 5vw 10vw;
+        margin: 18vh 5vw 10vw;
+    }
+
+    @include respond(phone) {
+        margin-top: 15vh;
     }
 
     //=============TOP SECTION==============
@@ -168,8 +178,8 @@
 
             @include respond(mini) {
                 top: -85%;
-                width: 6rem;
-                right: 15%;
+                width: 2.5vw;
+                right: 10%;
                 display: none;
             }
     
@@ -337,6 +347,11 @@
             margin-bottom: 4rem;
             display: block;
             width: 100%;
+
+            @include respond(phone) {
+                font-size: 5vw;
+                letter-spacing: .8rem;
+            }
         }
 
         &-image {

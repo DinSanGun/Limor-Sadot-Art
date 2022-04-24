@@ -25,6 +25,13 @@ const Videos = () => {
         </div>
 
 
+        <div className='videos__item reveal'>
+          <h2 className='heading-2 videos__title'>The Spiritual Trilogy 1</h2>
+          <h5 className='heading-4'>A taste of spiritual collage course</h5>
+          <YouTubeVideo link="https://www.youtube.com/embed/SxPdd_t_G-4"/>
+        </div>
+
+
       </div>
 
       <div className='videos__footer'>

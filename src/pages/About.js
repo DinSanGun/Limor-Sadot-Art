@@ -5,6 +5,8 @@ import GoTop from '../components/GoTop'
 
 const About = () => {
 
+  window.scrollTo(0,0)
+
   useEffect(() => {
     const nav = document.getElementById('navbar')
     nav.scrollIntoView(true)
