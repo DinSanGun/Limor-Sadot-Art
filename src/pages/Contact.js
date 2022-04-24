@@ -28,19 +28,20 @@ const Contact = () => {
             <div className='contact__form-area'>
                 <h1 className='contact__title'>contact</h1>
                 <div className='vl'></div>
-                <form className='form' autoComplete='off' ref={form} onSubmit={sendEmail}>
+                <form className='form' autoComplete='off' action="https://formsubmit.co/zeremhatodaart@gmail.com" method="POST"> 
+                    {/* ref={form} onSubmit={sendEmail} */}
 
                     <label htmlFor='form-name' className='form__label'>Please enter your name</label>
-                    <input id='form-name' name='name' type='text' className='form__input' />
+                    <input id='form-name' name='name' type='text' className='form__input' required/>
 
                     <label htmlFor='form-subject' className='form__label'>Please enter the subject of your message</label>
-                    <input id='form-subject' name='subject' type='text' className='form__input' />
+                    <input id='form-subject' name='subject' type='text' className='form__input' required/>
 
                     <label htmlFor='form-email' className='form__label'>Please enter a valid Email</label>
-                    <input id='form-email' name='email' type='email' className='form__input' />
+                    <input id='form-email' name='email' type='email' className='form__input' required/>
 
                     <label htmlFor='form-message' className='form__label'>Please write your message here</label>
-                    <textarea id='form-message' name='message' rows="10" col="80" className='form__textarea' />
+                    <textarea id='form-message' name='message' rows="10" col="80" className='form__textarea' required/>
 
                     <input type='submit' value="Send" className='form__submit' />
                 </form>

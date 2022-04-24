@@ -95,6 +95,7 @@
         display: block;
         transition: all .5s;
         position: relative;
+        perspective: 140rem;
     }
 
     &__item:hover {
@@ -273,14 +274,13 @@
 
 
 .reveal-image{
-    position: relative;
-    transform: translateY(.8);
+    transform: scaleX(.5) ; //rotateY(90deg) scale(.6)
     opacity: 0;
-    transition: 2s all ease;
+    transition: 1.3s all ease;
   }
   
 .reveal-image.active{
-    transform: translateY(1);
+    transform: scaleX(1); //rotateY(0) scale(1)
     opacity: 1;
 }
 

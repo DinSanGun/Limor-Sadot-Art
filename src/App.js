@@ -32,15 +32,15 @@ import EntangledLiving from './galleries/EntangledLiving';
 import Contact from './pages/Contact';
 import Videos from './pages/Videos';
 
-export const reveal = (nameOfClass) => {
+export const reveal = (nameOfClass, visibleDistance) => {
   var reveals = document.querySelectorAll(nameOfClass)
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight
     var elementTop = reveals[i].getBoundingClientRect().top
-    var elementVisible = 80
+    // var elementVisible = 80
 
-    if (elementTop < windowHeight - elementVisible)
+    if (elementTop < windowHeight - visibleDistance)
       reveals[i].classList.add("active");
     else
       reveals[i].classList.remove("active");
@@ -49,7 +49,7 @@ export const reveal = (nameOfClass) => {
 
 function App() {
 
-  window.addEventListener("scroll", () => reveal(".reveal"));
+  window.addEventListener("scroll", () => reveal(".reveal", 80));
 
   return (
     <Routes>

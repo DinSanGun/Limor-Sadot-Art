@@ -6,13 +6,9 @@ import { reveal } from '../App';
 
 const Gallery = (props) => {
 
-  useEffect(() => {
-    var point = document.getElementById('scroll-point')
-    point.scrollIntoView({behavior: 'smooth'})
-    reveal('.reveal')
-  }, [])
-
-  window.addEventListener('scroll', reveal('.reveal'));
+  window.onscroll = () => {
+    reveal('.reveal-image', 100)
+  }
 
   const [lightbox, setLightbox] = useState(false);
   const [image, setImage] = useState('');
@@ -46,6 +42,11 @@ const Gallery = (props) => {
     }
   }
   
+  useEffect(() => {
+    var point = document.getElementById('scroll-point')
+    point.scrollIntoView({behavior: 'smooth'})
+    reveal('.reveal-image', 80)
+  }, [])
 
   useEffect(() => {
     window.addEventListener('keydown', function (event) {
@@ -106,7 +107,7 @@ const Gallery = (props) => {
         {
             props.series.images.map((image) => {
                 return(
-                    <div className='gallery__item reveal' key={image.id} onClick={() => getImg(image)}>
+                    <div className='gallery__item reveal-image' key={image.id} onClick={() => getImg(image)}>
                         <img src={image.smallSrc} alt='img' className='gallery__image' />
                     </div>
                 )
