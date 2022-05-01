@@ -20,7 +20,7 @@ const Videos = () => {
 
         <div className='videos__item reveal'>
           <h2 className='heading-2 videos__title'>Wabi Sabi - Mixed Media</h2>
-          <h4 className='heading-4'>A 3 minutes demonstration of a work</h4>
+          <h4 className='heading-4'>A 3-minutes demonstration of a work</h4>
           <YouTubeVideo link="https://www.youtube.com/embed/PUjYCkNugtg"/>
         </div>
 

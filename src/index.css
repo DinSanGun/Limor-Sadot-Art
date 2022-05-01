@@ -1118,12 +1118,12 @@ a {
       transform-origin: right; }
 
 .reveal-image {
-  transform: scaleX(0.5);
+  transform: scale(0.7) translateY(3rem);
   opacity: 0;
   transition: 1.3s all ease; }
 
 .reveal-image.active {
-  transform: scaleX(1);
+  transform: scale(1) translateY(0);
   opacity: 1; }
 
 .themes {
