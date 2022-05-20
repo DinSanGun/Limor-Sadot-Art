@@ -1,24 +1,45 @@
 import React, { useRef } from 'react'
 import Layout from '../layout/Layout'
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     
     window.scrollTo(0,0)
 
-  const form = useRef()
+    const formElement = useRef()
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => { 
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, window.process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, window.process.env.REACT_APP_EMAILJS_USER_ID)
-      .then((result) => {
-          alert("Message sent succesfuly!");
-      }, (error) => {
-          alert("Some error occured!");
-      });
+    const formData = formElement.current.elements;
 
-      e.target.reset()
+    const data = {
+        name: formData.name.value,
+        subject: formData.subject.value,
+        email: formData.email.value,
+        message: formData.message.value
+    };
+
+    const requestDetails = {
+        method: 'POST',
+        headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+    };
+
+    try{
+        const response = await fetch('http://54.226.118.139:8080/email', requestDetails);
+        console.log(response)
+        if(response.status === 200)
+            alert('Form submitted succesfully!')
+        else
+            alert('Some error occured on the server')
+    } catch(error) {
+        alert('Error sending the form')
+    }
+
+    e.target.reset()
   };
 
   return (
@@ -28,8 +49,8 @@ const Contact = () => {
             <div className='contact__form-area'>
                 <h1 className='contact__title'>contact</h1>
                 <div className='vl'></div>
-                <form className='form' autoComplete='off' action="https://formsubmit.co/zeremhatodaart@gmail.com" method="POST"> 
-                    {/* ref={form} onSubmit={sendEmail} */}
+
+                <form className='form' autoComplete='off' ref={formElement} onSubmit={sendEmail} > 
 
                     <label htmlFor='form-name' className='form__label'>Please enter your name</label>
                     <input id='form-name' name='name' type='text' className='form__input' required/>

@@ -54,12 +54,12 @@
         animation-fill-mode: backwards;
 
         &:hover {
-            background-color: rgb(222, 222, 222);
-            outline: 2.5rem solid rgb(222, 222, 222);
+            background-color: rgb(165, 165, 165);
+            outline: 2.5rem solid rgb(165, 165, 165);
         }
 
         &:hover + figcaption {
-            color: rgb(100, 100, 100);
+            color: rgb(85, 85, 85);
         }
 
         @include respond(mini) {
@@ -84,7 +84,7 @@
         text-align: center;
         font-size: 2rem;
         margin: 1rem;
-        color: rgb(180,180,180);
+        color: rgb(160, 160, 160);
         cursor: pointer;
         width: 20rem;
 
