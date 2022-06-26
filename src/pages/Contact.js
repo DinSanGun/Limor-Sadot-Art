@@ -29,7 +29,7 @@ const Contact = () => {
     };
 
     try{
-        const response = await fetch('http://54.226.118.139:8080/email', requestDetails);
+        const response = await fetch('https://limorsadot.link/email', requestDetails);
         console.log(response)
         if(response.status === 200)
             alert('Form submitted succesfully!')
