@@ -25,6 +25,18 @@ import sImage24 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-tri
 import sImage25 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (25).jpg';
 import sImage26 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (26).jpg';
 import sImage27 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (27).jpg';
+import sImage28 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (28).jpg';
+import sImage29 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (29).jpg';
+import sImage30 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (30).jpg';
+import sImage31 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (31).jpg';
+import sImage32 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (32).jpg';
+import sImage33 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (33).jpg';
+import sImage34 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (34).jpg';
+import sImage35 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (35).jpg';
+import sImage36 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (36).jpg';
+import sImage37 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (37).jpg';
+import sImage38 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (38).jpg';
+import sImage39 from '../img/line-art/surreal-neuro-trip/small/surreal-neuro-trip_small (39).jpg';
 
 
 import bImage1 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (1).jpg'
@@ -54,6 +66,19 @@ import bImage24 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_
 import bImage25 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (25).jpg';
 import bImage26 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (26).jpg';
 import bImage27 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (27).jpg';
+import bImage28 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (28).jpg';
+import bImage29 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (29).jpg';
+import bImage30 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (30).jpg';
+import bImage31 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (31).jpg';
+import bImage32 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (32).jpg';
+import bImage33 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (33).jpg';
+import bImage34 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (34).jpg';
+import bImage35 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (35).jpg';
+import bImage36 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (36).jpg';
+import bImage37 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (37).jpg';
+import bImage38 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (38).jpg';
+import bImage39 from '../img/line-art/surreal-neuro-trip/big/surreal-neuro-trip_big (39).jpg';
+
 
 
 import React from 'react'
@@ -66,141 +91,201 @@ const SurrealNeuroTrip = () => {
     description: "psychedalic line art",
     images: 
     [
-      {
-          id: 1,
-          smallSrc: sImage1,
-          bigSrc: bImage1
-      },
-      {
-          id: 2,
-          smallSrc: sImage2,
-          bigSrc: bImage2
-      },
-      {
-          id: 3,
-          smallSrc: sImage3,
-          bigSrc: bImage3
-      },
-      {
-          id: 4,
-          smallSrc: sImage4,
-          bigSrc: bImage4
-      },
-      {
-          id: 5,
-          smallSrc: sImage5,
-          bigSrc: bImage5
-      },
-      {
-          id: 6,
-          smallSrc: sImage6,
-          bigSrc: bImage6
-      },
-      {
-          id: 7,
-          smallSrc: sImage7,
-          bigSrc: bImage7
-      },
-      {
-          id: 8,
-          smallSrc: sImage8,
-          bigSrc: bImage8
-      },
-      {
-          id: 9,
-          smallSrc: sImage9,
-          bigSrc: bImage9
-      },
-      {
-          id: 10,
-          smallSrc: sImage10,
-          bigSrc: bImage10
-      },
-      {
-          id: 11,
-          smallSrc: sImage11,
-          bigSrc: bImage11
-      },
-      {
-          id: 12,
-          smallSrc: sImage12,
-          bigSrc: bImage12
-      },
-      {
-          id: 13,
-          smallSrc: sImage13,
-          bigSrc: bImage13
-      },
-      {
-          id: 14,
-          smallSrc: sImage14,
-          bigSrc: bImage14
-      },
-      {
-          id: 15,
-          smallSrc: sImage15,
-          bigSrc: bImage15
-      },
-      {
-          id: 16,
-          smallSrc: sImage16,
-          bigSrc: bImage16
-      },
-      {
-          id: 17,
-          smallSrc: sImage17,
-          bigSrc: bImage17
-      },
-      {
-          id: 18,
-          smallSrc: sImage18,
-          bigSrc: bImage18
-      },
-      {
-          id: 19,
-          smallSrc: sImage19,
-          bigSrc: bImage19
-      },
-      {
-          id: 20,
-          smallSrc: sImage20,
-          bigSrc: bImage20
-      },
-      {
-          id: 21,
-          smallSrc: sImage21,
-          bigSrc: bImage21
-      },
-      {
-          id: 22,
-          smallSrc: sImage22,
-          bigSrc: bImage22
-      },
-      {
-          id: 23,
-          smallSrc: sImage23,
-          bigSrc: bImage23
-      },
-      {
-          id: 24,
-          smallSrc: sImage24,
-          bigSrc: bImage24
-      },
-      {
-          id: 25,
-          smallSrc: sImage25,
-          bigSrc: bImage25
-      },
-      {
-          id: 26,
-          smallSrc: sImage26,
-          bigSrc: bImage26
-      },
-      {
-          id: 27,
-          smallSrc: sImage27,
-          bigSrc: bImage27
-      }
+        {
+            id: 1,
+            smallSrc: sImage1,
+            bigSrc: bImage1
+        },
+        {
+            id: 2,
+            smallSrc: sImage2,
+            bigSrc: bImage2
+        },
+        {
+            id: 3,
+            smallSrc: sImage3,
+            bigSrc: bImage3
+        },
+        {
+            id: 4,
+            smallSrc: sImage4,
+            bigSrc: bImage4
+        },
+        {
+            id: 5,
+            smallSrc: sImage5,
+            bigSrc: bImage5
+        },
+        {
+            id: 6,
+            smallSrc: sImage6,
+            bigSrc: bImage6
+        },
+        {
+            id: 7,
+            smallSrc: sImage7,
+            bigSrc: bImage7
+        },
+        {
+            id: 8,
+            smallSrc: sImage8,
+            bigSrc: bImage8
+        },
+        {
+            id: 9,
+            smallSrc: sImage9,
+            bigSrc: bImage9
+        },
+        {
+            id: 10,
+            smallSrc: sImage10,
+            bigSrc: bImage10
+        },
+        {
+            id: 11,
+            smallSrc: sImage11,
+            bigSrc: bImage11
+        },
+        {
+            id: 12,
+            smallSrc: sImage12,
+            bigSrc: bImage12
+        },
+        {
+            id: 13,
+            smallSrc: sImage13,
+            bigSrc: bImage13
+        },
+        {
+            id: 14,
+            smallSrc: sImage14,
+            bigSrc: bImage14
+        },
+        {
+            id: 15,
+            smallSrc: sImage15,
+            bigSrc: bImage15
+        },
+        {
+            id: 16,
+            smallSrc: sImage16,
+            bigSrc: bImage16
+        },
+        {
+            id: 17,
+            smallSrc: sImage17,
+            bigSrc: bImage17
+        },
+        {
+            id: 18,
+            smallSrc: sImage18,
+            bigSrc: bImage18
+        },
+        {
+            id: 19,
+            smallSrc: sImage19,
+            bigSrc: bImage19
+        },
+        {
+            id: 20,
+            smallSrc: sImage20,
+            bigSrc: bImage20
+        },
+        {
+            id: 21,
+            smallSrc: sImage21,
+            bigSrc: bImage21
+        },
+        {
+            id: 22,
+            smallSrc: sImage22,
+            bigSrc: bImage22
+        },
+        {
+            id: 23,
+            smallSrc: sImage23,
+            bigSrc: bImage23
+        },
+        {
+            id: 24,
+            smallSrc: sImage24,
+            bigSrc: bImage24
+        },
+        {
+            id: 25,
+            smallSrc: sImage25,
+            bigSrc: bImage25
+        },
+        {
+            id: 26,
+            smallSrc: sImage26,
+            bigSrc: bImage26
+        },
+        {
+            id: 27,
+            smallSrc: sImage27,
+            bigSrc: bImage27
+        },
+        {
+            id: 28,
+            smallSrc: sImage28,
+            bigSrc: bImage28
+        },
+        {
+            id: 29,
+            smallSrc: sImage29,
+            bigSrc: bImage29
+        },
+        {
+            id: 30,
+            smallSrc: sImage30,
+            bigSrc: bImage30
+        },
+        {
+            id: 31,
+            smallSrc: sImage31,
+            bigSrc: bImage31
+        },
+        {
+            id: 32,
+            smallSrc: sImage32,
+            bigSrc: bImage32
+        },
+        {
+            id: 33,
+            smallSrc: sImage33,
+            bigSrc: bImage33
+        },
+        {
+            id: 34,
+            smallSrc: sImage34,
+            bigSrc: bImage34
+        },
+        {
+            id: 35,
+            smallSrc: sImage35,
+            bigSrc: bImage35
+        },
+        {
+            id: 36,
+            smallSrc: sImage36,
+            bigSrc: bImage36
+        },
+        {
+            id: 37,
+            smallSrc: sImage37,
+            bigSrc: bImage37
+        },
+        {
+            id: 38,
+            smallSrc: sImage38,
+            bigSrc: bImage38
+        },
+        {
+            id: 39,
+            smallSrc: sImage39,
+            bigSrc: bImage39
+        }
     ]
   }
 
