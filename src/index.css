@@ -271,7 +271,7 @@ a {
 .footer {
   background-color: black;
   color: grey;
-  height: 25vh;
+  height: 16vh;
   text-align: center;
   font-size: 1.2rem;
   display: flex;
@@ -283,9 +283,6 @@ a {
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding-left: 7vw; } }
-  @media only screen and (max-width: 31.25em) {
-    .footer {
-      height: 18vh; } }
   .footer__social {
     display: flex;
     margin-right: 5vw; }
@@ -1167,10 +1164,10 @@ a {
         width: 40vw;
         height: 40vw; } }
     .themes__image:hover {
-      background-color: #dedede;
-      outline: 2.5rem solid #dedede; }
+      background-color: #9b9b9b;
+      outline: 2.5rem solid #9b9b9b; }
     .themes__image:hover + figcaption {
-      color: #646464; }
+      color: #9b9b9b; }
     @media only screen and (max-width: 31.25em) {
       .themes__image {
         animation: grow 1.5s ease 3s;
@@ -1186,7 +1183,7 @@ a {
     text-align: center;
     font-size: 2rem;
     margin: 1rem;
-    color: #b4b4b4;
+    color: #5e5e5e;
     cursor: pointer;
     width: 20rem;
     animation: moveUp 1.2s 1.5s;
@@ -1525,6 +1522,8 @@ a {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   margin-right: 3.2rem;
   cursor: pointer;
   transition: all .2s;
@@ -1537,6 +1536,7 @@ a {
     .series__icon {
       width: 30vw;
       height: 30vw;
+      border-radius: 50%;
       outline: 1.5rem solid #dbdada; } }
   .series__icon:hover {
     background-color: black;
