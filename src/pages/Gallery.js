@@ -6,6 +6,11 @@ import { reveal } from '../App';
 
 const Gallery = (props) => {
 
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+  
+
   window.onscroll = () => {
     reveal('.reveal-image', 100)
   }
