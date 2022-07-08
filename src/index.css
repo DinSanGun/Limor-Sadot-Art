@@ -1153,7 +1153,12 @@ a {
     display: block;
     height: 20vw;
     width: 20vw;
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     margin-bottom: 2rem;
     border: none;
     cursor: pointer;
@@ -1164,10 +1169,10 @@ a {
         width: 40vw;
         height: 40vw; } }
     .themes__image:hover {
-      background-color: #9b9b9b;
-      outline: 2.5rem solid #9b9b9b; }
+      background-color: #c1c1c1;
+      outline: 2.5rem solid #c1c1c1; }
     .themes__image:hover + figcaption {
-      color: #9b9b9b; }
+      color: #c1c1c1; }
     @media only screen and (max-width: 31.25em) {
       .themes__image {
         animation: grow 1.5s ease 3s;
@@ -1521,7 +1526,10 @@ a {
 .series__icon {
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   margin-right: 3.2rem;

@@ -104,7 +104,10 @@
     &__icon {
         width: 10rem;
         height: 10rem;
-        border-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         margin-right: 3.2rem;

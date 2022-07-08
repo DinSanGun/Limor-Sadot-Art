@@ -40,7 +40,12 @@
         display: block;
         height: 20vw;
         width: 20vw;
-        border-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         margin-bottom: 2rem;
         border: none;
         cursor: pointer;
@@ -54,12 +59,12 @@
         animation-fill-mode: backwards;
 
         &:hover {
-            background-color: rgb(155, 155, 155);
-            outline: 2.5rem solid rgb(155, 155, 155);
+            background-color: rgb(193, 193, 193);
+            outline: 2.5rem solid rgb(193, 193, 193);
         }
 
         &:hover + figcaption {
-            color: rgb(155, 155, 155);
+            color: rgb(193, 193, 193);
         }
 
         @include respond(mini) {
