@@ -7,6 +7,8 @@ import { reveal } from '../App';
 const Gallery = (props) => {
 
   useEffect(() => {
+    // const layoutElement = document.getElementById('layout')
+    // layoutElement.scrollIntoView({behavior: "smooth", block: "end"});
     window.scrollTo(0,0)
   }, [])
   
@@ -78,7 +80,7 @@ const Gallery = (props) => {
 
   return (
 
-    <Layout banner='grey'>
+    <Layout id='layout' banner='grey'>
 
         <Blocker/>
         <div className={lightbox ? 'gallery__lightbox gallery__lightbox--open' : 'gallery__lightbox'} >
