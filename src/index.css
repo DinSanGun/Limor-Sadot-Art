@@ -1153,12 +1153,12 @@ a {
     display: block;
     height: 20vw;
     width: 20vw;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
-    border-bottom-left-radius: 300px;
-    border-bottom-right-radius: 300px;
-    -webkit-border-radius: 300px;
-    -moz-border-radius: 300px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     margin-bottom: 2rem;
     border: none;
     cursor: pointer;
@@ -1544,6 +1544,7 @@ a {
     .series__icon {
       width: 30vw;
       height: 30vw;
+      border-radius: 50%;
       outline: 1.5rem solid #dbdada; } }
   .series__icon:hover {
     background-color: black;
