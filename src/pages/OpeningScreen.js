@@ -7,7 +7,7 @@ const OpeningScreen = () => {
   return (
     <div className='opening'>
         <div className='opening__name-box'>
-                <h1 className='heading-1' class="notranslate">
+                <h1 className='heading-1'>
                     <Link to='/home'>
                         Limor Sadot
                     </Link>

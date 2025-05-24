@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <nav className="navigation">
 
-      <h1 className="heading-1 navigation__title" class="notranslate"><a href="/home">Limor Sadot</a></h1>
+      <h1 className="heading-1 navigation__title"><a href="/home">Limor Sadot</a></h1>
 
       <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
 
@@ -21,12 +21,12 @@ const Navigation = () => {
 
       <ul id="navbar" className="navigation__list">
 
-        <li className="navigation__item" class="notranslate"><NavLink to="/home" className={(navData) => activeClass(navData)}>home</NavLink></li>
-        <li className="navigation__item" class="notranslate"><NavLink to="/work" className={(navData) => activeClass(navData)}>work</NavLink></li>
-        <li className="navigation__item" class="notranslate"><NavLink to="/about" className={(navData) => activeClass(navData)}>about</NavLink></li>
-        <li className="navigation__item" class="notranslate"><NavLink to="/videos" className={(navData) => activeClass(navData)}>videos</NavLink></li>
-        <li className="navigation__item" class="notranslate"><NavLink to="/contact" className={(navData) => activeClass(navData)}>contact</NavLink></li>
-        <li className="navigation__item" class="notranslate"><a href="https://www.redbubble.com/people/Limor-Sadot/shop" className="navigation__link" target="_blank" rel="noopener noreferrer">shop</a></li>
+        <li className="navigation__item"><NavLink to="/home" className={(navData) => activeClass(navData)}>home</NavLink></li>
+        <li className="navigation__item"><NavLink to="/work" className={(navData) => activeClass(navData)}>work</NavLink></li>
+        <li className="navigation__item"><NavLink to="/about" className={(navData) => activeClass(navData)}>about</NavLink></li>
+        <li className="navigation__item"><NavLink to="/videos" className={(navData) => activeClass(navData)}>videos</NavLink></li>
+        <li className="navigation__item"><NavLink to="/contact" className={(navData) => activeClass(navData)}>contact</NavLink></li>
+        <li className="navigation__item"><a href="https://www.redbubble.com/people/Limor-Sadot/shop" className="navigation__link" target="_blank" rel="noopener noreferrer">shop</a></li>
 
         <li className="navigation__item">
           <a href="https://www.instagram.com/limor_sadot/" target="_blank" rel="noopener noreferrer"><img src="img/social-media/instagram-logo.png" alt="instagram" className='navigation__social-media'/></a>

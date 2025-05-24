@@ -1535,7 +1535,7 @@ a {
   margin-right: 3.2rem;
   cursor: pointer;
   transition: all .2s;
-  outline: 1.2rem solid #cdcdcd; }
+  outline: 1.2rem solid #dddddd; }
   @media only screen and (max-width: 700px) {
     .series__icon {
       width: 17vw;
