@@ -3,9 +3,9 @@
 A fully custom, responsive portfolio website for collage artist **Limor Sadot**, built with **React**, **JavaScript**, and **SCSS**, and deployed on **AWS Amplify**.
 The site presents a large multi-category artwork gallery, curated video section, and a contact form powered by a separate **Node.js/Express** backend hosted on **AWS EC2**.
 
-> **Live website:** https://www.limorsadot.com/
-> **Frontend repo:** https://github.com/DinSanGun/Limor-Sadot-Art
-> **Backend (Express API):** https://github.com/DinSanGun/limor-sadot-server
+* **Live website:** https://www.limorsadot.com/
+* **Frontend repo:** https://github.com/DinSanGun/Limor-Sadot-Art
+* **Backend (Express API):** https://github.com/DinSanGun/limor-sadot-server
 
 ---
 
