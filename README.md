@@ -1,36 +1,34 @@
 # Limor Sadot Art – Portfolio Website
 
-A responsive, single-page portfolio website for collage artist **Limor Sadot**, built from scratch with **React**, **SCSS**, and **JavaScript**, and deployed on **AWS Amplify**.  
-The site features a large artwork gallery with sub-categories, a curated video section, and a contact form backed by a custom **Node.js/Express** service running on **AWS EC2**.
+A fully custom, responsive portfolio website for collage artist **Limor Sadot**, built with **React**, **JavaScript**, and **SCSS**, and deployed on **AWS Amplify**.
+The site presents a large multi-category artwork gallery, curated video section, and a contact form powered by a separate **Node.js/Express** backend hosted on **AWS EC2**.
 
-> **Live site:** https://www.limorsadot.com/  
-> **Frontend repo:** https://github.com/DinSanGun/Limor-Sadot-Art  
-> **Backend (contact form API):** https://github.com/DinSanGun/limor-sadot-server
+> **Live website:** https://www.limorsadot.com/
+> **Frontend repo:** https://github.com/DinSanGun/Limor-Sadot-Art
+> **Backend (Express API):** https://github.com/DinSanGun/limor-sadot-server
 
 ---
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Potential Improvements](#potential-improvements)
-- [Credits](#credits)
+* [Project Overview](#project-overview)
+* [Features](#features)
+* [Architecture](#architecture)
+* [Tech Stack](#tech-stack)
+* [Key Skills Demonstrated](#key-skills-demonstrated)
+* [Potential Improvements](#potential-improvements)
 
 ---
 
 ## Project Overview
 
-This project is a fully custom, production-ready portfolio designed for a professional visual artist.  
-Unlike page-builder solutions (Wix, WordPress, etc.), **every component was implemented manually**, including layout, responsiveness, animations, and backend integration.
+This project was built as a production-ready portfolio for a professional visual artist. It does **not** rely on templates or site builders; every component, animation, layout, and responsive behavior was implemented manually using core web technologies.
 
-The main goals were:
-
-- Create a visually rich, fast, and intuitive gallery experience.
-- Ensure the website works seamlessly across screen sizes.
-- Implement a real full-stack structure using React, Node.js, and AWS.
-- Gain hands-on experience with modern web deployment pipelines and cloud tools.
+The primary goal was to architect a clean, scalable codebase that prioritizes:
+* **Separation of concerns:** distinct logic for components, pages, layout, and styles.
+* **Reusable SCSS patterns:** using mixins and variables to ensure consistency.
+* **Maintainability:** logical naming conventions and a predictable file structure.
+* **Full-Stack Implementation:** decoupling the UI (Amplify) from the API logic (EC2).
 
 ---
 
@@ -38,77 +36,80 @@ The main goals were:
 
 ### User-Facing
 
-- 🎨 **Artwork Gallery with Sub-Categories**  
-  Multiple gallery sections built from scratch using custom SCSS layouts and asset handling.
+* 🎨 **Multi-category Artwork Gallery**
+    Built from scratch to display extensive artwork collections organized by themes. Each gallery is implemented as a reusable component for scalability.
+* 🎥 **Video Showcase Section**
+    Displays curated videos using a dedicated `<YouTubeVideo />` component for consistent embedding and aspect-ratio handling.
+* ✉️ **Contact Form with API Integration**
+    Form submits data to a custom backend hosted on AWS EC2, ensuring secure message handling.
+* 📱 **Responsive, Mobile-First Design**
+    The entire layout (navigation, gallery grid, typography) adapts across breakpoints using custom SCSS mixins.
+* ✨ **Custom Animations**
+    Subtle UI interactions defined in a dedicated styles file and applied via utility classes, avoiding heavy external animation libraries.
 
-- 🎥 **Video Section**  
-  Displays the artist’s recent curated video content, updated periodically.
+---
 
-- ✉️ **Contact Form with Backend Integration**  
-  Connected to a custom Express.js API hosted on AWS EC2 for message handling.
+## Architecture
 
-- 📱 **Responsive Design**  
-  Carefully constructed mobile, tablet, and desktop breakpoints with SCSS.
+The website is designed as a **single-page application (SPA)** with an emphasis on clarity and modularity.
 
-- ✨ **Custom Animations**  
-  Subtle transitions and effects implemented manually without heavy animation libraries.
+### File Structure & SCSS
+
+The project follows industry-standard SCSS architecture to prevent style pollution and ensure reusability:
+* `_base.scss` → Global resets and universal rules.
+* `_typography.scss` → Centralized font sizes and weights.
+* `_animations.scss` → Reusable keyframes and transitions.
+* `_mixins.scss` → Breakpoints and responsive logic.
+
+### Component Philosophy
+
+The React structure focuses on readability and the "Don't Repeat Yourself" (DRY) principle:
+* **Modular Styles:** Each page and component has its own dedicated SCSS file to keep CSS localized.
+* **Atomic Components:** Reusable UI elements (`BackButton.js`, `GoTop.js`, `YouTubeVideo.js`) are separated from complex page logic.
+* **Consistent Naming:** Follows React best practices, using PascalCase for components and clear, predictable file names.
 
 ---
 
 ## Tech Stack
 
 ### Frontend
+* **React.js** – Component-based SPA structure
+* **JavaScript (ES6+)**
+* **SCSS** – Modular styling with preprocessor features
 
-- **React** (SPA architecture)
-- **SCSS** for styling
-- **HTML5 / CSS3**
-- **Vanilla JavaScript** for animations and UI interactions
-
-### Backend (Contact Form API)
-
-- **Node.js**
-- **Express.js**
-- Hosted on **AWS EC2**  
-  (backend repo: https://github.com/DinSanGun/limor-sadot-server)
+### Backend (Contact API)
+* **Node.js & Express.js**
+* Hosted on **AWS EC2**
+* Handles routing, CORS configuration, and form processing.
 
 ### Deployment / DevOps
-
-- **AWS Amplify** – CI/CD and hosting for the React app
-- **GitHub** – version control and integration with Amplify build pipeline
+* **AWS Amplify** – CI/CD pipeline and hosting for the React app.
+* **GitHub** – Version control and source integration.
 
 ---
 
-## Architecture
+## Key Skills Demonstrated
 
-The website is implemented as a **single-page React application** composed of:
-
-- **Layout components** – header, navigation, footer, and shared layout wrappers.
-- **Feature components** – gallery sections, video section, contact form, buttons, and utilities.
-- **Page-level components** – home, gallery, themes, series, about, contact, etc.
-- **SCSS layers** – base styles, typography, animations, utilities, and per-component/page styling.
-
-Key design decisions:
-
-- **Component-based structure** for maintainability and clarity.  
-- **SCSS architecture** (variables, mixins, nested rules) for consistent styling.  
-- **Responsive design logic** expressed through SCSS breakpoints.  
-- **Backend separation**: the contact form uses a dedicated API hosted on EC2, keeping the frontend purely presentational and the server responsible for handling form submissions.
+This project highlights the following engineering capabilities:
+* **Frontend Architecture:** Designing large, multi-section React applications without reliance on external UI component libraries.
+* **Advanced CSS/SCSS:** Writing modular styles using variables, mixins, and clean naming conventions.
+* **Full-Stack Integration:** Implementing a decoupled backend API and managing form submissions.
+* **Cloud Infrastructure:** Managing a split-host environment (Frontend on Amplify, Backend on EC2) and configuring production endpoints.
 
 ---
 
 ## Potential Improvements
 
-These are common and professional enhancements for future scalability:
-
-- 🗂 Move artwork metadata to a small database or CMS instead of static data.  
-- 🧰 Add an admin panel for easier content updates (uploading artworks, managing categories).  
-- 📈 Add analytics to understand visitor engagement.  
-- ♿ Improve accessibility (semantic roles, ARIA labels) and SEO metadata.
+Future roadmap for scalability and performance:
+* 🗂 **CMS Integration:** Migrate static artwork data to a headless CMS or database.
+* ⚡ **Performance Optimization:** Implement lazy-loading for gallery images to improve load times.
+* ♿ **Accessibility:** Enhance ARIA roles and semantic navigation for screen readers.
 
 ---
 
 ## Credits
 
-- **Artist & Artwork:** [Limor Sadot](https://www.limorsadot.com/)  
-- **Design & Development:** **Din Yair Sadot**  
-  (React, SCSS, JavaScript, Node.js, AWS Amplify & EC2)
+* **Artist:** [Limor Sadot](https://www.limorsadot.com/)
+* **Design & Development:** **Din Yair Sadot**
+
+***
