@@ -61,9 +61,9 @@ The project follows industry-standard SCSS architecture to prevent style polluti
 * `_animations.scss` → Reusable keyframes and transitions.
 * `_mixins.scss` → Breakpoints and responsive logic.
 
-### Component Philosophy
+### Component Structure & Principles
 
-The React structure focuses on readability and the "Don't Repeat Yourself" (DRY) principle:
+The React structure focuses on readability and the "DRY" principle:
 * **Modular Styles:** Each page and component has its own dedicated SCSS file to keep CSS localized.
 * **Atomic Components:** Reusable UI elements (`BackButton.js`, `GoTop.js`, `YouTubeVideo.js`) are separated from complex page logic.
 * **Consistent Naming:** Follows React best practices, using PascalCase for components and clear, predictable file names.
