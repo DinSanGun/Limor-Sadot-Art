@@ -1,11 +1,11 @@
 # Limor Sadot Art – Portfolio Website
 
 A responsive, single-page portfolio website for collage artist **Limor Sadot**, built from scratch with **React**, **SCSS**, and **JavaScript**, and deployed on **AWS Amplify**.  
-The site showcases a large artwork gallery with sub-categories, a curated video section, and a contact form backed by a custom **Node.js/Express** server hosted on **AWS EC2**.
+The site features a large artwork gallery with sub-categories, a curated video section, and a contact form backed by a custom **Node.js/Express** service running on **AWS EC2**.
 
 > **Live site:** https://www.limorsadot.com/  
 > **Frontend repo:** https://github.com/DinSanGun/Limor-Sadot-Art  
-> **Contact API (backend):** https://github.com/DinSanGun/limor-sadot-server
+> **Backend (contact form API):** https://github.com/DinSanGun/limor-sadot-server
 
 ---
 
@@ -14,11 +14,7 @@ The site showcases a large artwork gallery with sub-categories, a curated video 
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Architecture & Project Structure](#architecture--project-structure)
-- [AWS Infrastructure](#aws-infrastructure)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [What This Project Demonstrates](#what-this-project-demonstrates)
+- [Architecture](#architecture)
 - [Potential Improvements](#potential-improvements)
 - [Credits](#credits)
 
@@ -26,46 +22,36 @@ The site showcases a large artwork gallery with sub-categories, a curated video 
 
 ## Project Overview
 
-This project is a fully custom, production-ready portfolio for a visual artist.  
-Instead of using templates or website builders (WordPress, Wix, etc.), the entire UI and deployment flow were implemented manually:
+This project is a fully custom, production-ready portfolio designed for a professional visual artist.  
+Unlike page-builder solutions (Wix, WordPress, etc.), **every component was implemented manually**, including layout, responsiveness, animations, and backend integration.
 
-- **Custom design** based on the artist’s visual style and assets.
-- **Custom frontend** built with React + SCSS (no page builders).
-- **Custom backend** (separate repo) for handling contact form submissions.
-- **Deployed and hosted on AWS** using Amplify (frontend) and EC2 (backend).
+The main goals were:
 
-The main goals:
-
-1. Provide a visually rich, fast, and responsive gallery experience.
-2. Make it simple for visitors and potential clients to explore artworks and contact the artist.
-3. Use this as an end-to-end example of modern web development skills: React, styling, responsiveness, backend integration, and AWS deployment.
+- Create a visually rich, fast, and intuitive gallery experience.
+- Ensure the website works seamlessly across screen sizes.
+- Implement a real full-stack structure using React, Node.js, and AWS.
+- Gain hands-on experience with modern web deployment pipelines and cloud tools.
 
 ---
 
 ## Features
 
-### User-Facing Features
+### User-Facing
 
-- 🎨 **Artwork gallery with sub-categories**  
-  - Multiple gallery sections for different types/series of work.  
-  - Layout and styling created from scratch, using the artist’s design language.
+- 🎨 **Artwork Gallery with Sub-Categories**  
+  Multiple gallery sections built from scratch using custom SCSS layouts and asset handling.
 
-- 📂 **Category-based browsing**  
-  - Artworks are grouped by themes/collections, making it easier to navigate a large portfolio.
+- 🎥 **Video Section**  
+  Displays the artist’s recent curated video content, updated periodically.
 
-- 🎥 **Recent videos section**  
-  - Section for the artist’s latest videos, updated manually every few months.
+- ✉️ **Contact Form with Backend Integration**  
+  Connected to a custom Express.js API hosted on AWS EC2 for message handling.
 
-- ✉️ **Contact form with backend integration**  
-  - Contact form sends data to a dedicated Node.js/Express backend running on AWS EC2.  
-  - Backend handles form requests (e.g., sending emails / logging messages).
+- 📱 **Responsive Design**  
+  Carefully constructed mobile, tablet, and desktop breakpoints with SCSS.
 
-- 📱 **Responsive design**  
-  - Optimized for desktop, tablet, and mobile.  
-  - Layout adjusts to different viewports and maintains a clean, readable gallery.
-
-- ✨ **Subtle animations**  
-  - Custom animations and transitions implemented using JavaScript and SCSS (no heavy animation libraries).
+- ✨ **Custom Animations**  
+  Subtle transitions and effects implemented manually without heavy animation libraries.
 
 ---
 
@@ -73,73 +59,51 @@ The main goals:
 
 ### Frontend
 
-- **React** (JavaScript, SPA)
+- **React** (SPA architecture)
 - **SCSS** for styling
-- **HTML5** + **CSS3**
-- Vanilla **JavaScript** for interactive behavior and animations
+- **HTML5 / CSS3**
+- **Vanilla JavaScript** for animations and UI interactions
 
-### Backend (Contact Form)
+### Backend (Contact Form API)
 
 - **Node.js**
 - **Express.js**
 - Hosted on **AWS EC2**  
-  (see backend repo: https://github.com/DinSanGun/limor-sadot-server)
+  (backend repo: https://github.com/DinSanGun/limor-sadot-server)
 
-### Deployment & DevOps
+### Deployment / DevOps
 
-- **AWS Amplify** – build & hosting for the React app
-- GitHub as the source repository
-- Standard **Node/npm** toolchain for building and running the app
+- **AWS Amplify** – CI/CD and hosting for the React app
+- **GitHub** – version control and integration with Amplify build pipeline
 
 ---
 
-## Architecture & Project Structure
+## Architecture
 
-At a high level, the frontend is structured as a **single-page React application** with components organized by feature/section.
+The website is implemented as a **single-page React application** composed of:
 
-A typical structure (simplified):
+- **Layout components** – header, navigation, footer, and shared layout wrappers.
+- **Feature components** – gallery sections, video section, contact form, buttons, and utilities.
+- **Page-level components** – home, gallery, themes, series, about, contact, etc.
+- **SCSS layers** – base styles, typography, animations, utilities, and per-component/page styling.
 
-```text
-Limor-Sadot-Art/
-├─ public/               # Static assets, index.html, favicon, etc.
-├─ src/
-│  ├─ components/        # Reusable UI building blocks
-│  │  ├─ Header/
-│  │  ├─ Footer/
-│  │  ├─ Gallery/
-│  │  ├─ VideoSection/
-│  │  ├─ ContactForm/
-│  │  └─ ...
-│  ├─ pages/             # Page-level compositions (e.g. Home)
-│  ├─ styles/            # Global SCSS, variables, mixins, layout
-│  ├─ assets/            # Artwork images, video thumbnails, icons, etc.
-│  ├─ utils/             # Helper functions if needed (e.g. data mappers)
-│  ├─ App.js             # Root SPA composition
-│  ├─ index.js           # React entry point
-│  └─ ...
-├─ package.json
-└─ ...
-
-
-### Key Design Decisions
+Key design decisions:
 
 - **Component-based structure** for maintainability and clarity.  
 - **SCSS architecture** (variables, mixins, nested rules) for consistent styling.  
-- **Responsive design logic** embedded into SCSS breakpoints.  
-- **Backend separation**: contact form uses a dedicated API hosted on EC2 to keep the frontend purely presentational.
+- **Responsive design logic** expressed through SCSS breakpoints.  
+- **Backend separation**: the contact form uses a dedicated API hosted on EC2, keeping the frontend purely presentational and the server responsible for handling form submissions.
 
 ---
 
-## Potential Improvements (Optional)
+## Potential Improvements
 
-These are optional enhancements that could naturally scale the project further:
+These are common and professional enhancements for future scalability:
 
 - 🗂 Move artwork metadata to a small database or CMS instead of static data.  
-- 🧰 Add an admin panel for easier content updates (uploading new artworks, videos).  
-- 📈 Add analytics or heatmaps to study visitor engagement.  
+- 🧰 Add an admin panel for easier content updates (uploading artworks, managing categories).  
+- 📈 Add analytics to understand visitor engagement.  
 - ♿ Improve accessibility (semantic roles, ARIA labels) and SEO metadata.
-
-These points demonstrate awareness of how the project could evolve in a professional full-stack environment.
 
 ---
 
