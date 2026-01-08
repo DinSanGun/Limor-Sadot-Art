@@ -41,7 +41,7 @@ const Videos = () => {
         <div className='videos__item reveal'>
           <h2 className='heading-2 videos__title'>Hebrew-Arabic Sketchbook</h2>
           <h4 className='heading-4'>An Illustrated sketchbook on old textbook</h4>
-          <YouTubeVideo link="https://www.youtube.com/watch?v=gfPaNHGUaVg"/>
+          <YouTubeVideo link="https://www.youtube.com/embed/gfPaNHGUaVg"/>
         </div>
 
 
