@@ -1,8 +1,9 @@
 .layout {
-    width: 100vw;
-    height: 100%;
-    animation: fadeIn 2s;
-    animation-fill-mode: backwards;
+    width: 100%;
+    max-width: 100vw;      /* optional */
+    min-height: 100vh;     /* important: use min-height, not height:100% */
+    height: auto;          /* important */
+    overflow: visible;     /* important */
     position: relative;
 
     &__main {

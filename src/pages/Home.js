@@ -4,27 +4,65 @@ import Layout from '../layout/Layout'
 
 const Home = () => {
 
+  const smoothScrollFollowTarget = ({
+    getTargetY,
+    duration = 2200,
+    maxStepPx = 18, // cap how many pixels we can move per animation frame
+  }) => {
+    const startTime = performance.now();
+
+    const easeInOutSine = (t) => -(Math.cos(Math.PI * t) - 1) / 2;
+
+    const step = (now) => {
+      const t = Math.min(1, (now - startTime) / duration);
+      const eased = easeInOutSine(t);
+
+      const currentY = window.pageYOffset;
+      const targetY = getTargetY();
+
+      // "Desired" progress-based position
+      const desiredY = currentY + (targetY - currentY) * eased;
+
+      // Cap movement to avoid sudden jumps caused by layout changes
+      const delta = desiredY - currentY;
+      const cappedDelta =
+        Math.abs(delta) > maxStepPx ? Math.sign(delta) * maxStepPx : delta;
+
+      window.scrollTo(0, currentY + cappedDelta);
+
+      if (t < 1 && Math.abs(targetY - window.pageYOffset) > 1) {
+        requestAnimationFrame(step);
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
   useEffect(() => {
-    
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
 
-    if(window.innerWidth > 600) {
-      setTimeout(() => {
-      var point = document.getElementById('scroll-point')
-      point.scrollIntoView({behavior: 'smooth'})
-      }, 7500)
-    }
+    const delay = 2000;
+    const above = -40; // 50px above the element
 
-    else {
-      setTimeout(() => {
-        window.scrollTo({
-          top: 250,
-          behavior: 'smooth'
-        })
-        }, 3500)
-    }
-  
-  }, [])
+    const id = setTimeout(() => {
+      const intro = document.getElementById("intro");
+      if (!intro) return;
+
+      smoothScrollFollowTarget({
+        duration: 2400,
+        maxStepPx: 16,
+        getTargetY: () => {
+          const rect = intro.getBoundingClientRect();
+          const absoluteTop = rect.top + window.pageYOffset;
+
+          // 100px above the top of #intro
+          return Math.max(0, absoluteTop - above);
+        },
+      });
+    }, delay);
+
+    return () => clearTimeout(id);
+  }, []);
   
 
   return (
@@ -32,7 +70,7 @@ const Home = () => {
 
       <img src='img/home/mobile-home-banner.jpg' className='introduction__top-banner' alt="Collage art circle"/>
 
-      <section className="introduction">
+      <section className="introduction" id="intro">
         
         <div className='introduction__top-image'>
           <img src='img/home/home-half-circle.jpg' className='introduction__top-image--1' alt="Collage art circle"/>
@@ -46,13 +84,11 @@ const Home = () => {
             <span className="introduction__text--5">for a dance</span>
             <span className="introduction__text--6">so I can refrain</span>
             <span className="introduction__text--7">from choosing</span>
-              <span className="flex-wrap">
-                <span className="introduction__text--8">
-                  sides
-                </span>
-                <span className="introduction__text--dot">.</span>
-              </span>
-            </p>
+            <span className="introduction__text--8">sides</span>
+            <span className="flex-wrap">
+              <span className="introduction__text--dot">.</span>
+            </span>
+        </p>
 
             <button className="introduction__btn">
               <Link to="/work">
