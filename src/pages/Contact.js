@@ -29,8 +29,7 @@ const Contact = () => {
     };
 
     try{
-        const response = await fetch('https://limorsadot.link/email', requestDetails);
-        console.log(response)
+        const response = await fetch('https://bmftwyrzihotxnzagtutsalgtu0ujita.lambda-url.us-east-1.on.aws/', requestDetails);        console.log(response)
         if(response.status === 200)
             alert('Form submitted succesfully!')
         else
