@@ -8,18 +8,6 @@ import Themes from './pages/Themes';
 import CollageSeries from './pages/CollageSeries';
 
 import GalleryPage from './galleries/GalleryPage';
-import WhimsicalDarkness from './galleries/WhimsicalDarkness';
-import PinkBloodlines from './galleries/PinkBloodline';
-import ThePurpleEra from './galleries/ThePurpleEra';
-import LiquidThoughts from './galleries/LiquidThoughts';
-import FallingEmpires from './galleries/FallingEmpires';
-import StorytellingCollage from './galleries/StorytellingCollage';
-import TheSeeker from './galleries/TheSeeker';
-import SpiritualPath from './galleries/SpiritualPath';
-import DreamlandPassport from './galleries/DreamlandPassport'
-import Assemblage from './galleries/Assemblage';
-import TheJapaneseWindow from './galleries/TheJapaneseWindow';
-import BotanicalWanders from './galleries/BotanicalWanders';
 
 import HumanKinda from './galleries/HumanKinda';
 import FloatingWorld from './galleries/FloatingWorld';
@@ -63,18 +51,18 @@ function App() {
 
 
       <Route path="/eternal-randomness" element={<GalleryPage slug="wabi-sabi" />} />
-      <Route path="/whimsical-darkness" element={<WhimsicalDarkness/>} />
-      <Route path="/the-purple-era" element={<ThePurpleEra/>} />
-      <Route path="/liquid-thoughts" element={<LiquidThoughts/>} />
-      <Route path="/falling-empires" element={<FallingEmpires/>} />
-      <Route path="/storytelling-collage" element={<StorytellingCollage/>} />
-      <Route path="/the-seeker" element={<TheSeeker/>} />
-      <Route path="/spiritual-path" element={<SpiritualPath/>} />
-      <Route path="/dreamland-passport" element={<DreamlandPassport/>} />
-      <Route path="/assemblage" element={<Assemblage/>} />
-      <Route path="/the-japanese-window" element={<TheJapaneseWindow/>} />
-      <Route path="/botanical-wanders" element={<BotanicalWanders/>} />
-      {/* <Route path="/pink-bloodlines" element={<PinkBloodlines/>} /> */}
+      <Route path="/whimsical-darkness" element={<GalleryPage slug="whimsical-darkness" />} />
+      <Route path="/the-purple-era" element={<GalleryPage slug="the-purple-era" />} />
+      <Route path="/liquid-thoughts" element={<GalleryPage slug="liquid-thoughts" />} />
+      <Route path="/falling-empires" element={<GalleryPage slug="falling-empires" />} />
+      <Route path="/storytelling-collage" element={<GalleryPage slug="storytelling-collage" />} />
+      <Route path="/the-seeker" element={<GalleryPage slug="the-seeker" />} />
+      <Route path="/spiritual-path" element={<GalleryPage slug="spiritual-path" />} />
+      <Route path="/dreamland-passport" element={<GalleryPage slug="dreamland-passport" />} />
+      <Route path="/assemblage" element={<GalleryPage slug="assemblage" />} />
+      <Route path="/the-japanese-window" element={<GalleryPage slug="the-japanese-window" />} />
+      <Route path="/botanical-wanders" element={<GalleryPage slug="botanical-wanders" />} />
+      {/* <Route path="/pink-bloodlines" element={<GalleryPage slug="pink-bloodlines" />} /> */}
 
 
       <Route path="/human-kinda" element={<HumanKinda/>} />
