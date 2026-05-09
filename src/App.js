@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound';
 import Themes from './pages/Themes';
 import CollageSeries from './pages/CollageSeries';
 
-import WabiSabi from './galleries/WabiSabi';
+import GalleryPage from './galleries/GalleryPage';
 import WhimsicalDarkness from './galleries/WhimsicalDarkness';
 import PinkBloodlines from './galleries/PinkBloodline';
 import ThePurpleEra from './galleries/ThePurpleEra';
@@ -62,7 +62,7 @@ function App() {
       <Route path="/line-art" element={<LineArtSeries/>} />
 
 
-      <Route path="/eternal-randomness" element={<WabiSabi/>} />
+      <Route path="/eternal-randomness" element={<GalleryPage slug="wabi-sabi" />} />
       <Route path="/whimsical-darkness" element={<WhimsicalDarkness/>} />
       <Route path="/the-purple-era" element={<ThePurpleEra/>} />
       <Route path="/liquid-thoughts" element={<LiquidThoughts/>} />
