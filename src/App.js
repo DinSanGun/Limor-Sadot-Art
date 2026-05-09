@@ -19,6 +19,7 @@ import SpiritualPath from './galleries/SpiritualPath';
 import DreamlandPassport from './galleries/DreamlandPassport'
 import Assemblage from './galleries/Assemblage';
 import TheJapaneseWindow from './galleries/TheJapaneseWindow';
+import BotanicalWanders from './galleries/BotanicalWanders';
 
 import HumanKinda from './galleries/HumanKinda';
 import FloatingWorld from './galleries/FloatingWorld';
@@ -63,7 +64,6 @@ function App() {
 
       <Route path="/eternal-randomness" element={<WabiSabi/>} />
       <Route path="/whimsical-darkness" element={<WhimsicalDarkness/>} />
-      <Route path="/pink-bloodlines" element={<PinkBloodlines/>} />
       <Route path="/the-purple-era" element={<ThePurpleEra/>} />
       <Route path="/liquid-thoughts" element={<LiquidThoughts/>} />
       <Route path="/falling-empires" element={<FallingEmpires/>} />
@@ -73,6 +73,9 @@ function App() {
       <Route path="/dreamland-passport" element={<DreamlandPassport/>} />
       <Route path="/assemblage" element={<Assemblage/>} />
       <Route path="/the-japanese-window" element={<TheJapaneseWindow/>} />
+      <Route path="/botanical-wanders" element={<BotanicalWanders/>} />
+      {/* <Route path="/pink-bloodlines" element={<PinkBloodlines/>} /> */}
+
 
       <Route path="/human-kinda" element={<HumanKinda/>} />
       <Route path="/pictures-of-the-floating-world" element={<FloatingWorld/>} />
