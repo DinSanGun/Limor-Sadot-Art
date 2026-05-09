@@ -1702,7 +1702,7 @@ a {
 }
 .introduction__btn {
   transition: all 0.4s;
-  animation: grow 1.5s 5s;
+  animation: grow 1.5s 4s;
   animation-fill-mode: backwards;
 }
 .introduction__btn--2 {
@@ -1769,33 +1769,33 @@ a {
   will-change: transform, opacity;
 }
 .introduction__text--1 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
 }
 .introduction__text--2 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
 }
 .introduction__text--3 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
 }
 .introduction__text--4 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
 }
 .introduction__text--5 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
 }
 .introduction__text--6 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
 }
 .introduction__text--7 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
 }
 .introduction__text--8 {
-  animation: fadeInGrow 2s ease 3s;
+  animation: fadeInGrow 2s ease 1s;
   margin-right: 2rem;
 }
 .introduction__text--dot {
   display: inline-block;
-  animation: growDot 1.2s cubic-bezier(1, 0, 0.9, 0.4) 3.5s;
+  animation: growDot 1.2s cubic-bezier(1, 0, 0.9, 0.4) 2.5s;
   animation-fill-mode: backwards;
   display: flex;
   align-items: flex-end;
@@ -1811,7 +1811,7 @@ a {
   margin-left: 15rem;
   padding-top: 4rem;
   position: relative;
-  animation: moveUp 1.5s ease 6s;
+  animation: moveUp 1.5s ease 5s;
   animation-fill-mode: backwards;
 }
 @media only screen and (max-width: 37.5em) {

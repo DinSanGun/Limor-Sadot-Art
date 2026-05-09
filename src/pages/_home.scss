@@ -72,7 +72,7 @@
 
         transition: all .4s;
 
-        animation: grow 1.5s 5s;
+        animation: grow 1.5s 4s;
         animation-fill-mode: backwards;
 
         &--2 {
@@ -152,49 +152,49 @@
 
         &--1 {
             @extend %text-line;
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
         }
 
         
         &--2 {
             @extend %text-line;
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
         }
 
         &--3 {
             @extend %text-line;
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
         }
 
         &--4 {
             @extend %text-line;
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
         }
 
         &--5 {
             @extend %text-line;
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
         }
 
         &--6 {
             @extend %text-line;
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
         }
 
         &--7 {
             @extend %text-line;
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
         }
 
         &--8 {
             @extend %text-line;          
-            animation: fadeInGrow 2s ease 3s;
+            animation: fadeInGrow 2s ease 1s;
             margin-right: 2rem;
         }
 
         &--dot {
             display: inline-block;
-            animation: growDot 1.2s cubic-bezier(1,0,.9,.4) 3.5s;
+            animation: growDot 1.2s cubic-bezier(1,0,.9,.4) 2.5s;
             animation-fill-mode: backwards;
             display: flex;
             align-items: flex-end;
@@ -213,7 +213,7 @@
         padding-top: 4rem;
         position: relative;
 
-        animation: moveUp 1.5s ease 6s;
+        animation: moveUp 1.5s ease 5s;
         animation-fill-mode: backwards;
 
         @include respond(phone){
