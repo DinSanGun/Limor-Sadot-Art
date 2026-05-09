@@ -104,13 +104,20 @@ const Series = () => {
                         <figcaption className='series__caption'>The Purple Era</figcaption>
                     </figure>
                 </Link>
+
+                <Link to='/botanical-wanders' className='link'>
+                    <figure className='series__item'>
+                        <img className='series__icon series__icon--12' alt='Botanical Wanders' src="/img/series-icons/collage/botanical_wanders_button.png" />
+                        <figcaption className='series__caption'>Botanical Wanders</figcaption>
+                    </figure>
+                </Link>
                 
-                <Link to='/pink-bloodlines' className='link'>
+                {/* <Link to='/pink-bloodlines' className='link'>
                     <figure className='series__item'>
                         <img className='series__icon series__icon--12' alt='Pink Bloodlines' src="/img/series-icons/collage/pink-blooodlines_button.png" />
                         <figcaption className='series__caption'>Pink Bloodlines</figcaption>
                     </figure>
-                </Link>
+                </Link> */}
                 
                 
             </div>
