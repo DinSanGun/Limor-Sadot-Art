@@ -129,7 +129,7 @@ const Gallery = (props) => {
       <div className={'gallery ' + (props.grid === '2' ? 'gallery--grid-2' : 'gallery--grid-3')}>
         {props.series.images.map((image) => (
           <div className="gallery__item reveal-image" key={image.id} onClick={() => getImg(image)}>
-            <img src={image.smallSrc} alt="img" className="gallery__image" />
+            <img src={image.smallSrc} alt="img" className="gallery__image" loading="lazy"/>
           </div>
         ))}
       </div>
