@@ -96,7 +96,7 @@ const BotanicalWanders = () => {
         ]
     }
 
-  return <Gallery grid="3" series={ BotanicalWandersGallery } />
+  return <Gallery grid="2" series={ BotanicalWandersGallery } />
 }
 
 export default BotanicalWanders
