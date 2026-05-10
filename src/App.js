@@ -9,15 +9,7 @@ import CollageSeries from './pages/CollageSeries';
 
 import GalleryPage from './galleries/GalleryPage';
 
-import HumanKinda from './galleries/HumanKinda';
-import FloatingWorld from './galleries/FloatingWorld';
 import LineArtSeries from './pages/LineArtSeries';
-import TheHumanLines from './galleries/TheHumanLines';
-import FamilliesDiptychsWinter from './galleries/FamiliesDiptychsWinter';
-import FamilliesDiptychsSummer from './galleries/FamiliesDiptychsSummer';
-import BlackWhiteBrown from './galleries/BlackWhiteBrown';
-import SurrealNeuroTrip from './galleries/SurrealNeuroTrip';
-import EntangledLiving from './galleries/EntangledLiving';
 import Contact from './pages/Contact';
 import Videos from './pages/Videos';
 
@@ -65,14 +57,14 @@ function App() {
       {/* <Route path="/pink-bloodlines" element={<GalleryPage slug="pink-bloodlines" />} /> */}
 
 
-      <Route path="/human-kinda" element={<HumanKinda/>} />
-      <Route path="/pictures-of-the-floating-world" element={<FloatingWorld/>} />
-      <Route path="/the-human-lines" element={<TheHumanLines/>} />
-      <Route path="/families-diptychs-winter" element={<FamilliesDiptychsWinter/>} />
-      <Route path="/families-diptychs-summer" element={<FamilliesDiptychsSummer/>} />
-      <Route path="/black-white-brown" element={<BlackWhiteBrown/>} />
-      <Route path="/surreal-neuro-trip" element={<SurrealNeuroTrip/>} />
-      <Route path="/entangled-living" element={<EntangledLiving/>} />
+      <Route path="/human-kinda" element={<GalleryPage slug="human-kinda" />} />
+      <Route path="/pictures-of-the-floating-world" element={<GalleryPage slug="floating-world" />} />
+      <Route path="/the-human-lines" element={<GalleryPage slug="the-human-lines" />} />
+      <Route path="/families-diptychs-winter" element={<GalleryPage slug="families-diptychs-cold" />} />
+      <Route path="/families-diptychs-summer" element={<GalleryPage slug="families-diptychs-warm" />} />
+      <Route path="/black-white-brown" element={<GalleryPage slug="black-white-brown" />} />
+      <Route path="/surreal-neuro-trip" element={<GalleryPage slug="surreal-neuro-trip" />} />
+      <Route path="/entangled-living" element={<GalleryPage slug="entangled-living" />} />
 
 
             {/* <Route path=":theme">
