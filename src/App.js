@@ -70,7 +70,7 @@ function App() {
       <Route path="/the-human-lines" element={<TheHumanLines/>} />
       <Route path="/families-diptychs-winter" element={<FamilliesDiptychsWinter/>} />
       <Route path="/families-diptychs-summer" element={<FamilliesDiptychsSummer/>} />
-      <Route path="/B&W-&-Brown" element={<BlackWhiteBrown/>} />
+      <Route path="/black-white-brown" element={<BlackWhiteBrown/>} />
       <Route path="/surreal-neuro-trip" element={<SurrealNeuroTrip/>} />
       <Route path="/entangled-living" element={<EntangledLiving/>} />
 

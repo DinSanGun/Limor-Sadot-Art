@@ -43,7 +43,7 @@ const LineArtSeries = () => {
                     </figure>
                 </Link>
 
-                <Link to='/B&W-&-Brown' className='link'>
+                <Link to='/black-white-brown' className='link'>
                     <figure className='series__item'>
                         <img className='series__icon series__icon--3' alt='B&W & Brown' src="/img/series-icons/line-art/bw-and-brown_button.png" />
                         <figcaption className='series__caption'>B&W & Brown</figcaption>

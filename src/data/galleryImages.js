@@ -1,18 +1,20 @@
 /**
- * Loads standardized collage gallery images from `src/img/collage/<slug>/small|big/`.
- * `gallery.slug` must match the folder name (e.g. `wabi-sabi`, `the-purple-era`).
+ * Loads standardized gallery images from `src/img/<category>/<slug>/small|big/`.
+ * `gallery.category` is the first path segment under `src/img` (e.g. `collage`, `line-art`).
+ * `gallery.slug` is the gallery folder name (e.g. `wabi-sabi`, `example-gallery`).
  */
 
 const IMAGE_EXT_RE = /\.(jpe?g|png|webp)$/i;
 
-const collageImagesContext = require.context(
-  '../img/collage',
+const galleryImagesContext = require.context(
+  '../img',
   true,
   /\.(jpe?g|png|webp)$/i
 );
 
-/** Reject slugs that could escape the intended collage subfolder. */
-const isSafeSlug = (slug) => typeof slug === 'string' && /^[a-z0-9-]+$/i.test(slug);
+/** Single path segment: letters, digits, hyphens only (no `.`, `/`, traversal). */
+const isSafePathSegment = (value) =>
+  typeof value === 'string' && /^[a-z0-9-]+$/i.test(value);
 
 const numericSortValue = (fileName) => {
   const base = fileName.replace(IMAGE_EXT_RE, '');
@@ -48,21 +50,25 @@ const buildBigSrcByFileName = (allKeys, bigPrefix, resolve) => {
 };
 
 /**
- * @param {{ slug?: string } | null | undefined} gallery - Metadata object (e.g. from galleries.js).
+ * @param {{ slug?: string; category?: string } | null | undefined} gallery - Metadata object (e.g. from galleries.js).
  * @returns {{ id: number; smallSrc: string; bigSrc: string }[]}
  */
 export const getGalleryImages = (gallery) => {
   if (!gallery || typeof gallery !== 'object') return [];
 
   const slug = typeof gallery.slug === 'string' ? gallery.slug.trim() : '';
-  if (!slug || !isSafeSlug(slug)) return [];
+  const category =
+    typeof gallery.category === 'string' ? gallery.category.trim() : '';
 
-  const smallPrefix = `./${slug}/small/`;
-  const bigPrefix = `./${slug}/big/`;
+  if (!slug || !isSafePathSegment(slug)) return [];
+  if (!category || !isSafePathSegment(category)) return [];
+
+  const smallPrefix = `./${category}/${slug}/small/`;
+  const bigPrefix = `./${category}/${slug}/big/`;
 
   let allKeys;
   try {
-    allKeys = collageImagesContext.keys();
+    allKeys = galleryImagesContext.keys();
   } catch {
     return [];
   }
@@ -77,7 +83,7 @@ export const getGalleryImages = (gallery) => {
   const getSmallFileName = (key) => key.slice(smallPrefix.length);
   const sortedSmallKeys = sortSmallKeysNaturally(smallKeys, getSmallFileName);
   const bigByName = buildBigSrcByFileName(keysList, bigPrefix, (key) =>
-    collageImagesContext(key)
+    galleryImagesContext(key)
   );
 
   const out = [];
@@ -90,7 +96,7 @@ export const getGalleryImages = (gallery) => {
 
     let smallSrc;
     try {
-      smallSrc = collageImagesContext(smallKey);
+      smallSrc = galleryImagesContext(smallKey);
     } catch {
       continue;
     }
