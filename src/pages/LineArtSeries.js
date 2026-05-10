@@ -50,7 +50,7 @@ const LineArtSeries = () => {
                     </figure> 
                 </Link>
 
-                <Link to='/pictures-of-the-floating-world' className='link'>
+                <Link to='/floating-world' className='link'>
                     <figure className='series__item'>
                         <img className='series__icon series__icon--4' alt='Pictures of the floating world - ukiyo e' src="/img/series-icons/line-art/floating-world_button.png" />
                         <figcaption className='series__caption'>Pictures of the Floating World</figcaption>
@@ -71,14 +71,14 @@ const LineArtSeries = () => {
                     </figure> 
                 </Link>
 
-                <Link to='/families-diptychs-summer' className='link'>
+                <Link to='/families-diptychs-warm' className='link'>
                     <figure className='series__item'>
                         <img className='series__icon series__icon--7' alt='Families diptychs Summer' src="/img/series-icons/line-art/summer_button.png" />
                         <figcaption className='series__caption'>Families diptychs - Summer</figcaption>
                     </figure> 
                 </Link>
 
-                <Link to='/families-diptychs-winter' className='link'>
+                <Link to='/families-diptychs-cold' className='link'>
                     <figure className='series__item'>
                         <img className='series__icon series__icon--8' alt='Families diptychs Winter' src="/img/series-icons/line-art/winter_button.png" />
                         <figcaption className='series__caption'>Families diptychs - Winter</figcaption>

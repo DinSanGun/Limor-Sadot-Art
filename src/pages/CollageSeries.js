@@ -42,7 +42,7 @@ const Series = () => {
                     </figure> 
                 </Link>
 
-                <Link to='/eternal-randomness' className='link'>
+                <Link to='/wabi-sabi' className='link'>
                     <figure className='series__item'>
                         <img className='series__icon series__icon--3' alt='Eternal randomness wabi sabi collage' src="/img/series-icons/collage/eternal-randomness_button.png" />
                         <figcaption className='series__caption'>Eternal Randomness Wabi-Sabi</figcaption>
