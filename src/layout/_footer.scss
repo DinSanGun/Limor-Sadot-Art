@@ -41,4 +41,15 @@
             }
         }
     }
+
+    @media only screen and (min-width: 1920px) {
+        font-size: 1.7rem;
+    }
+
+    &__social-icon {
+        @media only screen and (min-width: 1920px) {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    }
 }

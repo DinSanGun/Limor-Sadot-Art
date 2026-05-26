@@ -46,6 +46,10 @@
         font-size: 1.3rem;
         margin-left: .2rem;
         margin-bottom: .5rem;
+
+        @media only screen and (min-width: 1920px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__input {
@@ -63,6 +67,11 @@
             width: 65vw;
         }
 
+        @media only screen and (min-width: 1920px) {
+            font-size: 1.8rem;
+            padding: .6rem;
+        }
+
         
     }
 
@@ -72,6 +81,11 @@
         border: 1.5px solid black;
         padding: .4rem;
         resize: none;
+
+        @media only screen and (min-width: 1920px) {
+            font-size: 1.8rem;
+            padding: .6rem;
+        }
     }
 
     &__submit {

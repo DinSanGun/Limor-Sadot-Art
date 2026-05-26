@@ -88,6 +88,10 @@
             color: white;
             // background-color: rgb(202, 102, 211);
             line-height: 1.4;
+
+            @media only screen and (min-width: 1920px) {
+                font-size: clamp(1.9rem, 1.15vw, 2.7rem);
+            }
         }
 
         &:hover &--1 {
@@ -100,6 +104,10 @@
             font-weight: 600;
             animation: grow .4s;
             animation-fill-mode: backwards;
+
+            @media only screen and (min-width: 1920px) {
+                font-size: clamp(1.8rem, 1.1vw, 2.6rem);
+            }
         }
 
     }

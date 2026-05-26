@@ -98,6 +98,11 @@
             font-size: 2.2rem;
             width: 12rem;
         }
+
+        @media only screen and (min-width: 1920px) {
+            font-size: 2.2rem;
+            width: 13rem;
+        }
         
     }
 
@@ -125,6 +130,12 @@
             width: 30vw;
             height: 30vw;
             outline: 1.5rem solid rgb(219, 218, 218);
+        }
+
+        @media only screen and (min-width: 1920px) {
+            width: 15rem;
+            height: 15rem;
+            outline-width: 1.7rem;
         }
 
         &:hover {

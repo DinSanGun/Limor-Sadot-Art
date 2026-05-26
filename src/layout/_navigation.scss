@@ -93,6 +93,10 @@
             font-size: 2.5rem;
             color: rgb(193, 193, 193);
         }
+
+        @media only screen and (min-width: 1920px) {
+            font-size: 2.2rem;
+        }
     }
 
     &__link:hover {
@@ -113,6 +117,10 @@
             font-size: 2.5rem;
             color: rgb(193, 193, 193);
         }
+
+        @media only screen and (min-width: 1920px) {
+            font-size: 2.2rem;
+        }
     }
 
     &__social-media {
@@ -122,6 +130,16 @@
 
         &--3 {
             width: 1.4rem;
+        }
+
+        @media only screen and (min-width: 1920px) {
+            width: 2.2rem;
+        }
+
+        &--3 {
+            @media only screen and (min-width: 1920px) {
+                width: 1.95rem;
+            }
         }
         
         &--mobile {
