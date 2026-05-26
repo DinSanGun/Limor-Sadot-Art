@@ -97,7 +97,9 @@ const Home = () => {
               </Link>
             </button>
 
-        <img src="img/home/home-bottom-sketch.jpg" className="introduction__bottom-image" alt="Line art sketch"/>
+        <div className="introduction__bottom-image-wrap">
+          <img src="img/home/home-bottom-sketch.jpg" className="introduction__bottom-image" alt="Line art sketch"/>
+        </div>
       </section>
     </Layout>
   )

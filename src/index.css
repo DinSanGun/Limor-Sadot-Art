@@ -1917,9 +1917,17 @@ a {
   right: 0;
   bottom: 0;
 }
-.introduction__bottom-image {
+.introduction__bottom-image-wrap {
   grid-row: 2/3;
   grid-column: 1/2;
+  overflow: hidden;
+}
+@media only screen and (max-width: 37.5em) {
+  .introduction__bottom-image-wrap {
+    z-index: -1;
+  }
+}
+.introduction__bottom-image {
   display: block;
   width: 65%;
   margin-left: 15rem;
@@ -1934,7 +1942,6 @@ a {
     margin-top: -10rem;
     padding-top: 0;
     width: 85%;
-    z-index: -1;
   }
 }
 

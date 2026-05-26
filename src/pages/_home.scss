@@ -212,9 +212,17 @@
         }
     }
 
-    &__bottom-image {
+    &__bottom-image-wrap {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
+        overflow: hidden;
+
+        @include respond(phone) {
+            z-index: -1;
+        }
+    }
+
+    &__bottom-image {
         display: block;
         width: 65%;
         margin-left: 15rem;
@@ -229,7 +237,6 @@
             margin-top: -10rem;
             padding-top: 0;
             width: 85%;
-            z-index: -1;
         }
     }
 }
