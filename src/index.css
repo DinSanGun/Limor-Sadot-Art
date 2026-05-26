@@ -1673,6 +1673,12 @@ a {
   animation: moveUp 1.2s 1.5s;
   animation-fill-mode: backwards;
 }
+@media only screen and (min-width: 1920px) {
+  .themes__caption {
+    font-size: 2.6rem;
+    width: 24rem;
+  }
+}
 @media only screen and (max-width: 75em) {
   .themes__caption {
     font-size: 2.2rem;

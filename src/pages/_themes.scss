@@ -96,6 +96,11 @@
         animation: moveUp 1.2s 1.5s;
         animation-fill-mode: backwards;
 
+        @media only screen and (min-width: 1920px) {
+            font-size: 2.6rem;
+            width: 24rem;
+        }
+
         @include respond(tab-land) {
             font-size: 2.2rem;
             width: 15rem;
