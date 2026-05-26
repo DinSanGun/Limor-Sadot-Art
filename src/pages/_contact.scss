@@ -23,6 +23,10 @@
 
         animation: moveUp 2s 1s;
         animation-fill-mode: backwards;
+
+        @media only screen and (min-width: 1920px) {
+            width: 40vw;
+        }
     }
 
     &__title {
@@ -70,6 +74,7 @@
         @media only screen and (min-width: 1920px) {
             font-size: 1.8rem;
             padding: .6rem;
+            width: min(60rem, 30vw);
         }
 
         
@@ -85,6 +90,8 @@
         @media only screen and (min-width: 1920px) {
             font-size: 1.8rem;
             padding: .6rem;
+            width: min(60rem, 30vw);
+            min-height: 18rem;
         }
     }
 
