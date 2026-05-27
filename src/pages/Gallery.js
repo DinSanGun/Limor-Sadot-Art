@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import BackButton from '../components/BackButton';
 import Blocker from '../components/Blocker';
 import Layout from '../layout/Layout';
@@ -6,6 +6,22 @@ import { reveal } from '../App';
 
 const FADE_DURATION_MS = 1000;
 const ADJACENT_PRELOAD_OFFSETS = [1, 2];
+const GRID_EAGER_IMAGE_COUNTS = { 2: 4, 3: 6 };
+const HIGH_PRIORITY_IMAGE_COUNT = 3;
+const GALLERY_REVEAL_THRESHOLD = 0;
+
+const getGridImageLoadingProps = (index, grid) => {
+  const eagerCount = GRID_EAGER_IMAGE_COUNTS[grid] ?? GRID_EAGER_IMAGE_COUNTS[3];
+  const props = {
+    loading: index < eagerCount ? 'eager' : 'lazy',
+  };
+
+  if (index < HIGH_PRIORITY_IMAGE_COUNT) {
+    props.fetchPriority = 'high';
+  }
+
+  return props;
+};
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -14,10 +30,42 @@ const Gallery = (props) => {
   const [image, setImage] = useState(null);
   const [fade, setFade] = useState('in');
   const [isAnimating, setIsAnimating] = useState(false);
+  const [loadedImages, setLoadedImages] = useState({});
   const isMountedRef = useRef(true);
   const transitionTokenRef = useRef(0);
   const preloadedSrcRef = useRef(new Set());
   const preloadPromisesRef = useRef(new Map());
+
+  const markImageLoaded = useCallback((src) => {
+    setLoadedImages((prev) => {
+      if (prev[src]) {
+        return prev;
+      }
+
+      return { ...prev, [src]: true };
+    });
+  }, []);
+
+  const handleGridImageRef = useCallback(
+    (src) => (node) => {
+      if (node?.complete && node.naturalWidth > 0) {
+        markImageLoaded(src);
+      }
+    },
+    [markImageLoaded]
+  );
+
+  const runGalleryReveal = useCallback(() => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (!isMountedRef.current) {
+          return;
+        }
+
+        reveal('.reveal-image', GALLERY_REVEAL_THRESHOLD);
+      });
+    });
+  }, []);
 
   const preloadBigImage = (imageOrSrc) => {
     const src = typeof imageOrSrc === 'string' ? imageOrSrc : imageOrSrc?.bigSrc;
@@ -94,7 +142,7 @@ const Gallery = (props) => {
   }, []);
 
   window.onscroll = () => {
-    reveal('.reveal-image', 100);
+    reveal('.reveal-image', GALLERY_REVEAL_THRESHOLD);
   };
 
   const closeLightbox = () => {
@@ -165,8 +213,16 @@ const Gallery = (props) => {
       point.scrollIntoView({ behavior: 'smooth' });
     }
 
-    reveal('.reveal-image', 80);
-  }, []);
+    runGalleryReveal();
+  }, [runGalleryReveal]);
+
+  useEffect(() => {
+    if (Object.keys(loadedImages).length === 0) {
+      return;
+    }
+
+    runGalleryReveal();
+  }, [loadedImages, runGalleryReveal]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -228,11 +284,29 @@ const Gallery = (props) => {
       </div>
 
       <div className={'gallery ' + (props.grid === '2' ? 'gallery--grid-2' : 'gallery--grid-3')}>
-        {props.series.images.map((image) => (
-          <div className="gallery__item reveal-image" key={image.id} onClick={() => getImg(image)}>
-            <img src={image.smallSrc} alt="img" className="gallery__image" loading="lazy"/>
-          </div>
-        ))}
+        {props.series.images.map((image, index) => {
+          const isLoaded = Boolean(loadedImages[image.smallSrc]);
+
+          return (
+            <div
+              className={
+                'gallery__item reveal-image' + (isLoaded ? ' gallery__item--loaded' : '')
+              }
+              key={image.id}
+              onClick={() => getImg(image)}
+            >
+              <img
+                src={image.smallSrc}
+                alt="img"
+                className="gallery__image"
+                {...getGridImageLoadingProps(index, props.grid)}
+                onLoad={() => markImageLoaded(image.smallSrc)}
+                onError={() => markImageLoaded(image.smallSrc)}
+                ref={handleGridImageRef(image.smallSrc)}
+              />
+            </div>
+          );
+        })}
       </div>
     </Layout>
   );

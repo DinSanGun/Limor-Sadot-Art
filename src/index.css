@@ -1376,6 +1376,14 @@ a {
   transition: all 0.5s;
   position: relative;
   perspective: 140rem;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.gallery__item:not(.gallery__item--loaded) {
+  min-height: 10rem;
+}
+.gallery__item--loaded {
+  background-color: transparent;
+  min-height: 0;
 }
 .gallery__item:hover {
   transform: translateY(-3px) scale(1.05);
