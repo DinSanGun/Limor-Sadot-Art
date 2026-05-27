@@ -1,5 +1,12 @@
-.fadeIn-class { animation: fadeIn 1s; }
-.fadeOut-class { animation: fadeOut 1s; }
+.fadeIn-class {
+    animation: fadeIn 1s forwards;
+    opacity: 1;
+}
+
+.fadeOut-class {
+    animation: fadeOut 1s forwards;
+    opacity: 0;
+}
 .grow-class { animation: grow 2s 4s;}
 
 .margin-bottom-realy-small {

@@ -29,7 +29,7 @@ const Themes = () => {
 
         <figure className='themes__figure'>
           <img src='img/work/big-circle-right-color.png' alt="line art theme" 
-            className="themes__image themes__image--1 fadeOut-class"
+            className="themes__image themes__image--1"
             onClick={() => navigate('/line-art')}
             onAnimationEnd={() => setFade(0)}
             />
