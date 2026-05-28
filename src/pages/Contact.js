@@ -1,12 +1,14 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Layout from '../layout/Layout'
 
 const Contact = () => {
-    
-    window.scrollTo(0,0)
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
 
     const formElement = useRef()
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [messageLength, setMessageLength] = useState(0)
 
   const sendEmail = async (e) => { 
     e.preventDefault();
@@ -44,6 +46,7 @@ const Contact = () => {
     }
 
     e.target.reset()
+    setMessageLength(0)
   };
 
   return (
@@ -57,18 +60,21 @@ const Contact = () => {
                 <form className='form' autoComplete='off' ref={formElement} onSubmit={sendEmail} > 
 
                     <label htmlFor='form-name' className='form__label'>Please enter your name</label>
-                    <input id='form-name' name='name' type='text' className='form__input' required/>
+                    <input id='form-name' name='name' type='text' className='form__input' maxLength={100} required/>
 
                     <label htmlFor='form-subject' className='form__label'>Please enter the subject of your message</label>
-                    <input id='form-subject' name='subject' type='text' className='form__input' required/>
+                    <input id='form-subject' name='subject' type='text' className='form__input' maxLength={150} required/>
 
                     <label htmlFor='form-email' className='form__label'>Please enter a valid Email</label>
-                    <input id='form-email' name='email' type='email' className='form__input' required/>
+                    <input id='form-email' name='email' type='email' className='form__input' maxLength={200} required/>
 
                     <label htmlFor='form-message' className='form__label'>Please write your message here</label>
-                    <textarea id='form-message' name='message' rows="10" col="80" className='form__textarea' required/>
+                    <textarea id='form-message' name='message' rows="10" col="80" className='form__textarea' maxLength={5000} onChange={(e) => setMessageLength(e.target.value.length)} required/>
+                    <p className={messageLength >= 5000 ? 'form__limit form__limit--error' : 'form__limit'}>
+                        {messageLength >= 5000 ? 'Message limit reached (5000 characters).' : `${messageLength} / 5000`}
+                    </p>
 
-                    <input type='submit' value={isSubmitting ? "Sending..." : "Send"} className='form__submit' disabled={isSubmitting} />
+                    <input type='submit' value={isSubmitting ? "..." : "Send"} className='form__submit' disabled={isSubmitting} />
                 </form>
                 
             </div>

@@ -95,6 +95,22 @@
         }
     }
 
+    &__limit {
+        margin: 0 0 1.6rem;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.65);
+        align-self: flex-end;
+
+        @media only screen and (min-width: 1920px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__limit--error {
+        color: #9b1c1c;
+        font-weight: 500;
+    }
+
     &__submit {
         border-radius: 50%;
         border: .9vw solid black;
