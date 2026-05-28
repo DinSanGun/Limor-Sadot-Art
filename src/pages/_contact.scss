@@ -111,6 +111,13 @@
         font-weight: 500;
     }
 
+    &__honeypot {
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
     &__submit {
         border-radius: 50%;
         border: .9vw solid black;

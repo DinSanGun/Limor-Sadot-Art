@@ -21,7 +21,8 @@ const Contact = () => {
         name: formData.name.value,
         subject: formData.subject.value,
         email: formData.email.value,
-        message: formData.message.value
+        message: formData.message.value,
+        website: formData.website.value
     };
 
     const requestDetails = {
@@ -58,6 +59,14 @@ const Contact = () => {
                 <div className='vl'></div>
 
                 <form className='form' autoComplete='off' ref={formElement} onSubmit={sendEmail} > 
+                    <input
+                        type='text'
+                        name='website'
+                        className='form__honeypot'
+                        tabIndex={-1}
+                        autoComplete='off'
+                        aria-hidden={true}
+                    />
 
                     <label htmlFor='form-name' className='form__label'>Please enter your name</label>
                     <input id='form-name' name='name' type='text' className='form__input' maxLength={100} required/>

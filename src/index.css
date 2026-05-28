@@ -1230,6 +1230,12 @@ a {
   color: #9b1c1c;
   font-weight: 500;
 }
+.form__honeypot {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
 .form__submit {
   border-radius: 50%;
   border: 0.9vw solid black;
