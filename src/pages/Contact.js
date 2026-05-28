@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Layout from '../layout/Layout'
 
 const Contact = () => {
@@ -6,9 +6,12 @@ const Contact = () => {
     window.scrollTo(0,0)
 
     const formElement = useRef()
+    const [isSubmitting, setIsSubmitting] = useState(false)
 
   const sendEmail = async (e) => { 
     e.preventDefault();
+    if (isSubmitting) return;
+    setIsSubmitting(true);
 
     const formData = formElement.current.elements;
 
@@ -29,13 +32,15 @@ const Contact = () => {
     };
 
     try{
-        const response = await fetch('https://bmftwyrzihotxnzagtutsalgtu0ujita.lambda-url.us-east-1.on.aws/', requestDetails);        console.log(response)
+        const response = await fetch('https://bmftwyrzihotxnzagtutsalgtu0ujita.lambda-url.us-east-1.on.aws/', requestDetails);
         if(response.status === 200)
             alert('Form submitted succesfully!')
         else
             alert('Some error occured on the server')
     } catch(error) {
         alert('Error sending the form')
+    } finally {
+        setIsSubmitting(false);
     }
 
     e.target.reset()
@@ -63,7 +68,7 @@ const Contact = () => {
                     <label htmlFor='form-message' className='form__label'>Please write your message here</label>
                     <textarea id='form-message' name='message' rows="10" col="80" className='form__textarea' required/>
 
-                    <input type='submit' value="Send" className='form__submit' />
+                    <input type='submit' value={isSubmitting ? "Sending..." : "Send"} className='form__submit' disabled={isSubmitting} />
                 </form>
                 
             </div>

@@ -114,6 +114,18 @@
             transform: scale(1.2);
         }
 
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        &:disabled:hover {
+            color: inherit;
+            border: .9vw solid black;
+            background-color: $purple-primary;
+        }
+
         @include respond(tab-land) {
             font-size: 2.5vw;
             width: 9vw;
