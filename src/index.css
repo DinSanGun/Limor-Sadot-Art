@@ -345,8 +345,8 @@ a {
 
 .youtube {
   margin: 2rem 0;
-  height: 33.73vw;
-  width: 60vw;
+  width: 56vw;
+  height: 31.5vw;
 }
 @media only screen and (max-width: 56.25em) {
   .youtube {
@@ -1413,10 +1413,14 @@ a {
   }
 }
 .gallery__image {
+  display: block;
   width: 100%;
-  animation: growLittle 2s ease;
-  animation-fill-mode: backwards;
+  opacity: 0;
+  transition: opacity 0.4s ease;
   pointer-events: none;
+}
+.gallery__item--loaded .gallery__image {
+  opacity: 1;
 }
 .gallery__lightbox {
   width: 100%;
@@ -2375,7 +2379,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 7vh;
+  padding-top: 3vh;
 }
 .videos__title {
   margin-bottom: 0.5rem;
@@ -2414,7 +2418,28 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8vh;
+  position: relative;
+  margin-bottom: 5vh;
+  padding-bottom: 1.75rem;
+}
+.videos__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(14rem, 38%);
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.videos__item--fade-reveal.reveal {
+  opacity: 0;
+  transform: scale(0.985);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.videos__item--fade-reveal.reveal.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=index.css.map */
