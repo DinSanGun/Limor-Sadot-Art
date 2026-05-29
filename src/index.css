@@ -1700,7 +1700,7 @@ a {
   }
 }
 .themes__image {
-  animation: grow 1.5s ease 3s;
+  animation: grow 1.5s ease 1.8s;
   animation-fill-mode: backwards;
 }
 .themes__image:hover {
@@ -1732,7 +1732,7 @@ a {
   color: rgb(94, 94, 94);
   cursor: pointer;
   width: 20rem;
-  animation: moveUp 1.2s 1.5s;
+  animation: moveUp 1.2s 0.7s;
   animation-fill-mode: backwards;
 }
 @media only screen and (min-width: 1920px) {

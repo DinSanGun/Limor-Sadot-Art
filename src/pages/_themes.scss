@@ -55,7 +55,7 @@
             height: 40vw;
         }
 
-        animation: grow 1.5s ease 3s;
+        animation: grow 1.5s ease 1.8s;
         animation-fill-mode: backwards;
 
         &:hover {
@@ -93,7 +93,7 @@
         cursor: pointer;
         width: 20rem;
 
-        animation: moveUp 1.2s 1.5s;
+        animation: moveUp 1.2s 0.7s;
         animation-fill-mode: backwards;
 
         @media only screen and (min-width: 1920px) {
