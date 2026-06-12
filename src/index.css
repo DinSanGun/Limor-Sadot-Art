@@ -1921,8 +1921,8 @@ a {
 }
 .introduction__text .introduction__text--8, .introduction__text .introduction__text--7, .introduction__text .introduction__text--6, .introduction__text .introduction__text--5, .introduction__text .introduction__text--4, .introduction__text .introduction__text--3, .introduction__text .introduction__text--2, .introduction__text .introduction__text--1 {
   display: block;
-  overflow: hidden;
   animation-fill-mode: backwards;
+  overflow: hidden;
   transform-origin: right center;
   will-change: transform, opacity;
 }
@@ -1964,7 +1964,6 @@ a {
 .introduction__bottom-image-wrap {
   grid-row: 2/3;
   grid-column: 1/2;
-  overflow: hidden;
 }
 @media only screen and (max-width: 37.5em) {
   .introduction__bottom-image-wrap {

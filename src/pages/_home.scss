@@ -151,8 +151,8 @@
 
         %text-line {
             display: block;
-            overflow: hidden;
             animation-fill-mode: backwards;
+            overflow: hidden;
 
             transform-origin: right center;
             will-change: transform, opacity;
@@ -215,7 +215,6 @@
     &__bottom-image-wrap {
         grid-row: 2 / 3;
         grid-column: 1 / 2;
-        overflow: hidden;
 
         @include respond(phone) {
             z-index: -1;
